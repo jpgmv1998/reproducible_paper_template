@@ -29,4 +29,11 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Files description
 
+## Links
+
+List of links and references about reproducibility:
+
+* https://doi.org/10.7287/peerj.preprints.3192v2 - Paper about uses of R to produce research compendia
+
+* https://aeadataeditor.github.io/aea-de-guidance/ - AEA Data Editor Unofficial Guidance on how to create data and code repicable supplements
 
