@@ -31,7 +31,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Links
 
-List of links and references about reproducibility:
+List of links and references for those interested in learning more about reproducibility:
 
 * https://doi.org/10.7287/peerj.preprints.3192v2 - Paper about uses of R to produce research compendia
 
@@ -40,3 +40,5 @@ List of links and references about reproducibility:
 * https://guides.github.com/activities/citable-code/ - Guide on how to archive GitHub repository and assign a DOI with Zenodo
 
 * https://rpubs.com/glennwithtwons/reproducible-r-toolbox - RPubs post about reproducility with R
+
+* https://www.projecttier.org/about/about-project-tier/ - Project dedicated to develop methods and tools for enhancing research transparency
