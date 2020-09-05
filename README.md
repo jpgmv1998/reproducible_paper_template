@@ -35,10 +35,10 @@ List of links and references for those interested in learning more about reprodu
 
 * https://doi.org/10.7287/peerj.preprints.3192v2 - Paper about uses of R to produce research compendia
 
-* https://aeadataeditor.github.io/aea-de-guidance/ - AEA Data Editor Unofficial Guidance on how to create data and code repicable supplements
+* https://aeadataeditor.github.io/aea-de-guidance/ - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements
 
 * https://guides.github.com/activities/citable-code/ - Guide on how to archive GitHub repository and assign a DOI with Zenodo
 
-* https://rpubs.com/glennwithtwons/reproducible-r-toolbox - RPubs post about reproducility with R
+* https://rpubs.com/glennwithtwons/reproducible-r-toolbox - RPubs post about reproducibility with R
 
-* https://www.projecttier.org/about/about-project-tier/ - Project dedicated to develop methods and tools for enhancing research transparency
+* https://www.projecttier.org/about/about-project-tier/ - Project dedicated to developing methods and tools for enhancing research transparency
