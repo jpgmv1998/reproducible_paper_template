@@ -37,3 +37,6 @@ List of links and references about reproducibility:
 
 * https://aeadataeditor.github.io/aea-de-guidance/ - AEA Data Editor Unofficial Guidance on how to create data and code repicable supplements
 
+* https://guides.github.com/activities/citable-code/ - Guide on how to archive GitHub repository and assign a DOI with Zenodo
+
+* https://rpubs.com/glennwithtwons/reproducible-r-toolbox - RPubs post about reproducility with R
