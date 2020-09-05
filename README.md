@@ -18,6 +18,10 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## How to use
 
+
+* If you want to use version control within the Rstudio project with git see this [tutorial](https://happygitwithr.com/) then:
+    * Open RStudio > File > New Project... > Version Control > Git > insert the url that appears when clicking on code your GitHub repository on Repository URL:
+
 * When using R always open it using the .Rproj file (double-click)
 
 *
