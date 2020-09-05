@@ -10,7 +10,7 @@ Software: Focused on empirical projects that use mostly R for data manipulation
 
 * R packages management: 
 
-Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues)
+Ideas for future implementation are stored on [Issues](issues)
 
 ## Folders Structure
 
@@ -18,7 +18,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## How to use
 
-
+* Select [use this template](https://github.com/jpgmv1998/reproducible_paper_template/generate) (upper right corner) 
 * If you want to use version control within the Rstudio project with git see this [tutorial](https://happygitwithr.com/) then:
     * Open RStudio > File > New Project... > Version Control > Git > insert the url that appears when clicking on code your GitHub repository on Repository URL:
 
