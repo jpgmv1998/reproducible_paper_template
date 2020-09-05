@@ -4,6 +4,8 @@ Main goal: Create a template repository for starting a new paper project impleme
 
 Software: Focused on empirical projects that use mostly R for data manipulation
 
+Disclaimer: This project is based on the author personal preferences and limitations
+
 Requirements: Tested using R version 4.0.2 and RStudio version 1.3.1073 
 
 ## Features
