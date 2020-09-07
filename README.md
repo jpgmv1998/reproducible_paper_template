@@ -25,6 +25,10 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 * When using R always open RStudio using the .Rproj file (double-click)
 
+* Setting large files support for data/projectSpecific and data/analysis folder (https://git-lfs.github.com/)
+      * [install large file support](https://github.com/git-lfs/git-lfs/releases/download/v2.11.0/git-lfs-windows-v2.11.0.exe)
+      * open the project in Rstudio > Tools > Shell... > insert "git lfs install" > insert "git lfs track "data"" > commit .gitattributes > commit data folder
+
 
 
 ## Folders Structure
