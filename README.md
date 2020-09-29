@@ -44,3 +44,7 @@ List of links and references for those interested in learning more about reprodu
 
 * https://www.projecttier.org/about/about-project-tier/ - Project dedicated to developing methods and tools for enhancing research transparency
 
+
+
+## License
+The material in this repository is made available under the [MIT license](http://opensource.org/licenses/mit-license.php). 
