@@ -9,9 +9,11 @@
 
 ## R 
 
-[Advanced R Book](https://adv-r.hadley.nz/)
+[Advanced R Book](https://adv-r.hadley.nz/) 
 
-[R for Data Science Book](https://r4ds.had.co.nz/)
+[R for Data Science Book](https://r4ds.had.co.nz/) 
+
+[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) 
 
 ## Econometrics
 
@@ -24,7 +26,10 @@
 
 ## Git
 
-[Happy Git with R](https://happygitwithr.com/)) - Instructions to integrate Git(Hub) with R and RStudio
+[Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio
+
+[Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes
+
  
 [Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files
 
