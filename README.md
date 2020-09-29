@@ -10,6 +10,8 @@ Requirements: Tested using R version 4.0.2 and RStudio version 1.3.1073
 
 ## Features
 
+* [Random References](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md) - File intended to store references that may be useful for empirical work (e.g. R, Econometrics, Git, and Statistics refereces).
+
 * R Project: Allows better use of relative paths, helps with version control connecting directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/))
 
 * R packages management: Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)) 
