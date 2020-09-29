@@ -2,13 +2,7 @@
 
  File intended to store references that may be useful for empirical work.
 
-
-## GitHub Projects
-
-[Data Science for Economists](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course
-
 ## R 
-
 
 [R for Data Science Book](https://r4ds.had.co.nz/) - Book with a practicum of skills for data science in R
 
@@ -24,6 +18,9 @@
 
 [Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software
 
+## GitHub Projects
+
+[Data Science for Economists](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course
 
 ## Git
 
