@@ -10,11 +10,11 @@
 ## R 
 
 
-[R for Data Science Book](https://r4ds.had.co.nz/) 
+[R for Data Science Book](https://r4ds.had.co.nz/) - Book with a practicum of skills for data science in R
 
 [Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language
 
-[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book with a practicum of skills for data science
+[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references
 
 ## Econometrics
 
@@ -30,8 +30,9 @@
 [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio
 
 [Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes
-
  
 [Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files
+
+# R Packages
 
 
