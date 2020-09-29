@@ -43,3 +43,5 @@ List of links and references for those interested in learning more about reprodu
 * https://rpubs.com/glennwithtwons/reproducible-r-toolbox - RPubs post about reproducibility with R
 
 * https://www.projecttier.org/about/about-project-tier/ - Project dedicated to developing methods and tools for enhancing research transparency
+
+* https://github.com/uo-ec607/lectures - Data Science for Economists - example of an entire reproducible graduate course
