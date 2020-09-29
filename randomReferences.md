@@ -7,8 +7,6 @@
 
 * [Data Science for Economists](https://github.com/uo-ec607/lectures) - graduate course with a lot of useful materials including tools that helps with reproducibility 
 
-* [Econometrics PhD Course](https://github.com/edrubin/EC525S19)
-
 ## Git
 
 * [Happy Git with R](https://happygitwithr.com/)) - Instructions to integrate Git(Hub) with R and RStudio
