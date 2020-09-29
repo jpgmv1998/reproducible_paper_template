@@ -5,19 +5,20 @@
 
 ## GitHub Projects
 
-[Data Science for Economists](https://github.com/uo-ec607/lectures) - graduate course with a lot of useful materials including tools that helps with reproducibility 
+[Data Science for Economists](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course
 
 ## R 
 
-[Advanced R Book](https://adv-r.hadley.nz/) 
 
 [R for Data Science Book](https://r4ds.had.co.nz/) 
 
-[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) 
+[Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language
+
+[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book with a practicum of skills for data science
 
 ## Econometrics
 
-[Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015)
+[Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015)
 
 ## Statistics
 
