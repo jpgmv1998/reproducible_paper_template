@@ -22,7 +22,7 @@
 
 ## Statistics
 
-[LOST](lost-stats.github.io/) - Library of Statistical Techniques 
+[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software
 
 
 ## Git
