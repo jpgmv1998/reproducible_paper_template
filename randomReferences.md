@@ -4,37 +4,37 @@
 
 ## R 
 
-[R for Data Science Book](https://r4ds.had.co.nz/) - Book with a practicum of skills for data science in R
+[R for Data Science Book](https://r4ds.had.co.nz/) - Book with a practicum of skills for data science in R.
 
-[Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language
+[Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language.
 
-[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references
+[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references.
 
 ## Econometrics
 
-[Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015)
+[Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
 
 ## Statistics
 
-[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software
+[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software.
 
 ## GitHub Projects
 
-[Data Science for Economists](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course
+[Data Science for Economists](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
 ## Git
 
-[Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio
+[Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
 
-[Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes
+[Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes.
  
-[Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files
+[Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files.
 
 ## R Packages
 
-[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data wrangling, manipulation, visualization, and more 
+[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
 
-[data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) - package for data manipulation, faster and more efficient in memory use than tidyverse. Recommended for large data.
+[data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
 
 ## Reproducibility 
 
