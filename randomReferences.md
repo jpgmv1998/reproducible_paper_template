@@ -32,6 +32,10 @@
 
 ## R Packages
 
+[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data wrangling, manipulation, visualization, and more 
+
+[data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) - package for data manipulation, faster and more efficient in memory use than tidyverse. Recommended for large data.
+
 ## Reproducibility 
 
 See links section on [README](https://github.com/jpgmv1998/reproducible_paper_template#links)
