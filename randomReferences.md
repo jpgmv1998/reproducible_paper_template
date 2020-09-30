@@ -32,4 +32,7 @@
 
 ## R Packages
 
+## Reproducibility 
+
+See links section on [README}(https://github.com/jpgmv1998/reproducible_paper_template#links)
 
