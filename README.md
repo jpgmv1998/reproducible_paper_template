@@ -36,6 +36,9 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 List of links and references for those interested in learning more about reproducibility:
 
+* https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse
+M. Shapiro (2014)
+
 * https://doi.org/10.7287/peerj.preprints.3192v2 - Paper about uses of R to produce research compendia
 
 * https://aeadataeditor.github.io/aea-de-guidance/ - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements
