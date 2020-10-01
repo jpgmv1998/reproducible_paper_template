@@ -1,6 +1,6 @@
 # Random (hopefully useful) References
 
- File intended to store references that may be useful for empirical work.
+ File intended to store references that may be useful for empirical work, focused on data science tools. 
 
 ## R 
 
