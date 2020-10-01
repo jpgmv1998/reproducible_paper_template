@@ -34,7 +34,7 @@
 
 [Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
 
-[data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
+[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
 
 ## Reproducibility 
 
