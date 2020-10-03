@@ -50,6 +50,8 @@
 
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
 
+[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities
+
 [model summary](https://vincentarelbundock.github.io/modelsummary/) - modelsummary creates tables and plots to summarize statistical models and data in R.
 
 
