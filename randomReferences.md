@@ -7,6 +7,13 @@
 - [R](#r)
   - [General](#general)
   - [Spatial Data](#spatial-data)
+  - [R Packages](#r-packages)
+- [Econometrics](#econometrics)
+- [Statistics](#statistics)
+- [GitHub Projects](#github-projects)
+- [Git](#git)
+- [Reproducibility](#reproducibility)
+  
 
 ## R 
 
