@@ -4,9 +4,9 @@
  
 # Table of Contents
 
-- [R](##R)
-  - [General](###General)
-  - [Spatial Data](###SpatialData)
+- [R](#r)
+  - [General](#general)
+  - [Spatial Data](#spatial-data)
 
 ## R 
 
