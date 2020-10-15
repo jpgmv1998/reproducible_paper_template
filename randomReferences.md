@@ -4,6 +4,8 @@
 
 ## R 
 
+### General
+
 [R for Data Science Book](https://r4ds.had.co.nz/) - Book with a practicum of skills for data science in R.
 
 [Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language.
@@ -19,6 +21,22 @@
 [Geocomputation with R](https://geocompr.robinlovelace.net/) - geographic data analysis, visualization and modeling.
 
 [R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of an econometric analysis. 
+
+### R Packages
+
+[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
+
+[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
+
+[dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
+
+[tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
+
+[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities
+
+[model summary](https://vincentarelbundock.github.io/modelsummary/) - modelsummary creates tables and plots to summarize statistical models and data in R.
+
+
 
 ## Econometrics
 
@@ -39,22 +57,7 @@
 [Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes.
  
 [Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files.
-
-## R Packages
-
-[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
-
-[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
-
-[dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
-
-[tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
-
-[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities
-
-[model summary](https://vincentarelbundock.github.io/modelsummary/) - modelsummary creates tables and plots to summarize statistical models and data in R.
-
-
+ 
 ## Reproducibility 
 
 See links section on [README](https://github.com/jpgmv1998/reproducible_paper_template#links)
