@@ -2,7 +2,7 @@
 
  File intended to store references that may be useful for empirical work, focused on data science tools. 
  
-## Table of Contents
+# Table of Contents
 
 - [R](#r)
   - [References](#references)
