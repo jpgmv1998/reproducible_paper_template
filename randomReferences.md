@@ -9,6 +9,7 @@
   - [Spatial Data](#spatial-data)
   - [R Packages](#r-packages)
     - [Data Frame Manipulation](#data-frame-manipulation)
+    - [Spatial Data Manipulation](#spatial-data-manipulation)
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
     - [Other](#other)
 - [Econometrics](#econometrics)
@@ -48,6 +49,12 @@
 [dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
 
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
+
+#### Spatial Data Manipulation
+
+[sf](https://r-spatial.github.io/sf/) - spatial manipulation for vector-based
+
+[raster](https://cran.r-project.org/web/packages/raster/raster.pdf) - spatial manipulation raster-based
 
 #### Regression Analysis and Output Presentation
 
