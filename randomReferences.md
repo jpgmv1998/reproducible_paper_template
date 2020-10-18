@@ -8,6 +8,9 @@
   - [General](#general)
   - [Spatial Data](#spatial-data)
   - [R Packages](#r-packages)
+    - [Data Frame Manipulation](#data-frame-manipulation)
+    - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
+    - [Other](#other)
 - [Econometrics](#econometrics)
 - [Statistics](#statistics)
 - [Public Available Courses](#public-available-courses)
@@ -37,6 +40,7 @@
 
 ### R Packages
 
+#### Data Frame Manipulation
 [Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
 
 [data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
@@ -45,11 +49,11 @@
 
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
 
-[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities.
+#### Regression Analysis and Output Presentation
 
 [model summary](https://vincentarelbundock.github.io/modelsummary/) - modelsummary creates tables and plots to summarize statistical models and data in R.
 
-[vtable](https://nickch-k.github.io/vtable/) - The vtable package is designed to help you quickly and efficiently look at and document your data. i\It is also very good at producing the type of “out of the box” summary tables that economists like.
+[vtable](https://nickch-k.github.io/vtable/) - The vtable package is designed to help you quickly and efficiently look at and document your data. It is also very good at producing the type of “out of the box” summary tables that economists like.
 
 [broom](https://broom.tidymodels.org/) - helps converting regression outputs into “tidy” data frames.
 
@@ -70,6 +74,10 @@
 [mfx](https://cran.r-project.org/web/packages/mfx/vignettes/mfxarticle.pdf) - provides functions that estimate a number of popular generalized linear models, returning marginal effects as output.
 
 [margins](https://cran.r-project.org/web/packages/margins/vignettes/Introduction.html) - margins is an effort to port Stata’s (closed source) margins command to R as an S3 generic method for calculating the marginal effects (or “partial effects”) of covariates included in model objects (like those of classes “lm” and “glm”).
+
+#### Other
+[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities.
+
 
 ## Econometrics
 
