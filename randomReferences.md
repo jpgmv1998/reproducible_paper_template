@@ -10,7 +10,7 @@
   - [R Packages](#r-packages)
 - [Econometrics](#econometrics)
 - [Statistics](#statistics)
-- [GitHub Projects](#github-projects)
+- [Public Available Courses](#public-available-courses)
 - [Git](#git)
 - [Reproducibility](#reproducibility)
   
@@ -45,11 +45,31 @@
 
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
 
-[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities
+[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities.
 
 [model summary](https://vincentarelbundock.github.io/modelsummary/) - modelsummary creates tables and plots to summarize statistical models and data in R.
 
+[vtable](https://nickch-k.github.io/vtable/) - The vtable package is designed to help you quickly and efficiently look at and document your data. i\It is also very good at producing the type of “out of the box” summary tables that economists like.
 
+[broom](https://broom.tidymodels.org/) - helps converting regression outputs into “tidy” data frames.
+
+[estimatr](https://declaredesign.org/r/estimatr/articles/getting-started.html) - dedicated to providing fast estimators that take into consideration designs often used by social scientists.
+
+[fixest](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) - provides family of functions to perform estimations with multiple fixed-effects. This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
+
+[lfe](https://cran.r-project.org/web/packages/lfe/lfe.pdf) - Useful for estimating linear models with multiple group fixed effects. Offers near-identical functionality to the popular Stata library, reghdfe.
+
+[drdid](https://pedrohcgs.github.io/DRDID/reference/drdid.html) - used to compute the locally efficient doubly robust estimators for the ATT in difference-in-differences (DiD) setups.
+
+[did](https://rdrr.io/cran/did/f/README.md) - contains tools for computing average treatment effect parameters in Difference in Differences models with more than two periods, with variation in treatment timing across individuals, and where the DID assumption possibly holds conditional on covariates.
+
+[gsynth](https://yiqingxu.org/software/gsynth/gsynth_examples.html) - R package for [Generalized Synthetic Control Method: for Causal Inference with Interactive Fixed Effect Models](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2584200).
+
+[scul](https://hollina.github.io/scul/index.html) - This repository contains the R package scul that is used in [Hollingsworth and Wing (2020) “Tactics for design and inference in synthetic control studies: An applied example using high-dimensional data.”](https://doi.org/10.31235/osf.io/fc9xt).
+
+[mfx](https://cran.r-project.org/web/packages/mfx/vignettes/mfxarticle.pdf) - provides functions that estimate a number of popular generalized linear models, returning marginal effects as output.
+
+[margins](https://cran.r-project.org/web/packages/margins/vignettes/Introduction.html) - margins is an effort to port Stata’s (closed source) margins command to R as an S3 generic method for calculating the marginal effects (or “partial effects”) of covariates included in model objects (like those of classes “lm” and “glm”).
 
 ## Econometrics
 
@@ -59,9 +79,12 @@
 
 [Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software.
 
-## GitHub Projects
+## Public Available Courses
 
-[Data Science for Economists](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
+[Data Science for Economists- Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
+
+[PhD Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
+
 
 ## Git
 
