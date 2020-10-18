@@ -52,9 +52,9 @@
 
 #### Spatial Data Manipulation
 
-[sf](https://r-spatial.github.io/sf/) - spatial manipulation for vector-based
+[sf](https://r-spatial.github.io/sf/) - spatial manipulation (vector-based)
 
-[raster](https://cran.r-project.org/web/packages/raster/raster.pdf) - spatial manipulation raster-based
+[raster](https://cran.r-project.org/web/packages/raster/raster.pdf) - spatial manipulation (raster-based)
 
 #### Regression Analysis and Output Presentation
 
