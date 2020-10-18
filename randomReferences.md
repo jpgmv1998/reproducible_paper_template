@@ -5,8 +5,9 @@
 ## Table of Contents
 
 - [R](#r)
-  - [General](#general)
-  - [Spatial Data](#spatial-data)
+  - [References](#references)
+    - [General](#general)
+    - [Spatial Data](#spatial-data)
   - [R Packages](#r-packages)
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
@@ -21,7 +22,9 @@
 
 ## R 
 
-### General
+### References
+
+#### General
 
 [R for Data Science Book](https://r4ds.had.co.nz/) - Book with a practicum of skills for data science in R.
 
@@ -31,13 +34,15 @@
 
 [R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (portuguese reference) 
 
-### Spatial Data
+#### Spatial Data
 
 [Spatial Data Science](https://keen-swartz-3146c4.netlify.app/) - The book aims at data scientists who want to get a grip on using spatial data in their analysis. To exemplify how to do things, it uses R.
 
 [Geocomputation with R](https://geocompr.robinlovelace.net/) - geographic data analysis, visualization and modeling.
 
 [R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of an econometric analysis. 
+
+[Spatio-Temporal Statistics with R](https://spacetimewithr.org/) - Book about spatial statistics topics
 
 ### R Packages
 
@@ -55,6 +60,8 @@
 [sf](https://r-spatial.github.io/sf/) - spatial manipulation (vector-based)
 
 [raster](https://cran.r-project.org/web/packages/raster/raster.pdf) - spatial manipulation (raster-based)
+
+[leaflet](https://rstudio.github.io/leaflet/) - plot interactive maps
 
 #### Regression Analysis and Output Presentation
 
