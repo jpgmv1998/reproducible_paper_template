@@ -101,12 +101,13 @@
 
 [Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software.
 
-## Public Available Courses
+## Public Available Resources
 
 [Data Science for Economists- Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
 [PhD Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
+[RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
 
 ## Git
 
