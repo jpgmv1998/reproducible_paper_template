@@ -36,6 +36,8 @@
 
 [Parallel Computing with R](https://arxiv.org/abs/1912.11144) - comprehensive overview of all things R parallel (working paper)
 
+[Databases using dplyr](https://db.rstudio.com/dplyr) - RStudio's tutorial
+
 #### Spatial Data
 
 [Spatial Data Science](https://keen-swartz-3146c4.netlify.app/) - The book aims at data scientists who want to get a grip on using spatial data in their analysis. To exemplify how to do things, it uses R.
@@ -56,6 +58,8 @@
 [dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
 
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
+
+[dbplyr](https://dbplyr.tidyverse.org/) - dbplyr is the database backend for dplyr. It allows you to use remote database tables as if they are in-memory data frames by automatically converting dplyr code into SQL.
 
 #### Spatial Data Manipulation
 
