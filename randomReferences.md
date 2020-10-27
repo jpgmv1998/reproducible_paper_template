@@ -38,6 +38,8 @@
 
 [Databases using dplyr](https://db.rstudio.com/dplyr) - RStudio's tutorial
 
+[R interface for Apache Spark](https://spark.rstudio.com/) - RStudio's tutorial
+
 #### Spatial Data
 
 [Spatial Data Science](https://keen-swartz-3146c4.netlify.app/) - The book aims at data scientists who want to get a grip on using spatial data in their analysis. To exemplify how to do things, it uses R.
@@ -60,6 +62,8 @@
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
 
 [dbplyr](https://dbplyr.tidyverse.org/) - dbplyr is the database backend for dplyr. It allows you to use remote database tables as if they are in-memory data frames by automatically converting dplyr code into SQL.
+
+[sparklyr](https://spark.rstudio.com/) - Spark is a unified analytics engine for large-scale data processing. Spark can scale in ways that R simply can’t.
 
 #### Spatial Data Manipulation
 
