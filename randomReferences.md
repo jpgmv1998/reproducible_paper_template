@@ -14,7 +14,6 @@
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
     - [Other](#other)
 - [Econometrics](#econometrics)
-- [Statistics](#statistics)
 - [Public Available Resources](#public-available-resources)
 - [Git](#git)
 - [Reproducibility](#reproducibility)
@@ -108,8 +107,6 @@
 ## Econometrics
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
-
-## Statistics
 
 [Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software.
 
