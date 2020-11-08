@@ -100,8 +100,10 @@
 [margins](https://cran.r-project.org/web/packages/margins/vignettes/Introduction.html) - margins is an effort to port Stata’s (closed source) margins command to R as an S3 generic method for calculating the marginal effects (or “partial effects”) of covariates included in model objects (like those of classes “lm” and “glm”).
 
 #### Other
+
 [furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities.
 
+[ralger](https://github.com/feddelegrand7/ralger) - The goal of ralger is to facilitate web scraping in R.
 
 ## Econometrics
 
