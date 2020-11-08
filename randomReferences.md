@@ -15,7 +15,7 @@
     - [Other](#other)
 - [Econometrics](#econometrics)
 - [Statistics](#statistics)
-- [Public Available Courses](#public-available-courses)
+- [Public Available Resources](#public-available-resources)
 - [Git](#git)
 - [Reproducibility](#reproducibility)
   
@@ -118,6 +118,8 @@
 [PhD Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
 [RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
+
+[Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.
 
 ## Git
 
