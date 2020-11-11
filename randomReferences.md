@@ -31,7 +31,7 @@
 
 [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references.
 
-[R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (portuguese reference)
+[R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (reference in portuguese)
 
 [Parallel Computing with R](https://arxiv.org/abs/1912.11144) - comprehensive overview of all things R parallel (working paper)
 
