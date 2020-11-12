@@ -1,6 +1,6 @@
 # Random (hopefully useful) References
 
- File intended to store references that may be useful for empirical work, focused on data science tools (empashis in R). 
+ File intended to store references that may be useful for empirical work focused on data science tools (emphasis in R). 
  
 # Table of Contents
 
@@ -33,7 +33,7 @@
 
 [R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (reference in portuguese)
 
-[Parallel Computing with R](https://arxiv.org/abs/1912.11144) - comprehensive overview of all things R parallel (working paper)
+[Parallel Computing with R](https://arxiv.org/abs/1912.11144) - a comprehensive overview of all things R parallel (working paper)
 
 [Databases using dplyr](https://db.rstudio.com/dplyr) - RStudio's tutorial
 
@@ -43,18 +43,18 @@
 
 [Spatial Data Science](https://keen-swartz-3146c4.netlify.app/) - The book aims at data scientists who want to get a grip on using spatial data in their analysis. To exemplify how to do things, it uses R.
 
-[Geocomputation with R](https://geocompr.robinlovelace.net/) - geographic data analysis, visualization and modeling.
+[Geocomputation with R](https://geocompr.robinlovelace.net/) - geographic data analysis, visualization, and modeling.
 
-[R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of an econometric analysis. 
+[R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of econometric analysis. 
 
 [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) - Book about spatial statistics topics
 
 ### R Packages
 
 #### Data Frame Manipulation
-[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
+[Tidyverse](https://www.tidyverse.org/) - a collection of packages that share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
 
-[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
+[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency-free. Recommended for large data.
 
 [dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
 
@@ -78,11 +78,11 @@
 
 [vtable](https://nickch-k.github.io/vtable/) - The vtable package is designed to help you quickly and efficiently look at and document your data. It is also very good at producing the type of “out of the box” summary tables that economists like.
 
-[broom](https://broom.tidymodels.org/) - helps converting regression outputs into “tidy” data frames.
+[broom](https://broom.tidymodels.org/) - helps to convert regression outputs into “tidy” data frames.
 
 [estimatr](https://declaredesign.org/r/estimatr/articles/getting-started.html) - dedicated to providing fast estimators that take into consideration designs often used by social scientists.
 
-[fixest](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) - provides family of functions to perform estimations with multiple fixed-effects. This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
+[fixest](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) - provides a family of functions to perform estimations with multiple fixed-effects. This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
 
 [lfe](https://cran.r-project.org/web/packages/lfe/lfe.pdf) - Useful for estimating linear models with multiple group fixed effects. Offers near-identical functionality to the popular Stata library, reghdfe.
 
@@ -100,7 +100,7 @@
 
 #### Other
 
-[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities.
+[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with the future’s parallel processing capabilities.
 
 [ralger](https://github.com/feddelegrand7/ralger) - The goal of ralger is to facilitate web scraping in R.
 
@@ -108,13 +108,13 @@
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
 
-[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software.
+[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website to make it easy to execute statistical techniques in statistical software.
 
 ## Public Available Resources
 
 [Data Science for Economists- Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
-[PhD Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
+[Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
 [RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
 
@@ -126,7 +126,7 @@
 
 [Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes.
  
-[Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files.
+[Git Large File Storage](https://git-lfs.github.com/) - An open-source Git extension for versioning large files.
  
 ## Reproducibility 
 
