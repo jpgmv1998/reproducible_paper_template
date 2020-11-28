@@ -55,6 +55,8 @@
 
 [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) - Book about spatial statistics topics
 
+[Spatial Data Science with R and “terra”](https://rspatial.org/terra/index.html) - Resources that teach spatial data analysis using the new package "terra" that will substitute the  "raster" package
+
 ### R Packages
 
 #### Data Frame Manipulation
