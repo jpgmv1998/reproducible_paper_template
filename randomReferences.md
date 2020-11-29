@@ -108,6 +108,8 @@
 
 #### Other
 
+[econocharts](https://github.com/R-CoderDotCom/econocharts/) - Microeconomics/macroeconomics graphs made with ggplot2. This package allows creating microeconomics or macroeconomics charts in R with simple functions
+
 [furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with the future’s parallel processing capabilities.
 
 [ralger](https://github.com/feddelegrand7/ralger) - The goal of ralger is to facilitate web scraping in R.
