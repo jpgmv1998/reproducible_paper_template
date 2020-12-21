@@ -1,0 +1,13 @@
+# DATASET NAME
+# files: file type x + file name x
+# content: x; x (extent); x (year of reference)
+# source: data source x
+# available at: url
+# raw data downloaded on: MON/DD/YYYY
+# web archive link: url from Web Archive Save a Page feature
+# raw data archived on: MON/DD/YYYY
+# CRS (only for spatial data): x (coordinate system); x; x (EPSG: x)
+#
+# citation: **x**. YYYY. "dataset name: detail 1, detail 2". source. url (accessed via Archive.org Month DD, YYYY).
+#
+# additional information about the download: 
