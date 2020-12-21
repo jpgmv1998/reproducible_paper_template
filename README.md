@@ -4,13 +4,13 @@ Main goal: Create a template repository for starting a new paper project impleme
 
 Software: Focused on empirical projects that use mostly R for data manipulation
 
-Disclaimer: This project is based on the author personal preferences, needs and limitations
+Disclaimer: This project is based on the author personal preferences, needs, and limitations
 
 Requirements: Tested using R version 4.0.2 and RStudio version 1.3.1073 (but may work on other versions)
 
 ## Features
 
-* [Random References](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, and Statistics refereces).
+* [Random References](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc).
 
 * R Project: Allows better use of relative paths, helps with version control connecting directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/))
 

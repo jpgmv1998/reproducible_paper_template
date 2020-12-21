@@ -1,6 +1,6 @@
 # Random (hopefully useful) References
 
- File intended to store references that may be useful for empirical work, focused on data science tools. 
+ File intended to store references that may be useful for empirical work focused on data science tools (emphasis in R). 
  
 # Table of Contents
 
@@ -14,8 +14,7 @@
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
     - [Other](#other)
 - [Econometrics](#econometrics)
-- [Statistics](#statistics)
-- [Public Available Courses](#public-available-courses)
+- [Public Available Resources](#public-available-resources)
 - [Git](#git)
 - [Reproducibility](#reproducibility)
   
@@ -30,30 +29,48 @@
 
 [Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language.
 
+[Data Visualization with R](https://rkabacoff.github.io/datavis/) - This book helps you create the most popular visualizations - from quick and dirty plots to publication-ready graphs. The text relies heavily on the ggplot2 package for graphics, but other approaches are covered as well.
+
 [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references.
 
-[R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (portuguese reference) 
+[R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/) - This book is designed to provide a range of examples on how to extend the functionality of your R Markdown documents. As a cookbook, this guide is recommended to new and intermediate R Markdown users who desire to enhance the efficiency of using R Markdown and also explore the power of R Markdown.
+
+[Academic Publications with R Markdown](https://danovando.github.io/publications-with-rmarkdown/presentations/pubs-with-rmarkdown#1) - slide presentation about using R markdown to write academic papers
+
+[R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (reference in portuguese)
+
+[Parallel Computing with R](https://arxiv.org/abs/1912.11144) - a comprehensive overview of all things R parallel (working paper)
+
+[Databases using dplyr](https://db.rstudio.com/dplyr) - RStudio's tutorial
+
+[R interface for Apache Spark](https://spark.rstudio.com/) - RStudio's tutorial
 
 #### Spatial Data
 
 [Spatial Data Science](https://keen-swartz-3146c4.netlify.app/) - The book aims at data scientists who want to get a grip on using spatial data in their analysis. To exemplify how to do things, it uses R.
 
-[Geocomputation with R](https://geocompr.robinlovelace.net/) - geographic data analysis, visualization and modeling.
+[Geocomputation with R](https://geocompr.robinlovelace.net/) - geographic data analysis, visualization, and modeling.
 
-[R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of an econometric analysis. 
+[R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of econometric analysis. 
 
 [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) - Book about spatial statistics topics
+
+[Spatial Data Science with R and “terra”](https://rspatial.org/terra/index.html) - Resources that teach spatial data analysis using the new package "terra" that will substitute the  "raster" package
 
 ### R Packages
 
 #### Data Frame Manipulation
-[Tidyverse](https://www.tidyverse.org/) - collection of packages share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
+[Tidyverse](https://www.tidyverse.org/) - a collection of packages that share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
 
-[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency free. Recommended for large data.
+[data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency-free. Recommended for large data.
 
 [dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
 
 [tidyfast](https://tysonbarrett.com/tidyfast/) - provide fast and efficient alternatives to some tidyr (and a few dplyr) functions using data.table under the hood.
+
+[dbplyr](https://dbplyr.tidyverse.org/) - dbplyr is the database backend for dplyr. It allows you to use remote database tables as if they are in-memory data frames by automatically converting dplyr code into SQL.
+
+[sparklyr](https://spark.rstudio.com/) - Spark is a unified analytics engine for large-scale data processing. Spark can scale in ways that R simply can’t.
 
 #### Spatial Data Manipulation
 
@@ -69,11 +86,11 @@
 
 [vtable](https://nickch-k.github.io/vtable/) - The vtable package is designed to help you quickly and efficiently look at and document your data. It is also very good at producing the type of “out of the box” summary tables that economists like.
 
-[broom](https://broom.tidymodels.org/) - helps converting regression outputs into “tidy” data frames.
+[broom](https://broom.tidymodels.org/) - helps to convert regression outputs into “tidy” data frames.
 
 [estimatr](https://declaredesign.org/r/estimatr/articles/getting-started.html) - dedicated to providing fast estimators that take into consideration designs often used by social scientists.
 
-[fixest](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) - provides family of functions to perform estimations with multiple fixed-effects. This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
+[fixest](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) - provides a family of functions to perform estimations with multiple fixed-effects. This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
 
 [lfe](https://cran.r-project.org/web/packages/lfe/lfe.pdf) - Useful for estimating linear models with multiple group fixed effects. Offers near-identical functionality to the popular Stata library, reghdfe.
 
@@ -90,23 +107,35 @@
 [margins](https://cran.r-project.org/web/packages/margins/vignettes/Introduction.html) - margins is an effort to port Stata’s (closed source) margins command to R as an S3 generic method for calculating the marginal effects (or “partial effects”) of covariates included in model objects (like those of classes “lm” and “glm”).
 
 #### Other
-[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with future’s parallel processing capabilities.
 
+[econocharts](https://github.com/R-CoderDotCom/econocharts/) - Microeconomics/macroeconomics graphs made with ggplot2. This package allows creating microeconomics or macroeconomics charts in R with simple functions
+
+[furrr](https://davisvaughan.github.io/furrr/) - combine purrr’s family of mapping functions with the future’s parallel processing capabilities.
+
+[ralger](https://github.com/feddelegrand7/ralger) - The goal of ralger is to facilitate web scraping in R.
 
 ## Econometrics
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
 
-## Statistics
+[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website to make it easy to execute statistical techniques in statistical software.
 
-[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website with the goal of making it easy to execute statistical techniques in statistical software.
+[Literature on Recent Advances in Applied Micro Methods](https://christinecai.github.io/PublicGoods/applied_micro_methods.pdf) - List of papers with recent advances in applied micro methods
 
-## Public Available Courses
+[Modern Difference in Difference Designs - Workshop Syllabus](https://www.dropbox.com/s/3asu2qgpxnbe6xp/Modern_DiD_II.pdf?dl=0) - This ten-day workshop will begin with the basic DiD design using two-way fixed effects and build up to the state-of-the-art applications. We will then move into advanced extensions like matching, synthetic control, asymmetric/staggered treatments, dynamic treatments, interference, and heterogeneous treatment effects. We will work though DiD designs with practical examples, assumptions, diagnostics, and code in R and Stata (when available).
+ 
+[Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
+
+
+## Public Available Resources
 
 [Data Science for Economists- Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
-[PhD Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
+[R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
 
+[RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
+
+[Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.
 
 ## Git
 
@@ -114,7 +143,7 @@
 
 [Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes.
  
-[Git Large File Storage](https://git-lfs.github.com/) - An open source Git extension for versioning large files.
+[Git Large File Storage](https://git-lfs.github.com/) - An open-source Git extension for versioning large files.
  
 ## Reproducibility 
 
