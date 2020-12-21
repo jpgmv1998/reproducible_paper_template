@@ -27,6 +27,9 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 * When using R always open RStudio using the .Rproj file (double-click)
 
+* If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
+   * Open RProject > execute `install.packages("renv")` if you don't have it yet > execute `renv::init()` > work normally in the project and following the [vignette](https://rstudio.github.io/renv/articles/renv.html) instructions
+
 
 ## Folders Structure
 
