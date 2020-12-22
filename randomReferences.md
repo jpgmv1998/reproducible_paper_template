@@ -80,6 +80,8 @@
 
 [leaflet](https://rstudio.github.io/leaflet/) - plot interactive maps
 
+[rgee](https://github.com/r-spatial/rgee) - rgee is a binding package for calling Google Earth Engine API from within R. Additionally, several functions have been implemented to make simple the connection with the R spatial ecosystem. The current version of rgee has been built considering the earthengine-api 0.1.235. Note that access to Google Earth Engine is only available to registered users.
+
 #### Regression Analysis and Output Presentation
 
 [model summary](https://vincentarelbundock.github.io/modelsummary/) - modelsummary creates tables and plots to summarize statistical models and data in R.
