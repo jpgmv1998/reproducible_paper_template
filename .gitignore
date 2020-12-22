@@ -1,4 +1,8 @@
 .Rproj.user
 .Rhistory
 .RData
+.Rdata
 .Ruserdata
+data/raw2clean/**/input
+data/raw2clean/**/output
+data/projectSpecific/**

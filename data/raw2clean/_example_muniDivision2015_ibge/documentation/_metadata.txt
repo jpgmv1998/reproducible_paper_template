@@ -1,0 +1,18 @@
+﻿# BRAZILIAN MUNICIPALITIES
+# files: shapefile (layer name 'BRMUE250GC_SIR')
+# content: municipal perimeter (polygons data frame); Brazil (extent); 2015 (year of reference)
+# source: Instituto Brasileiro de Geografia e Estatistica (IBGE)
+# available at: https://www.ibge.gov.br/geociencias/organizacao-do-territorio/15774-malhas.html?=&t=downloads
+# raw data downloaded on: SEP/16/2020
+# web archive link (used for download): 
+https://web.archive.org/web/20200916142056/ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/Brasil/BR/br_municipios.zip
+# raw data archived on: SEP/16/2020
+# CRS: LongLat (coordinate system); SIRGAS2000; not projected (EPSG: 4674)
+#
+# obs:
+# We have identified that IBGE documents data for two bodies of water in RS
+# with the following muni codes: 4300001 & 4300002.
+#
+# citation: **Instituto Brasileiro de Geografia e Estatística (IBGE)**. 2015. "Malhas Muncipais: shapefile, 2015." Instituto Brasileiro de Geografia e Estatística, Ministério da Economia. https://web.archive.org/web/20200916142056/ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2015/Brasil/BR/br_municipios.zip (accessed via Archive.org September 16, 2020).
+#
+# additional information about the download: downloaded zip file containing multiple files that compose the shapefile (.shp, .prj, .shx, etc). Manually unzipe the files and moved the to "input" folder, then deleted the "br_municipios" folders. 
