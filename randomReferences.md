@@ -133,6 +133,9 @@
 
 [R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
 
+[World Bank Methodology Posts](https://blogs.worldbank.org/impactevaluations/curated-list-our-postings-technical-topics-your-one-stop-shop-methodology-0) - 
+This is a curated list of our technical postings, to serve as a one-stop shop for your technical reading. I’ve focused here on our posts on methodological issues in impact evaluation – we also have a whole lot of posts on how to conduct surveys and measure certain concepts curated here. In lieu of our regular links this week, it is updated up to August 20, 2020
+
 [RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
 
 [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.
