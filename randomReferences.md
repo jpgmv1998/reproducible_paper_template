@@ -8,6 +8,7 @@
   - [References](#references)
     - [General](#general)
     - [Spatial Data](#spatial-data)
+    - [R Markdown](#r-markdown)
   - [R Packages](#r-packages)
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
@@ -31,12 +32,6 @@
 
 [Data Visualization with R](https://rkabacoff.github.io/datavis/) - This book helps you create the most popular visualizations - from quick and dirty plots to publication-ready graphs. The text relies heavily on the ggplot2 package for graphics, but other approaches are covered as well.
 
-[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references.
-
-[R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/) - This book is designed to provide a range of examples on how to extend the functionality of your R Markdown documents. As a cookbook, this guide is recommended to new and intermediate R Markdown users who desire to enhance the efficiency of using R Markdown and also explore the power of R Markdown.
-
-[Academic Publications with R Markdown](https://danovando.github.io/publications-with-rmarkdown/presentations/pubs-with-rmarkdown#1) - slide presentation about using R markdown to write academic papers
-
 [R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (reference in portuguese)
 
 [Parallel Computing with R](https://arxiv.org/abs/1912.11144) - a comprehensive overview of all things R parallel (working paper)
@@ -44,6 +39,14 @@
 [Databases using dplyr](https://db.rstudio.com/dplyr) - RStudio's tutorial
 
 [R interface for Apache Spark](https://spark.rstudio.com/) - RStudio's tutorial
+
+#### R Markdown
+
+[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references.
+
+[R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/) - This book is designed to provide a range of examples on how to extend the functionality of your R Markdown documents. As a cookbook, this guide is recommended to new and intermediate R Markdown users who desire to enhance the efficiency of using R Markdown and also explore the power of R Markdown.
+
+[Academic Publications with R Markdown](https://danovando.github.io/publications-with-rmarkdown/presentations/pubs-with-rmarkdown#1) - slide presentation about using R markdown to write academic papers
 
 #### Spatial Data
 
