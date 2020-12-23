@@ -6,3 +6,4 @@
 data/raw2clean/**/input
 data/raw2clean/**/output
 data/projectSpecific/**
+reproducible_paper_template.Rproj
