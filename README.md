@@ -45,7 +45,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Folders structure
 
-### Code
+### `Code`
 
 All files inside this folder should be in version control and committed regularly when changes are made.
 
@@ -89,7 +89,7 @@ All files inside this folder should be in version control and committed regularl
 
   * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R script.
 
-### Data
+### `Data`
 
 
 ## License
