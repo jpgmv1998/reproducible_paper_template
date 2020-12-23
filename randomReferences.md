@@ -152,5 +152,14 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
  
 ## Reproducibility 
 
-See links section on [README](https://github.com/jpgmv1998/reproducible_paper_template#links)
+[Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014)
 
+[Research Compendia](https://doi.org/10.7287/peerj.preprints.3192v2) - Paper about uses of R to produce research compendia
+
+[Unofficial guidance replication supplements - AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements
+
+[Archive GitHub repo with Zenodo](https://guides.github.com/activities/citable-code/) - Guide on how to archive GitHub repository and assign a DOI with Zenodo
+
+[Reproducible R toolbox](https://rpubs.com/glennwithtwons/reproducible-r-toolbo)x - RPubs post about reproducibility with R
+
+[Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency
