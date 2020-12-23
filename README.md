@@ -45,7 +45,51 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Folders structure
 
+### Code
 
+All files inside this folder should be in version control and committed regularly when changes are made.
+
+* `raw2clean` - a folder containing:
+
+    * one `datasetName_raw2clean.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder,  perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder preferably in `.Rdata` format. This template contains one template script and three example scripts: 
+    
+      * `code/raw2clean/_template_datasetName_raw2clean.R` - an R script containing only the general structure of this type of file.
+      * `code/raw2clean/_example_muniDivision2015_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
+      * `code/raw2clean/_example_priorityMuniAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.txt format).
+      * `code/raw2clean/_example_prodesDeforestationAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.pdf format).
+        
+    * `masterfile_raw2clean.R` - an R script to source all raw2clean R scripts in the desired sequence.
+    
+    * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
+
+* `projectSpecific` - a folder containing:
+    
+    * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and other at the individual level). Each subfolder should contain:
+      
+      * `sampleConstruction_projectSpecific_subfolderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial).
+      
+      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more datafiles from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample.
+      
+      * `sampleAnalysis_subfolderName.R` - an R script to combine all relevant files in `data/projectSpecific/subfolderName` into a single `sampleAnalysis_subfolderName.Rdata` file.
+      
+      * `masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence.
+  
+      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.
+        
+* `analysis` - a folder containing some subfolders like:
+  
+  * `maps` - to generate maps when using spatial data.
+  
+  * `stats` - to generate descriptive statistics (tables/graphics)
+
+  * `regs` - to generate regression outputs (tables/graphics).
+  
+
+* `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
+
+  * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R script.
+
+### Data
 
 
 ## License
