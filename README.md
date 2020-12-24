@@ -47,7 +47,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 This section explains how code and data are organized and the structure of folders used in this template. As noted before this template is very biased towards the author`s personal preferences, experience, and limitations. 
 
-All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name and removing the prefix) or removed from your project.
+All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project.
 
 ### `Code`
 
@@ -62,7 +62,7 @@ All files inside this folder should be in version control and committed regularl
       * `code/raw2clean/_example_priorityMuniAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.txt format).
       * `code/raw2clean/_example_prodesDeforestationAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.pdf format).
         
-    * `masterfile_raw2clean.R` - an R script to source all raw2clean R scripts in the desired sequence. This template contains the template version `_template_masterfile_raw2clean.R`.
+    * `masterfile_raw2clean.R` - an R script to source all raw2clean R scripts in the desired sequence. This template contains the template version `_template_masterfile_raw2clean.R` and one example version `_example_masterfile_raw2clean.R`.
     
     * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run. This template contains the example version `_example_timeProcessing_raw2clean.csv`.
 
@@ -74,17 +74,17 @@ All files inside this folder should be in version control and committed regularl
       
       * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample. This template contains one template script and two example scripts: 
     
-      * `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` - an R script containing only the general structure of this type of file.
-      * `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
-      * `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
+        * `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` - an R script containing only the general structure of this type of file.
+        * `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
+        * `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
       
       * `sampleAnalysis_subfolderName.R` - an R script to combine all relevant files in `data/projectSpecific/subfolderName` into a single `sampleAnalysis_subfolderName.Rdata` file.  This template contains the template version `_template_sampleAnalysis_subfolderName.R` and one example `_example_sampleAnalysis_muniLevel.R`.
       
-      * `masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence.
+      * `masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence. This template contains the template version `_template_projectSpecific_subfolderName.R` and one example version `_exampleprojectSpecific_muniLevel.R`.
   
-      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.
+      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  This template contains the example version `_example_timeProcessing_projectSpecific_muniLevel.csv`.
         
-* `analysis` - a folder containing some subfolders like:
+* `analysis` - a folder containing some subfolders like (pending addition of examples and templates):
   
   * `maps` - to generate maps when using spatial data.
   
