@@ -26,12 +26,12 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * Select use this template on the upper right corner (or click [here](https://github.com/jpgmv1998/reproducible_paper_template/generate)) and follow the instructions to create your own GitHub repository.
 
 * If you want to use version control within the Rstudio project with git see this [tutorial](https://happygitwithr.com/) then:
-    * Remember to substitute with your own scripts, move to outside the folder project, or remove all files with prefix `_example_` before initializing renv management to avoid including  unnecessary packages and its dependencies in the project library. 
     * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
 
 * When using R always open RStudio using the .Rproj file (double-click).
 
 * If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
+    * Remember to substitute with your own scripts, move to outside the folder project, or remove all files with prefixes `_example_` and `_template_` before initializing renv management to avoid including unnecessary packages and its dependencies in the project library. 
    * Open RProject > execute `install.packages("renv")` if you don't have it yet > execute `renv::init()` > work normally in the project and following the [vignette](https://rstudio.github.io/renv/articles/renv.html) instructions.
 
 ## Files description
@@ -93,33 +93,29 @@ The default of this folder is to ignore all subfolders that normally contain lar
 
 * `raw2clean` - a folder containing:
 
-    * one `datasetName_raw2clean.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder,  perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder preferably in `.Rdata` format (raster is an exception and should be saved as `.tif` format). 
+    * one `data/raw2clean/datasetName_dataSource` folder for each dataset. Each folder has three subfolder: 
+        * `documentation` - containing always the `_metadata` file with information about the download and the dataset, additionaly can contain other relevant documents
+        * `input` - containing the raw data stored in the original format you should never change it, only unzip and extract the files from the downloaded folder when necessary.
+        * `output` - containing ususally a single `.Rdata` file with the cleaned data, but sometimes multiple `.Rdata` may be necessary due to size constraints or the `.tif` format may be used when the input data is a raster file.
         
-    * `_masterfile_raw2clean.R` - an R script to source all raw2clean R scripts and specify the order when relevant.
-    
-    * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
 
 * `projectSpecific` - a folder containing:
     
     * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each subfolder should contain:
-      
-      * `sampleConstruction_projectSpecific_subfolderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial).
-      
-      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample.
     
-      * `sampleForAnalysis_typeOfSample_subfolderName.R` - an R script to combine all relevant files in `data/projectSpecific/subfolderName` into a single `sampleForAnalysis_typeOfSample_subfolderName.Rdata` file for each type of sample like: spatial, crossSection, panel, etc. 
-      
-      * `_masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence.
-      
-      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  
-      
+    *
+    
+    *
+    
+    *
+     
 * `analysis` - a folder, that may need more adaptations accordingly to the project, containing some subfolders like:
   
-  * `maps` - to generate maps when using spatial data.
+  * `maps` - to store maps when using spatial data.
   
-  * `stats` - to generate descriptive statistics (tables/graphics)
+  * `stats` - to store descriptive statistics (tables/graphics)
 
-  * `regs` - to generate regression outputs (tables/graphics).
+  * `regs` - to store regression outputs (tables/graphics).
   
 
 ## Script templates and examples
