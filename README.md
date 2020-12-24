@@ -6,7 +6,7 @@ Author: João Pedro Vieira
 
 Software: Focused on empirical projects that use mostly R for data manipulation.
 
-Disclaimer: This project is based on the author personal preferences, needs, and limitations.
+Disclaimer: This project is based on the author's personal preferences, needs, and limitations.
 
 Requirements: Tested using R version 4.0.2 and RStudio version 1.3.1073 (but may work on other versions).
 
@@ -37,7 +37,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 - `.gitignore`, a text file that tells Git which files/folders should be ignored, not included in the version control system. In this template we want to ignore data files from the raw2clean and projectSpecific folders, the main reason for that is to avoid exceeding GitHub size limits see more [here](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota).
 
-- `LICENSE`, a file to allow others to reproduce, distribute or create derivatives works using this project.
+- `LICENSE`, a file to allow others to reproduce, distribute, or create derivatives works using this project.
 
 - `README.md` this file, a general overview of the project in markdown format.
 
@@ -45,9 +45,9 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Folders structure
 
-This section explains how code and data are organized and the structure of folders used in this template. As noted before this template is very biased towards the author`s personal preferences, experience and limitations. 
+This section explains how code and data are organized and the structure of folders used in this template. As noted before this template is very biased towards the author`s personal preferences, experience, and limitations. 
 
-All files with the prefix `_template_` contains the suggested strucuture for that type of file, and all files with the prefix `_example_` contains scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name and removing the prefix) or removed from your project.
+All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name and removing the prefix) or removed from your project.
 
 ### `Code`
 
@@ -68,11 +68,11 @@ All files inside this folder should be in version control and committed regularl
 
 * `projectSpecific` - a folder containing:
     
-    * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and other at the individual level). Each subfolder should contain:
+    * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each subfolder should contain:
       
       * `sampleConstruction_projectSpecific_subfolderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial). This template contains the template version `_template_sampleConstruction_projectSpecific_subfolderName.R` and one example `_example_sampleConstruction_projectSpecific_muniLevel.R`.
       
-      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more datafiles from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample. This template contains one template script and two example scripts: 
+      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample. This template contains one template script and two example scripts: 
     
       * `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` - an R script containing only the general structure of this type of file.
       * `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
