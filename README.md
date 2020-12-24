@@ -58,7 +58,7 @@ All files inside this folder should be in version control and committed regularl
         
     * `_masterfile_raw2clean.R` - an R script to source all raw2clean R scripts and specify the order when relevant.
     
-    * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
+    * `_timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
 
 * `projectSpecific` - a folder containing:
     
@@ -72,7 +72,7 @@ All files inside this folder should be in version control and committed regularl
       
       * `_masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence.
       
-      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  
+      * `_timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  
       
 * `analysis` - a folder containing some subfolders like:
   
