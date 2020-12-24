@@ -1,0 +1,14 @@
+﻿# BRAZILIAN BIOMES
+# files: shapefile (layer name 'lm_bioma_250')
+# content: biomes perimeter (polygons data frame); Brazil (extent); 2019 (year of reference)
+# source: Instituto Brasileiro de Geografia e Estatistica (IBGE)
+# available at: https://www.ibge.gov.br/geociencias/informacoes-ambientais/15842-biomas.html?=&t=sobre
+# raw data downloaded on: SEP/16/2020
+# web archive link (used for download): 
+https://web.archive.org/web/20200916173523/ftp://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/vetores/Biomas_250mil.zip
+# raw data archived on: SEP/16/2020
+# CRS: LongLat (coordinate system); SIRGAS2000; not projected (EPSG: 4674)
+#
+# citation: **Instituto Brasileiro de Geografia e Estatística (IBGE)**. 2019. "Biomas do Brasil: shapefile, 2019." Instituto Brasileiro de Geografia e Estatística, Ministério da Economia. https://web.archive.org/web/20200916173523/ftp://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/vetores/Biomas_250mil.zip (accessed via Archive.org September 16, 2020).
+#
+# additional information about the download: downloaded zip file containing multiple files that compose the shapefile (.shp, .prj, .shx, etc). Manually unziped the folder and moved the files to "input" folder, then deleted the "Biomas_250mil" folders.

@@ -35,7 +35,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Files description
 
-- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). In this template we mainly want to ignore data files from the raw2clean and projectSpecific folders, in order to avoid exceeding GitHub size limits, see more [here](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota). Instead of adding these folders patterns in this specific files we add one `.gitignore` file in each folder inside `data` whose contents should be ignored. In this way we are able to preserve all the folders structure.
+- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHUb repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other type of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and subfolders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folders patterns in this specific file we add one `.gitignore` file inside each relevant folder. In this way we are able to preserve all the folders structure, while avoiding to commit large files.
 
 - `LICENSE`, a file to allow others to reproduce, distribute, or create derivatives works using this project.
 
@@ -47,7 +47,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 This section explains how code and data should be organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [Script templates and examples](#script-templates-and-examples) section. As noted before this template is very biased towards the author`s personal preferences, needs, and limitations. 
 
-### `Code`
+### `code`
 
 All files inside this folder should be in version control and committed regularly when changes are made.
 
@@ -86,48 +86,33 @@ All files inside this folder should be in version control and committed regularl
 
   * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R script.
 
-### `Data`
+### `data`
 
-
-## Script templates and examples
-
-
-### `Code`
-
-All files inside this folder should be in version control and committed regularly when changes are made.
+The default of this folder is to ignore all subfolders that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). However, if your project only has small files respecting [GitHub limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) (in my experience this is a rare case) you can have everything in the version control (which is ideal) just by removing the `.gitignore` files inside the `data` subfolders and adjusting the `.gitignore` in the root removing `.Rdata` and `.RData` patterns. 
 
 * `raw2clean` - a folder containing:
 
-    * one `datasetName_raw2clean.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder,  perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder preferably in `.Rdata` format. This template contains one template script and three example scripts: 
-    
-      * `code/raw2clean/_template_datasetName_raw2clean.R` - an R script containing only the general structure of this type of file.
-      * `code/raw2clean/_example_muniDivision2015_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
-      * `code/raw2clean/_example_priorityMuniAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.txt format).
-      * `code/raw2clean/_example_prodesDeforestationAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.pdf format).
+    * one `datasetName_raw2clean.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder,  perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder preferably in `.Rdata` format (raster is an exception and should be saved as `.tif` format). 
         
-    * `masterfile_raw2clean.R` - an R script to source all raw2clean R scripts in the desired sequence. This template contains the template version `_template_masterfile_raw2clean.R` and one example version `_example_masterfile_raw2clean.R`.
+    * `_masterfile_raw2clean.R` - an R script to source all raw2clean R scripts and specify the order when relevant.
     
-    * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run. This template contains the example version `_example_timeProcessing_raw2clean.csv`.
+    * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
 
 * `projectSpecific` - a folder containing:
     
     * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each subfolder should contain:
       
-      * `sampleConstruction_projectSpecific_subfolderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial). This template contains the template version `_template_sampleConstruction_projectSpecific_subfolderName.R` and one example `_example_sampleConstruction_projectSpecific_muniLevel.R`.
+      * `sampleConstruction_projectSpecific_subfolderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial).
       
-      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample. This template contains one template script and two example scripts: 
+      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample.
     
-        * `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` - an R script containing only the general structure of this type of file.
-        * `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
-        * `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
+      * `sampleForAnalysis_typeOfSample_subfolderName.R` - an R script to combine all relevant files in `data/projectSpecific/subfolderName` into a single `sampleForAnalysis_typeOfSample_subfolderName.Rdata` file for each type of sample like: spatial, crossSection, panel, etc. 
       
-      * `sampleAnalysis_subfolderName.R` - an R script to combine all relevant files in `data/projectSpecific/subfolderName` into a single `sampleAnalysis_subfolderName.Rdata` file.  This template contains the template version `_template_sampleAnalysis_subfolderName.R` and one example `_example_sampleAnalysis_muniLevel.R`.
+      * `_masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence.
       
-      * `masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence. This template contains the template version `_template_projectSpecific_subfolderName.R` and one example version `_exampleprojectSpecific_muniLevel.R`.
-  
-      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  This template contains the example version `_example_timeProcessing_projectSpecific_muniLevel.csv`.
-        
-* `analysis` - a folder containing some subfolders like (pending addition of examples and templates):
+      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  
+      
+* `analysis` - a folder, that may need more adaptations accordingly to the project, containing some subfolders like:
   
   * `maps` - to generate maps when using spatial data.
   
@@ -136,13 +121,59 @@ All files inside this folder should be in version control and committed regularl
   * `regs` - to generate regression outputs (tables/graphics).
   
 
+## Script templates and examples
+
+All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
+
+### `code`
+
+* `raw2clean` - a folder containing:
+
+    * This template contains one template script and four example scripts of the `datasetName_raw2clean.R`: 
+    
+      * `code/raw2clean/_template_datasetName_raw2clean.R` - an R script containing only the general structure of this type of file.
+      * `code/raw2clean/_example_muniDivision2015_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
+      * `code/raw2clean/_example_biomesDivision_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
+      * `code/raw2clean/_example_priorityMuniAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.txt format).
+      * `code/raw2clean/_example_prodesDeforestationAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.pdf format).
+        
+    * This template contains the template version `_template_masterfile_raw2clean.R` and one example version `_example_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
+    
+    * This template contains the example version `_example_timeProcessing_raw2clean.csv` of the `timeProcessing_raw2clean.csv`.
+
+* `projectSpecific` - a folder containing:
+    
+    * This template contains the subfolder `muniLevel` with:
+      
+      *  The template version `_template_sampleConstruction_projectSpecific_subfolderName.R` and one example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_subfolderName.R`.
+      
+      * The template script and two example scripts of the `variableTheme_projectSpecific_subfolderName.R`: 
+    
+        * `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` - an R script containing only the general structure of this type of file.
+        * `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
+        * `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
+      
+      *  The template version `_template_sampleForAnalysis_typeOfSample_subfolderName.R` and two examples `_example_sampleForAnalysis_spatial_muniLevel.R` and `_example_sampleForAnalysis_panel_muniLevel.R` of the `sampleAnalysis_subfolderName.R`.
+      
+      * The template version `_template_projectSpecific_subfolderName.R` and one example version `_exampleprojectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_subfolderName.R`.
+  
+      * The example version `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `timeProcessing_projectSpecific_subfolderName.csv`.
+        
+* `analysis` - a folder containing some subfolders like (pending addition of examples and templates):
+  
+  * `maps` with
+  
+  * `stats` with
+
+  * `regs` with
+  
+
 * `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
 
   * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R script.
 
-### `Data`
+### `data`
 
-All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project.
 
 ## License
 The material in this repository is made available under the [MIT license](http://opensource.org/licenses/mit-license.php). 
