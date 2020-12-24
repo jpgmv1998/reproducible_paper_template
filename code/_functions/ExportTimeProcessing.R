@@ -29,6 +29,8 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
 
   # LIBRARIES
   require("tidyverse")
+  require("tictoc")
+
 
   # checks if tic.log only have one time information
   if (length(tictoc::tic.log(format = TRUE)) != 1) {
