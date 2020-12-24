@@ -35,7 +35,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Files description
 
-- `.gitignore`, a text file that tells Git which files/folders should be ignored, not included in the version control system. In this template we want to ignore data files from the raw2clean and projectSpecific folders, the main reason for that is to avoid exceeding GitHub size limits see more [here](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota).
+- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). In this template we mainly want to ignore data files from the raw2clean and projectSpecific folders, in order to avoid exceeding GitHub size limits, see more [here](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota). Instead of adding these folders patterns in this specific files we add one `.gitignore` file in each folder inside `data` whose contents should be ignored. In this way we are able to preserve all the folders structure.
 
 - `LICENSE`, a file to allow others to reproduce, distribute, or create derivatives works using this project.
 
@@ -45,9 +45,52 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Folders structure
 
-This section explains how code and data are organized and the structure of folders used in this template. As noted before this template is very biased towards the author`s personal preferences, experience, and limitations. 
+This section explains how code and data should be organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [Script templates and examples](#script-templates-and-examples) section. As noted before this template is very biased towards the author`s personal preferences, needs, and limitations. 
 
-All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project.
+### `Code`
+
+All files inside this folder should be in version control and committed regularly when changes are made.
+
+* `raw2clean` - a folder containing:
+
+    * one `datasetName_raw2clean.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder,  perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder preferably in `.Rdata` format (raster is an exception and should be saved as `.tif` format). 
+        
+    * `_masterfile_raw2clean.R` - an R script to source all raw2clean R scripts and specify the order when relevant.
+    
+    * `timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
+
+* `projectSpecific` - a folder containing:
+    
+    * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each subfolder should contain:
+      
+      * `sampleConstruction_projectSpecific_subfolderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial).
+      
+      * multiple R scripts with pattern `variableTheme_projectSpecific_subfolderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample.
+    
+      * `sampleAnalysis_subfolderName.R` - an R script to combine all relevant files in `data/projectSpecific/subfolderName` into a single `sampleAnalysis_subfolderName.Rdata` file. 
+      
+      * `_masterfile_projectSpecific_subfolderName.R` - an R script to source all projectSpecifc/subfolderName R scripts in the desired sequence.
+      
+      * `timeProcessing_projectSpecific_subfolderName.csv` - a csv file containing the time each script took to run.  
+      
+* `analysis` - a folder containing some subfolders like:
+  
+  * `maps` - to generate maps when using spatial data.
+  
+  * `stats` - to generate descriptive statistics (tables/graphics)
+
+  * `regs` - to generate regression outputs (tables/graphics).
+  
+
+* `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
+
+  * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R script.
+
+### `Data`
+
+
+## Script templates and examples
+
 
 ### `Code`
 
@@ -99,6 +142,7 @@ All files inside this folder should be in version control and committed regularl
 
 ### `Data`
 
+All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project.
 
 ## License
 The material in this repository is made available under the [MIT license](http://opensource.org/licenses/mit-license.php). 
