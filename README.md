@@ -31,12 +31,12 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * When using R always open RStudio using the .Rproj file (double-click).
 
 * If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
-    * Remember to substitute with your own scripts, move to outside the folder project, or remove all files with prefixes `_example_` and `_template_` before initializing renv management to avoid including unnecessary packages and its dependencies in the project library. 
+    * Remember to substitute with your own scripts, move to outside the folder project, or remove all files with prefixes `_example_` and `_template_` before initializing renv management to avoid including unnecessary packages and their dependencies in the project library. 
    * Open RProject > execute `install.packages("renv")` if you don't have it yet > execute `renv::init()` > work normally in the project and following the [vignette](https://rstudio.github.io/renv/articles/renv.html) instructions.
 
 ## Files description
 
-- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHUb repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other type of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and subfolders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folders patterns in this specific file we add one `.gitignore` file inside each relevant folder. In this way we are able to preserve all the folders structure, while avoiding to commit large files.
+- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHub repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other types of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and subfolders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folder patterns in this specific file, we add one `.gitignore` file inside each relevant folder. In this way, we are able to preserve all the folders structure, while avoiding to commit large files.
 
 - `LICENSE`, a file to allow others to reproduce, distribute, or create derivatives works using this project.
 
@@ -94,20 +94,23 @@ The default of this folder is to ignore all subfolders that normally contain lar
 * `raw2clean` - a folder containing:
 
     * one `data/raw2clean/datasetName_dataSource` folder for each dataset. Each folder has three subfolder: 
-        * `documentation` - containing always the `_metadata` file with information about the download and the dataset, additionaly can contain other relevant documents
+    
+        * `documentation` - containing always the `_metadata` file with information about the download and the dataset, additionally can contain other relevant documents.
+        
         * `input` - containing the raw data stored in the original format you should never change it, only unzip and extract the files from the downloaded folder when necessary.
-        * `output` - containing ususally a single `.Rdata` file with the cleaned data, but sometimes multiple `.Rdata` may be necessary due to size constraints or the `.tif` format may be used when the input data is a raster file.
+        
+        * `output` - containing usually a single `.Rdata` file with the cleaned data, but sometimes multiple `.Rdata` may be necessary due to size constraints, or the `.tif` format may be used when the input data is a raster file.
         
 
 * `projectSpecific` - a folder containing:
     
     * possibly multiple subfolders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each subfolder should contain:
     
-    *
-    
-    *
-    
-    *
+      *
+      
+      *
+      
+      *
      
 * `analysis` - a folder, that may need more adaptations accordingly to the project, containing some subfolders like:
   
@@ -120,7 +123,7 @@ The default of this folder is to ignore all subfolders that normally contain lar
 
 ## Script templates and examples
 
-All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
+All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware of adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
 
 ### `code`
 
