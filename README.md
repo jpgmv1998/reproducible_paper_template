@@ -147,11 +147,7 @@ All files with the prefix `_template_` contains the suggested structure for that
       
       *  The template version `_template_sampleConstruction_projectSpecific_subfolderName.R` and one example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_subfolderName.R`.
       
-      * The template script and two example scripts of the `variableTheme_projectSpecific_subfolderName.R`: 
-    
-        * `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` - an R script containing only the general structure of this type of file.
-        * `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
-        * `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` - a real example of a projectSpecific R script.
+      * The template script `code/raw2clean/_template_variableTheme_projectSpecific_subfolderName.R` and two example scripts `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` and `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `variableTheme_projectSpecific_subfolderName.R`: 
       
       *  The template version `_template_sampleForAnalysis_typeOfSample_subfolderName.R` and two examples `_example_sampleForAnalysis_spatial_muniLevel.R` and `_example_sampleForAnalysis_panel_muniLevel.R` of the `sampleAnalysis_subfolderName.R`.
       
