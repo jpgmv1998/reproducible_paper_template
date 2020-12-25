@@ -68,7 +68,7 @@ All files inside this folder should be in version control and committed regularl
       
       * multiple R scripts with pattern `variableTheme_projectSpecific_folderName.R` to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample.
     
-      * `sampleAnalysis_folderName.R` - an R script to combine all relevant files in `data/projectSpecific/folderName` into at least one output file for analysis.
+      * `dataFormatAnalysis_folderName.R` - R script(s) to combine all relevant files in `data/projectSpecific/folderName` into at least one output file for analysis, with `dataFormat` being at least one of the following: `spatial`, `panel`, `crossSection`.
       
       * `_masterfile_projectSpecific_folderName.R` - an R script to source all `projectSpecifc/folderName` R scripts in the desired sequence.
       
@@ -150,13 +150,13 @@ All files with the prefix `_template_` contains the suggested structure for that
       
       *  The template version `_template_sampleConstruction_projectSpecific_folderName.R` and one example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_folderName.R`.
       
-      * The template script `code/raw2clean/_template_variableTheme_projectSpecific_folderName.R` and two example scripts `code/raw2clean/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` and `code/raw2clean/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `variableTheme_projectSpecific_folderName.R`: 
+      * The template script `code/projectSpecific/_template_variableTheme_projectSpecific_folderName.R` and two example scripts `code/projectSpecific/_example_priorityMuniAmazon_projectSpecific_muniLevel.R` and `code/projectSpecific/_example_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `variableTheme_projectSpecific_folderName.R`: 
       
-      *  The template version `_template_sampleForAnalysis_typeOfSample_folderName.R` and two examples `_example_sampleForAnalysis_spatial_muniLevel.R` and `_example_sampleForAnalysis_panel_muniLevel.R` of the `sampleAnalysis_folderName.R`.
+      *  The template version `_template_dataFormatAnalysis_folderName.R` and three examples `_example_panelAnalysis_muniLevel.R`, `_example_crossSectionAnalysis_muniLevel.R`, and `_example_spatialAnalysis_muniLevel.R` of the `dataFormatAnalysis_folderName.R`.
       
-      * The template version `_template_projectSpecific_folderName.R` and one example version `_exampleprojectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
+      * The template version `_template_masterfile_projectSpecific_folderName.R` and one example version `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
   
-      * The example version `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `timeProcessing_projectSpecific_folderName.csv`.
+      * The example version `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `_timeProcessing_projectSpecific_folderName.csv`.
         
 * `analysis` - a folder containing some folders like (pending addition of examples and templates):
   
