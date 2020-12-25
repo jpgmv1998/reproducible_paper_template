@@ -28,10 +28,10 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * If you want to use version control within the Rstudio project with git see this [tutorial](https://happygitwithr.com/) then:
     * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
 
-* When using R always open RStudio using the .Rproj file (double-click).
+* When using R always open RStudio using the .Rproj file.
 
 * If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
-    * Remember to substitute with your own scripts, move to outside the folder project, or remove all files with prefixes `_example_` and `_template_` before initializing renv management to avoid including unnecessary packages and their dependencies in the project library. 
+    * Remember to substitute with your own scripts, move to a folder outside of the project, or remove all files with prefixes `_example_` and `_template_` before initializing renv management, to avoid including unnecessary packages and their dependencies in the project library. 
    * Open RProject > execute `install.packages("renv")` if you don't have it yet > execute `renv::init()` > work normally in the project and following the [vignette](https://rstudio.github.io/renv/articles/renv.html) instructions.
 
 ## Files description
