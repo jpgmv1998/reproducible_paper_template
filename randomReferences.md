@@ -10,6 +10,7 @@
     - [Spatial Data](#spatial-data)
     - [R Markdown](#r-markdown)
   - [R Packages](#r-packages)
+    - [Reproducibility](#reproducibility)
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
@@ -61,6 +62,14 @@
 [Spatial Data Science with R and “terra”](https://rspatial.org/terra/index.html) - Resources that teach spatial data analysis using the new package "terra" that will substitute the  "raster" package
 
 ### R Packages
+
+#### Reproducibility
+
+[checkpoint](https://cran.r-project.org/web/packages/checkpoint/vignettes/checkpoint.html#using-checkpoint) - The Reproducible R Toolkit provides an R function checkpoint, which ensures that all of the necessary R packages are installed with the correct version. This makes it easy to reproduce your results at a later date or on another system, and makes it easier to share your code with the confidence that others will get the same results you did.
+
+[renv](https://rstudio.github.io/renv/articles/renv.html) - Underlying the philosophy of renv is that any of your existing workflows should just work as they did before – renv helps manage library paths (and other project-specific state) to help isolate your project’s R dependencies, and the existing tools you’ve used for managing R packages (e.g. install.packages(), remove.packages()) should work as they did before
+
+[groundhog](http://groundhogr.com/) - Reproducible Scripts via Version-Specific Package Loading 
 
 #### Data Frame Manipulation
 [Tidyverse](https://www.tidyverse.org/) - a collection of packages that share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
