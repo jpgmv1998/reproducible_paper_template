@@ -65,7 +65,7 @@
 
 #### Reproducibility
 
-[checkpoint](https://cran.r-project.org/web/packages/checkpoint/vignettes/checkpoint.html#using-checkpoint) - The Reproducible R Toolkit provides an R function checkpoint, which ensures that all of the necessary R packages are installed with the correct version. This makes it easy to reproduce your results at a later date or on another system, and makes it easier to share your code with the confidence that others will get the same results you did.
+[checkpoint](https://cran.r-project.org/web/packages/checkpoint/vignettes/checkpoint.html#using-checkpoint) - The goal of the checkpoint package is to solve the problem of package reproducibility in R. Since packages get updated on CRAN all the time, it can be difficult to recreate an environment where all your packages are consistent with some earlier state. To solve this issue, checkpoint allows you to install packages locally as they existed on a specific date from the corresponding snapshot (stored on the checkpoint server) and it configures your R session to use only these packages. Together, the checkpoint package and the checkpoint server act as a CRAN time machine so that anyone using checkpoint() can ensure the reproducibility of their scripts or projects at any time.
 
 [renv](https://rstudio.github.io/renv/articles/renv.html) - Underlying the philosophy of renv is that any of your existing workflows should just work as they did before – renv helps manage library paths (and other project-specific state) to help isolate your project’s R dependencies, and the existing tools you’ve used for managing R packages (e.g. install.packages(), remove.packages()) should work as they did before
 
