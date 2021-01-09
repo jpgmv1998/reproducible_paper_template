@@ -4,6 +4,10 @@
  
 # Table of Contents
 
+- [Reproducibility](#reproducibility)
+  - [Templates](#templates)
+  - [Guides](#guides)
+  - [Other](#other)
 - [R](#r)
   - [References](#references)
     - [General](#general)
@@ -14,12 +18,48 @@
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
-    - [Other](#other)
+    - [Other Packages](#other-packages)
 - [Econometrics](#econometrics)
-- [Public Available Resources](#public-available-resources)
-- [Git](#git)
-- [Reproducibility](#reproducibility)
+- [Data Science Tools](#data-science-tools)
   
+
+## Reproducibility 
+
+### Templates
+
+[Generic Paper Templare - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for setup of multiple softwares.
+
+[Gentzkow-Shapiro Lab template](https://github.com/gslab-econ/template) - The GSLab Template is a minimal working demonstration of the tools and organization used by projects in the GSLab. We use SCons and a few custom builders to execute scripts and track dependencies in a portable and flexible manner.
+
+[Template for Overleaf](https://github.com/talgross-bu/Template-for-Overleaf) - A LaTeX Template for Economics Papers.
+
+
+### Guides
+
+[Replication tutorial - Lars Vilhuber](https://labordynamicsinstitute.github.io/replication-tutorial-2019/#/12) - Replication and Reproducibility in Social Sciences and Statistics: Overview and Practice (2019).
+
+[R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
+
+[Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014).
+
+[RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
+
+[Unofficial guidance on various topics by the AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements.
+
+[Unofficial guidance on various topics by Social Science Data Editors](https://social-science-data-editors.github.io/guidance/) - Guidance on creating replicable data and program archives. Guidance on testing replicability of code.
+
+[Archive GitHub repo with Zenodo](https://guides.github.com/activities/citable-code/) - Guide on how to archive GitHub repository and assign a DOI with Zenodo.
+
+[Reproducible R toolbox](https://rpubs.com/glennwithtwons/reproducible-r-toolbox) - RPubs post about reproducibility with R.
+
+[Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency.
+
+### Other
+
+[Replicability Presentations - Lars Vilhuber](https://github.com/labordynamicsinstitute/replicability-presentation-2020) - In this talk, I describe the context in which the current discussion in the social science is occurring: what are the definitions of replicability and reproducibility, what is failing, and to what extent. I discuss progess over the past 15 years. Finally, I discuss the concrete measures that have been implemented under my guidance at the American Economic Association, and the first preliminary outcomes from those measures. I conclude with some observations on how to integrate reproducibility into the scientific workflow in the social and statistical sciences.
+ 
+[Research Compendia](https://doi.org/10.7287/peerj.preprints.3192v2) - Paper about uses of R to produce research compendia.
+
 
 ## R 
 
@@ -120,7 +160,7 @@
 
 [margins](https://cran.r-project.org/web/packages/margins/vignettes/Introduction.html) - margins is an effort to port Stata’s (closed source) margins command to R as an S3 generic method for calculating the marginal effects (or “partial effects”) of covariates included in model objects (like those of classes “lm” and “glm”).
 
-#### Other
+#### Other Packages
 
 [econocharts](https://github.com/R-CoderDotCom/econocharts/) - Microeconomics/macroeconomics graphs made with ggplot2. This package allows creating microeconomics or macroeconomics charts in R with simple functions
 
@@ -140,23 +180,14 @@
  
 [Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
-
-## Public Available Resources
-
-[Data Science for Economists- Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
-
-[Template for Overleaf](https://github.com/talgross-bu/Template-for-Overleaf) - A LaTeX Template for Economics Papers.
-
-[R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
-
 [World Bank Methodology Posts](https://blogs.worldbank.org/impactevaluations/curated-list-our-postings-technical-topics-your-one-stop-shop-methodology-0) - 
 This is a curated list of our technical postings, to serve as a one-stop shop for your technical reading. I’ve focused here on our posts on methodological issues in impact evaluation – we also have a whole lot of posts on how to conduct surveys and measure certain concepts curated here. In lieu of our regular links this week, it is updated up to August 20, 2020
 
-[RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
-
 [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.
 
-## Git
+## Other Data Science Tools 
+
+[Data Science for Economists- Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
 [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
 
@@ -164,24 +195,3 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
  
 [Git Large File Storage](https://git-lfs.github.com/) - An open-source Git extension for versioning large files.
  
-## Reproducibility 
-
-[Replication tutorial - Lars Vilhuber](https://labordynamicsinstitute.github.io/replication-tutorial-2019/#/12) - Replication and Reproducibility in Social Sciences and Statistics: Overview and Practice (2019).
-
-[Replicability Presentations - Lars Vilhuber](https://github.com/labordynamicsinstitute/replicability-presentation-2020) - In this talk, I describe the context in which the current discussion in the social science is occurring: what are the definitions of replicability and reproducibility, what is failing, and to what extent. I discuss progess over the past 15 years. Finally, I discuss the concrete measures that have been implemented under my guidance at the American Economic Association, and the first preliminary outcomes from those measures. I conclude with some observations on how to integrate reproducibility into the scientific workflow in the social and statistical sciences.
- 
-[Generic Paper Templare - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for setup of multiple softwares.
-
-[Gentzkow-Shapiro Lab template]https://github.com/gslab-econ/template - The GSLab Template is a minimal working demonstration of the tools and organization used by projects in the GSLab. We use SCons and a few custom builders to execute scripts and track dependencies in a portable and flexible manner.
-
-[Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014).
-
-[Research Compendia](https://doi.org/10.7287/peerj.preprints.3192v2) - Paper about uses of R to produce research compendia.
-
-[Unofficial guidance replication supplements - AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements.
-
-[Archive GitHub repo with Zenodo](https://guides.github.com/activities/citable-code/) - Guide on how to archive GitHub repository and assign a DOI with Zenodo.
-
-[Reproducible R toolbox](https://rpubs.com/glennwithtwons/reproducible-r-toolbox) - RPubs post about reproducibility with R.
-
-[Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency.
