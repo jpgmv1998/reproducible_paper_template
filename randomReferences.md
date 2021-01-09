@@ -10,7 +10,7 @@
     - [Spatial Data](#spatial-data)
     - [R Markdown](#r-markdown)
   - [R Packages](#r-packages)
-    - [Reproducibility](#package-reproducibility)
+    - [Package Reproducibility](#package-reproducibility)
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
