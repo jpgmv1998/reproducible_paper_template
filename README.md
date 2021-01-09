@@ -17,7 +17,11 @@ Disclaimer: This project aims to incorporate reproducible workflows gathered fro
 
 * R packages management: Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
 
-* Code and data structure: 
+* [Code and data folders structure](#folders-structure): suggestion of folders structure to organize all code and data files.
+
+* [File templates and examples](#file-templates-and-examples): template files contain the suggested structure for that type of file, and example files are adaptions of its template version using real data.
+
+* [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflects the author personal preferences and needs.
 
 Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
@@ -31,7 +35,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * When using R always open RStudio using the .Rproj file.
 
 * If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
-    * Remember to substitute with your own scripts, move to a folder outside of the project, or remove all files with prefixes `_example_` and `_template_` before initializing renv management, to avoid including unnecessary packages and their dependencies in the project library. 
+    * Remember to substitute with your own scripts  all files with prefixes `_example_` and `_template_`  before initializing renv management, to avoid including unnecessary packages and their dependencies in the project library. You can move them to a folder outside of the project or remove them. 
    * Open RProject > execute `install.packages("renv")` if you don't have it yet > execute `renv::init()` > work normally in the project and following the [vignette](https://rstudio.github.io/renv/articles/renv.html) instructions.
 
 ## Files description
@@ -46,7 +50,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Folders structure
 
-This section explains how code and data should be organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [Script templates and examples](#script-templates-and-examples) section. As noted before this template is very biased towards the author`s personal preferences, needs, and limitations. 
+This section explains how code and data should be organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author`s personal preferences, needs, and limitations. 
 
 ### `code`
 
@@ -124,9 +128,9 @@ The default of this folder is to ignore all folders that normally contain large 
   * `regs` - to store regression outputs (tables/graphics).
   
 
-## Script templates and examples
+## File templates and examples
 
-All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain scripts adapted from its template version to process real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware of adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
+All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain files adapted from its template version using real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware of adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
 
 ### `code`
 
