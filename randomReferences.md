@@ -10,7 +10,7 @@
     - [Spatial Data](#spatial-data)
     - [R Markdown](#r-markdown)
   - [R Packages](#r-packages)
-    - [Reproducibility](#reproducibility)
+    - [Reproducibility](#package-reproducibility)
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
@@ -63,7 +63,7 @@
 
 ### R Packages
 
-#### Reproducibility
+#### Package Reproducibility
 
 [checkpoint](https://cran.r-project.org/web/packages/checkpoint/vignettes/checkpoint.html#using-checkpoint) - The goal of the checkpoint package is to solve the problem of package reproducibility in R. Since packages get updated on CRAN all the time, it can be difficult to recreate an environment where all your packages are consistent with some earlier state. To solve this issue, checkpoint allows you to install packages locally as they existed on a specific date from the corresponding snapshot (stored on the checkpoint server) and it configures your R session to use only these packages. Together, the checkpoint package and the checkpoint server act as a CRAN time machine so that anyone using checkpoint() can ensure the reproducibility of their scripts or projects at any time.
 
@@ -166,14 +166,22 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
  
 ## Reproducibility 
 
-[Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014)
+[Replication tutorial - Lars Vilhuber](https://labordynamicsinstitute.github.io/replication-tutorial-2019/#/12) - Replication and Reproducibility in Social Sciences and Statistics: Overview and Practice (2019).
 
-[Research Compendia](https://doi.org/10.7287/peerj.preprints.3192v2) - Paper about uses of R to produce research compendia
+[Replicability Presentations - Lars Vilhuber](https://github.com/labordynamicsinstitute/replicability-presentation-2020) - In this talk, I describe the context in which the current discussion in the social science is occurring: what are the definitions of replicability and reproducibility, what is failing, and to what extent. I discuss progess over the past 15 years. Finally, I discuss the concrete measures that have been implemented under my guidance at the American Economic Association, and the first preliminary outcomes from those measures. I conclude with some observations on how to integrate reproducibility into the scientific workflow in the social and statistical sciences.
+ 
+[Generic Paper Templare - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for setup of multiple softwares.
 
-[Unofficial guidance replication supplements - AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements
+[Gentzkow-Shapiro Lab template]https://github.com/gslab-econ/template - The GSLab Template is a minimal working demonstration of the tools and organization used by projects in the GSLab. We use SCons and a few custom builders to execute scripts and track dependencies in a portable and flexible manner.
 
-[Archive GitHub repo with Zenodo](https://guides.github.com/activities/citable-code/) - Guide on how to archive GitHub repository and assign a DOI with Zenodo
+[Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014).
 
-[Reproducible R toolbox](https://rpubs.com/glennwithtwons/reproducible-r-toolbo)x - RPubs post about reproducibility with R
+[Research Compendia](https://doi.org/10.7287/peerj.preprints.3192v2) - Paper about uses of R to produce research compendia.
 
-[Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency
+[Unofficial guidance replication supplements - AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements.
+
+[Archive GitHub repo with Zenodo](https://guides.github.com/activities/citable-code/) - Guide on how to archive GitHub repository and assign a DOI with Zenodo.
+
+[Reproducible R toolbox](https://rpubs.com/glennwithtwons/reproducible-r-toolbox) - RPubs post about reproducibility with R.
+
+[Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency.
