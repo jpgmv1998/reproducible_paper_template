@@ -166,14 +166,14 @@ All files with the prefix `_template_` contains the suggested structure for that
       
     * An template folder `folderName` with:
     
-     *  The template version `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
-      
-     * The template script `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`: 
+        *  The template version `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
 
-     * The template version `_template_dataFormat_forAnalysis_folderName.R` of the `dataFormat_forAnalysis_folderName.R`.
+        * The template script `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`: 
 
-     * The template version `_template_masterfile_projectSpecific_folderName.R` of the `_masterfile_projectSpecific_folderName.R`.
-  
+        * The template version `_template_dataFormat_forAnalysis_folderName.R` of the `dataFormat_forAnalysis_folderName.R`.
+
+        * The template version `_template_masterfile_projectSpecific_folderName.R` of the `_masterfile_projectSpecific_folderName.R`.
+
         
 * `analysis` - a folder containing some folders like (pending addition of examples and templates):
   
