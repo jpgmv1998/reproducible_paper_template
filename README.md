@@ -13,13 +13,13 @@ Disclaimer: This project aims to incorporate reproducible workflows gathered fro
 
 * [Random References](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc).
 
-* R Project with git: Allows better use of relative paths, helps with version control connecting directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
+* R Project with git - Allows better use of relative paths, helps with version control connecting directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
 
-* R packages management: Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
+* R packages management - Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
 
-* [Code and data folders structure](#folders-structure): suggestion of folders structure to organize all code and data files.
+* [Code and data folders structure](#folders-structure) - suggestion of folders structure to organize all code and data files.
 
-* [File templates and examples](#file-templates-and-examples): template files contain the suggested structure for that type of file, and example files are adaptions of its template version using real data.
+* [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are adaptions of its template version using real data.
 
 * [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflects the author personal preferences and needs.
 
