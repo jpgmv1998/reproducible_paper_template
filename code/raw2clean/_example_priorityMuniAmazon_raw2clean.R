@@ -20,7 +20,7 @@
 tictoc::tic(msg = "_example_priorityMuniAmazon_raw2clean script", log = T)
 
 # SOURCES
-source("code/_functions/ExportTimeProcessing.R")
+source("code/_functions/_example_ExportTimeProcessing.R")
 
 
 
@@ -181,7 +181,7 @@ save(clean.priorityMuniAmazon,
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("raw2clean")
+example_ExportTimeProcessing("raw2clean")
 
 
 

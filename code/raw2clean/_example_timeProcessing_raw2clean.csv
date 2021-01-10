@@ -1,4 +1,4 @@
-_example_priorityMuniAmazon_raw2clean script: 11 seconds elapsed
-_example_prodesDeforestationAmazonMuni_raw2clean script: 6 seconds elapsed
-_example_biomeDivision_raw2clean script: 26 seconds elapsed
 _example_muniDivision2015_raw2clean script: 34 minutes elapsed
+_example_biomeDivision_raw2clean script: 24 seconds elapsed
+_example_priorityMuniAmazon_raw2clean script: 4 seconds elapsed
+_example_prodesDeforestationAmazonMuni_raw2clean script: 5 seconds elapsed
