@@ -35,8 +35,10 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * When using R always open RStudio using the .Rproj file.
 
 * If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
-    * Remember to substitute with your own scripts  all files with prefixes `_example_` and `_template_`  before initializing renv management, to avoid including unnecessary packages and their dependencies in the project library. You can move them to a folder outside of the project or remove them. 
-   * Open RProject > execute `install.packages("renv")` if you don't have it yet > execute `renv::init()` > work normally in the project and following the [vignette](https://rstudio.github.io/renv/articles/renv.html) instructions.
+    * Remember to substitute all files with prefixes `_example_` and `_template_` with your own scripts before initializing renv management, to avoid including unnecessary packages and their dependencies in the project library. You can move them to a folder outside of the project or remove them. 
+   * Open RProject and execute `install.packages("renv")` if you do not have it installed yet.
+   * Execute `renv::init()` to develop a "local library" of the packages employed in a project. It will create the following files and folders in the project directory: `renv.lock`, `.Rprofile`, and `renv/.` Binaries of the project's packages will be stored in the `renv/library/` subfolder.
+   * When working on the project, use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
 
 ## Files description
 
