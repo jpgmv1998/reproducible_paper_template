@@ -11,7 +11,7 @@ Disclaimer: This project aims to incorporate reproducible workflows gathered fro
 
 ## Features
 
-* [Random References](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc).
+* [Random References](randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc).
 
 * R Project with git - Allows better use of relative paths, helps with version control connecting directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
 
