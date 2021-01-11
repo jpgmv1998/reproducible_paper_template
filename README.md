@@ -210,4 +210,4 @@ All files with the prefix `_template_` contains the suggested structure for that
       
   
 ## License
-The material in this repository is made available under the [MIT license](http://opensource.org/licenses/mit-license.php). 
+The material in this repository is made available under a dual-license setup. See [LICENSE](LICENSE) for details. 
