@@ -20,7 +20,7 @@
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
     - [Other Packages](#other-packages)
 - [Econometrics](#econometrics)
-- [Data Science Tools](#data-science-tools)
+- [Other Data Science Tools](#other-data-science-tools)
   
 
 ## Reproducibility 
