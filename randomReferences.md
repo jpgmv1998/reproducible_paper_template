@@ -180,6 +180,8 @@ producing the type of “out of the box” summary tables that economists like.
 :star: [World Bank Methodology Posts](https://blogs.worldbank.org/impactevaluations/curated-list-our-postings-technical-topics-your-one-stop-shop-methodology-0) - 
 This is a curated list of our technical postings, to serve as a one-stop shop for your technical reading. I’ve focused here on our posts on methodological issues in impact evaluation – we also have a whole lot of posts on how to conduct surveys and measure certain concepts curated here. In lieu of our regular links this week, it is updated up to August 20, 2020
 
+:star: [Guia Brasileiro de Análise de Dados: Armadilhas e Soluções](https://repositorio.enap.gov.br/bitstream/1/6039/1/Guia%20BR%20de%20Ana%cc%81lise%20de%20Dados.pdf) - book about brazilian data (crime, health, education, etc.) presenting common pitfalls and solutions when working with it (reference in portuguese).
+
 :star: [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.]
 
 :star: [How to Do Empirical Economics](http://www.crest.fr/ckfinder/userfiles/files/Pageperso/kramarz/v30i2a1.pdf) - This article presents a discussion among leading economists on how to do empirical research in economics. The participants discuss their reasons for starting research projects, data base construction, the methods they use, the role of theory, and their views on the main alternative empirical approaches The article ends with a discussion of a set of articles which exemplify best practice in empirical work.
