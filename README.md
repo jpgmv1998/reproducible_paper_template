@@ -74,9 +74,9 @@ All files inside this folder should be in version control and committed regularl
       
       * `sampleConstruction_projectSpecific_folderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial).
       
-      * multiple R scripts with pattern `dataFormat_variableTheme_projectSpecific_folderName.R`, with `dataFormat` being at least one of the following: `spatial`, `panel`, `crossSection`, to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample (according to `dataFormat`.
+      * multiple R scripts with pattern `dataFormat_variableTheme_projectSpecific_folderName.R`, with `dataFormat` being at least one of the following: `spatial`, `panel`, `crossSection`, to extract/create the variables of interest using one or more data files from `data/raw2clean/datasetName_dataSource/output`, and merge with the relevant sample (according to `dataFormat`).
     
-      * `dataFormat_forAnalysis_folderName.R` - R script(s) to combine all relevant files in `data/projectSpecific/folderName` into at least one output file for analysis, with `dataFormat` being at least one of the following: `spatial`, `panel`, `crossSection`.
+      * `dataFormat_forAnalysis_folderName.R` - R script(s) to combine all relevant files in `data/projectSpecific/folderName` into an output file for analysis, with `dataFormat` being at least one of the following: `spatial`, `panel`, `crossSection`.
       
       * `_masterfile_projectSpecific_folderName.R` - an R script to source all `projectSpecifc/folderName` R scripts in the desired sequence.
       
@@ -93,7 +93,7 @@ All files inside this folder should be in version control and committed regularl
 
 * `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
 
-  * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R script.
+  * `ExportTimeProcessing.R` - an R script to store `ExportTimeProcessing` function used to calculate and export the time of processing of each R script.
 
 ### `data`
 
@@ -150,25 +150,25 @@ All files with the prefix `_template_` contains the suggested structure for that
         
     * One template version `_template_masterfile_raw2clean.R` and one example version `_example_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
     
-    * One example version `_example_timeProcessing_raw2clean.csv` of the `timeProcessing_raw2clean.csv`.
+    * One example version `_example_timeProcessing_raw2clean.csv` of the `_timeProcessing_raw2clean.csv`.
 
 * `projectSpecific` - a folder containing:
     
     * An example folder `muniLevel` with:
       
-      *  One example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_folderName.R`.
+      * The example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_folderName.R`.
       
-      * Six example scripts `code/projectSpecific/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R`, `code/projectSpecific/_example_panel_prodesDeforestationAmazon_projectSpecific_muniLevel.R`, `code/projectSpecific/_example_spatial_priorityMuniAmazon_projectSpecific_muniLevel.R`, `code/projectSpecific/_example_spatial_prodesDeforestationAmazon_projectSpecific_muniLevel.R`, `code/projectSpecific/_example_crossSection_priorityMuniAmazon_projectSpecific_muniLevel.R`, and `code/projectSpecific/_example_crossSection_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`: 
+      * Two example scripts `code/projectSpecific/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R`, and `code/projectSpecific/_example_panel_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`. 
       
-      * Three examples `_example_panel_forAnalysis_muniLevel.R`, `_example_crossSection_forAnalysis_muniLevel.R`, and `_example_spatial_forAnalysis_muniLevel.R` of the `dataFormat_forAnalysis_folderName.R`.
+      * Two examples `_example_panel_forAnalysis_muniLevel.R`, and `_example_spatial_forAnalysis_muniLevel.R` of the `dataFormat_forAnalysis_folderName.R`.
       
-      * One example version `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
+      * The example version `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
   
       * The example version `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `_timeProcessing_projectSpecific_folderName.csv`.
       
     * An template folder `folderName` with:
     
-        *  The template version `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
+        * The template version `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
 
         * The template script `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`: 
 
@@ -179,16 +179,18 @@ All files with the prefix `_template_` contains the suggested structure for that
         
 * `analysis` - a folder containing some folders like (pending addition of examples and templates):
   
-  * `maps` with
+  * `maps` - a folder containing:
+    *
   
-  * `stats` with
+  * `stats` - a folder containing:
+    *
 
-  * `regs` with
-  
+  * `regs` - a folder containing:
+    *
 
 * `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
 
-  * `_example_ExportTimeProcessing.R` - an R script to store example_ExportTimeProcessing function used to calculate and export the time of processing of each R example script.
+  * `_example_ExportTimeProcessing.R` - an R script to store example_ExportTimeProcessing function used to calculate and export the time of processing of each R example script. Used only to adapt the output name adding the prefix `_example`, in practice you should exclude this function and only use the `ExporTimeProcessing.R` version.
 
 ### `data`
 
@@ -204,11 +206,11 @@ All files with the prefix `_template_` contains the suggested structure for that
     
     * An empty example folder `muniLevel` and an empty template folder `folderName`. The example folder `muniLevel` will be automatically populated when running the `_example_masterfile_projectSpecific_muniLevel.R` script with:
       
-      *  Three example versions: `_example_spatial_sample_muniLevel.Rdata`, `_example_panel_sample_muniLevel.Rdata`, and `_example_crossSection_sample_muniLevel.Rdata` of the `dataFormat_sample_folderName.Rdata`.
+      *  Three examples `_example_spatial_sample_muniLevel.Rdata`, `_example_panel_sample_muniLevel.Rdata`, and `_example_crossSection_sample_muniLevel.Rdata` of the `dataFormat_sample_folderName.Rdata`.
       
-      *  Six example versions: `_example_panel_prodesDeforestationAmazonMuni_muniLevel.Rdata`, `_example_panel_priorityMuniAmazon_muniLevel.Rdata`, `_example_spatial_prodesDeforestationAmazonMuni_muniLevel.Rdata`, `_example_spatial_priorityMuniAmazon_muniLevel.Rdata`, `_example_crossSection_prodesDeforestationAmazonMuni_muniLevel.Rdata`, and `_example_crossSection_priorityMuniAmazon_muniLevel.Rdata` of the `dataFormat_variableTheme_folderName.Rdata`.
+      *  Two examples `_example_panel_prodesDeforestationAmazonMuni_muniLevel.Rdata`, and `_example_panel_priorityMuniAmazon_muniLevel.Rdata` of the `dataFormat_variableTheme_folderName.Rdata`.
       
-      *  Three examples `_example_panel_forAnalysis_muniLevel.Rdata`, `_example_crossSection_forAnalysis_muniLevel.Rdata`, and `_example_spatial_forAnalysis_muniLevel.Rdata` of the `dataFormat_forAnalysis_folderName.Rdata`.
+      *  Two examples `_example_panel_forAnalysis_muniLevel.Rdata`, `_example_crossSection_forAnalysis_muniLevel.Rdata`, and `_example_spatial_forAnalysis_muniLevel.Rdata` of the `dataFormat_forAnalysis_folderName.Rdata`.
       
   
 ## License
