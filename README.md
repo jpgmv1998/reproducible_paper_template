@@ -17,11 +17,11 @@ Disclaimer: This project aims to incorporate reproducible workflows gathered fro
 
 * R packages management - Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
 
-* [Code and data folders structure](#folders-structure) - suggestion of folders structure to organize all code and data files.
+* [Code and data folders structure](#folders-structure) - suggestion of folder structure to organize all code and data files.
 
 * [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are adaptions of its template version using real data.
 
-* [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflects the structure of this template.
+* [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflect the structure of this template.
 
 Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
@@ -42,7 +42,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Files description
 
-- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHub repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other types of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and folders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folder patterns in this specific file, we add one `.gitignore` file inside each relevant folder. In this way, we are able to preserve all the folders structure, while avoiding to commit large files.
+- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHub repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other types of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and folders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folder patterns in this specific file, we add one `.gitignore` file inside each relevant folder. In this way, we can preserve the folder structure, while avoiding to commit large files.
 
 - `LICENSE`, a file to allow others to reproduce, distribute, or create derivatives works using this project.
 
@@ -204,9 +204,9 @@ All files with the prefix `_template_` contains the suggested structure for that
 
   * Examples: `example_biomeDivision_ibge`; `example_muniDivision2015_ibge`; `example_priorityMuniAmazon_mma`; `example_prodesDeforestationAmazon_inpe`. 
   
-  * For each example folder you should follow the download instructions in `documentation/_metadata.txt` and save the data in the `input` folder. The `output` folder will be automatically populated when running the `_example_masterfile_raw2clean.R`.
+  * For each example folder, you should follow the download instructions in `documentation/_metadata.txt` and save the data in the `input` folder. The `output` folder will be automatically populated when running the `_example_masterfile_raw2clean.R`.
   
-  * The template `_template_datasetName_dataSource` contains a skeleton of the `_metadata.txt` file and the folders structure to be used for your own datasets.
+  * The template `_template_datasetName_dataSource` contains a skeleton of the `_metadata.txt` file and the folder structure to be used for your own datasets.
 
 * `projectSpecific` - a folder containing:
     
