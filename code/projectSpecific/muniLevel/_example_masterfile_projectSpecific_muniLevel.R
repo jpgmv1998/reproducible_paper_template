@@ -21,6 +21,8 @@
 # CONSTRUCT SAMPLE OF INTEREST AND EXPORT IT IN SPATIAL, CROSS-SECTION AND PANEL FORMATS
 source("code/projectSpecific/muniLevel/_example_sampleConstruction_projectSpecific_muniLevel.R", encoding = "UTF-8", echo = T)
 
+# clear enviromnet
+rm(list = ls())
 
 
 # PRIORITY MUNICIPALITIES
@@ -28,7 +30,8 @@ source("code/projectSpecific/muniLevel/_example_sampleConstruction_projectSpecif
 # ADD AMAZON PRIORITY MUNI INFO TO PROJECT PANEL SAMPLE
 source("code/projectSpecific/muniLevel/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R", encoding = "UTF-8", echo = T)
 
-
+# clear enviromnet
+rm(list = ls())
 
 
 # DEFORESTATION
@@ -40,18 +43,11 @@ source("code/projectSpecific/muniLevel/_example_panel_prodesDeforestationAmazonM
 
 # OUTPUT FOR ANALYSIS
 
-# SPATIAL
-source("code/projectSpecific/muniLevel/_example_spatial_forAnalysis_muniLevel.R", encoding = "UTF-8", echo = T)
+# MERGE VARIABLES OF INTEREST AND EXPORT IT IN SPATIAL, CROSS-SECTION AND PANEL FORMATS FORMATS
+source("code/projectSpecific/muniLevel/_example_sample_forAnalysis_muniLevel.R", encoding = "UTF-8", echo = T)
 
-# CROSS-SECTION
-source("code/projectSpecific/muniLevel/_example_crossSection_forAnalysis_muniLevel.R", encoding = "UTF-8", echo = T)
-
-# PANEL
-source("code/projectSpecific/muniLevel/_example_panel_forAnalysis_muniLevel.R", encoding = "UTF-8", echo = T)
-
-
-
-
+# clear enviromnet
+rm(list = ls())
 
 
 # END OF SCRIPT --------------------------------------------------------------------------------------------------------------------------------------

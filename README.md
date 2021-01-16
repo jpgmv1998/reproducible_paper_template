@@ -120,7 +120,7 @@ The default of this folder is to ignore all folders that normally contain large 
       
       * the output of each R script with pattern `dataFormat_variableTheme_projectSpecific_folderName.R` with the following name pattern: `dataFormat_variableTheme_folderName.Rdata`.
     
-      * the output of each `dataFormat_forAnalysis_folderName.R` file with the following name pattern: `dataFormat_forAnalysis_folderName.Rdata`.
+      * the output(s) of `sample_forAnalysis_folderName.R` file with the following name pattern: `dataFormat_forAnalysis_folderName.Rdata`.
       
      
 * `analysis` - a folder, that may need more adaptations accordingly to the project, containing some folders like:
@@ -160,19 +160,19 @@ All files with the prefix `_template_` contains the suggested structure for that
       
       * Two examples `code/projectSpecific/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R`, and `code/projectSpecific/_example_panel_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`. 
       
-      * Two examples `_example_panel_forAnalysis_muniLevel.R`, and `_example_spatial_forAnalysis_muniLevel.R` of the `dataFormat_forAnalysis_folderName.R`.
+      * An example `_example_sample_forAnalysis_muniLevel.R` of the `sample_forAnalysis_folderName.R`.
       
       * An example `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
   
       * An example `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `_timeProcessing_projectSpecific_folderName.csv`.
       
-    * An template folder `folderName` with:
+    * The template folder `folderName` containing:
     
         * The template `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
 
         * The template `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`.
 
-        * The template `_template_dataFormat_forAnalysis_folderName.R` of the `dataFormat_forAnalysis_folderName.R`.
+        * The template `_template_sample_forAnalysis_folderName.R` of the `sample_forAnalysis_folderName.R`.
 
         * The template `_template_masterfile_projectSpecific_folderName.R` of the `_masterfile_projectSpecific_folderName.R`.
 
@@ -213,7 +213,7 @@ All files with the prefix `_template_` contains the suggested structure for that
       
       *  Two examples `_example_panel_prodesDeforestationAmazonMuni_muniLevel.Rdata`, and `_example_panel_priorityMuniAmazon_muniLevel.Rdata` of the `dataFormat_variableTheme_folderName.Rdata`.
       
-      *  Two examples `_example_panel_forAnalysis_muniLevel.Rdata`, `_example_crossSection_forAnalysis_muniLevel.Rdata`, and `_example_spatial_forAnalysis_muniLevel.Rdata` of the `dataFormat_forAnalysis_folderName.Rdata`.
+      *  Three examples `_example_panel_forAnalysis_muniLevel.Rdata`, `_example_crossSection_forAnalysis_muniLevel.Rdata`, and `_example_spatial_forAnalysis_muniLevel.Rdata` of the `dataFormat_forAnalysis_folderName.Rdata`.
       
   
 ## License
