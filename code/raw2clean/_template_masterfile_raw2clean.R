@@ -19,6 +19,8 @@
 # SHORT DESCRIPTION
 source("code/raw2clean/datasetName_dataSource.R", encoding = "UTF-8", echo = T)
 
+# clear enviromnet
+rm(list = ls())
 
 
 
