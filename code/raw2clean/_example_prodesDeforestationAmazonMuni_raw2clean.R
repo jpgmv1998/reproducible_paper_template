@@ -120,18 +120,18 @@ raw.prodes <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(raw.prodes$muni_name)                        <- "municipality name"
-sjlabelled::set_label(raw.prodes$muni_code)                        <- "municipality code (7-digit, IBGE)"
-sjlabelled::set_label(raw.prodes$state_uf)                         <- "state name (abbreviation)"
-sjlabelled::set_label(raw.prodes$prodesAmazon_muniArea)            <- "municipal area (from PRODES data, sq km)"
-sjlabelled::set_label(raw.prodes$year)                             <- "year of reference (calendar or PRODES year)"
+sjlabelled::set_label(raw.prodes$muni_name)                        <- "(cross-section) municipality name"
+sjlabelled::set_label(raw.prodes$muni_code)                        <- "(cross-section) municipality code (7-digit, IBGE)"
+sjlabelled::set_label(raw.prodes$state_uf)                         <- "(cross-section) state name (abbreviation)"
+sjlabelled::set_label(raw.prodes$prodesAmazon_muniArea)            <- "(cross-section) municipal area (sq km; PRODES)"
+sjlabelled::set_label(raw.prodes$year)                             <- "(calendar or PRODES year) year of reference"
 sjlabelled::set_label(raw.prodes$prodesAmazon_deforestAccumulated) <- "(PRODES year) total deforested area through Jul/t-1 (sq km; PRODES)"
 sjlabelled::set_label(raw.prodes$prodesAmazon_deforestIncrement)   <- "(PRODES year) increment in deforested area from Aug/t-1 through Jul/t (sq km; PRODES)"
 sjlabelled::set_label(raw.prodes$prodesAmazon_forest)              <- "(PRODES year) remaining primary forest area (sq km; PRODES)"
 sjlabelled::set_label(raw.prodes$prodesAmazon_cloud)               <- "(PRODES year) area covered by clouds during remote sensing (sq km; PRODES)"
 sjlabelled::set_label(raw.prodes$prodesAmazon_nonobserved)         <- "(PRODES year) area blocked from view during remote sensing (sq km; PRODES)"
-sjlabelled::set_label(raw.prodes$prodesAmazon_nonforest)           <- "(PRODES year) area originally covered by something other than tropical forest (sq km; PRODES)"
-sjlabelled::set_label(raw.prodes$prodesAmazon_hidrography)         <- "(PRODES year) area covered by bodies of water (sq km; PRODES)"
+sjlabelled::set_label(raw.prodes$prodesAmazon_nonforest)           <- "(cross-section) area originally covered by non-tropical forest vegetation (sq km; PRODES)"
+sjlabelled::set_label(raw.prodes$prodesAmazon_hidrography)         <- "(cross-section) area covered by bodies of water (sq km; PRODES)"
 
 
 

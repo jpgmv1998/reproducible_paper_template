@@ -99,8 +99,8 @@ raw.biome <- sf::st_make_valid(raw.biome)
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(raw.biome$biome_code)            <- "biome code"
-sjlabelled::set_label(raw.biome$biome_name)            <- "biome name"
+sjlabelled::set_label(raw.biome$biome_code) <- "(cross-section) biome code"
+sjlabelled::set_label(raw.biome$biome_name) <- "(cross-section) biome name"
 
 
 

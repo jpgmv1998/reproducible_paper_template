@@ -134,9 +134,9 @@ raw.muni <- sf::st_make_valid(raw.muni)
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(raw.muni$muni_code)            <- "municipality code (7-digit, IBGE)"
-sjlabelled::set_label(raw.muni$muni_name)            <- "municipality name"
-sjlabelled::set_label(raw.muni$state_uf)             <- "state name (abbreviation)"
+sjlabelled::set_label(raw.muni$muni_code) <- "(cross-section) municipality code (7-digit, IBGE)"
+sjlabelled::set_label(raw.muni$muni_name) <- "(cross-section) municipality name"
+sjlabelled::set_label(raw.muni$state_uf)  <- "(cross-section) state name (abbreviation)"
 
 
 

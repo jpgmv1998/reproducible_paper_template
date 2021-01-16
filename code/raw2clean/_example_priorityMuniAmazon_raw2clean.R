@@ -147,14 +147,14 @@ raw.priorityMuniAmazon <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(raw.priorityMuniAmazon$state_uf)           <- "state name (abbreviation)"
-sjlabelled::set_label(raw.priorityMuniAmazon$muni_name)          <- "municipality name"
+sjlabelled::set_label(raw.priorityMuniAmazon$state_uf)           <- "(cross-section) state name (abbreviation)"
+sjlabelled::set_label(raw.priorityMuniAmazon$muni_name)          <- "(cross-section) municipality name"
 sjlabelled::set_label(raw.priorityMuniAmazon$entry_year)         <- "(calendar year) year when the municipality was placed on the list"
 sjlabelled::set_label(raw.priorityMuniAmazon$entry_year_prodes)  <- "(PRODES year) year when the municipality was placed on the list"
-sjlabelled::set_label(raw.priorityMuniAmazon$entry_lawOrdinance) <- "law ordinance name that placed the municipality on the list"
+sjlabelled::set_label(raw.priorityMuniAmazon$entry_lawOrdinance) <- "(calendar date) law ordinance name that placed the municipality on the list"
 sjlabelled::set_label(raw.priorityMuniAmazon$exit_year)          <- "(calendar year) year when the municipality was removed from the list"
 sjlabelled::set_label(raw.priorityMuniAmazon$exit_year_prodes)   <- "(PRODES year) year when the municipality was removed from the list"
-sjlabelled::set_label(raw.priorityMuniAmazon$exit_lawOrdinance)  <- "law ordinance name that removed the municipality from the list"
+sjlabelled::set_label(raw.priorityMuniAmazon$exit_lawOrdinance)  <- "(calendar date) law ordinance name that removed the municipality from the list"
 
 # change final object name
 clean.priorityMuniAmazon <- raw.priorityMuniAmazon
