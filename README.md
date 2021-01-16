@@ -180,12 +180,15 @@ All files with the prefix `_template_` contains the suggested structure for that
 * `analysis` - a folder containing some folders like (pending addition of examples and templates):
   
   * `maps` - a folder containing:
+  
     *
   
   * `stats` - a folder containing:
+  
     *
 
   * `regs` - a folder containing:
+  
     *
 
 * `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
