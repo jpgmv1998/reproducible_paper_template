@@ -52,6 +52,9 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 - `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
 
+- `brainstorming`, a folder to store research ideas, peer feedback, etc. Contains:
+  * `_template_research_project.Rmd`, a template to organize and structure the first ideas about the project (draft version).
+
 ## Folders structure
 
 This section explains how code and data should be organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author`s personal preferences, needs, and limitations. 

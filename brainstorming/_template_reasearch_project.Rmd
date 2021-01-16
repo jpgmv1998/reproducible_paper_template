@@ -1,0 +1,69 @@
+---
+title: "Project Name"
+subtitle: "Research Project - TEMPLATE"
+author: "Author(s) name" 
+date: "`r Sys.Date()`"
+bibliography: 
+output: 
+  pdf_document:
+    latex_engine: xelatex
+citation_package: natbib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction and Motivation
+
+
+
+## Policy Description (in case of evaluating a policy)
+
+
+
+## Research Goals
+
+
+
+## Methodology 
+
+
+
+## Data
+
+### Sample
+  * Unit of analysis:
+  * Geographic extent:
+  * Timing:
+
+### Variables and Sources
+
+
+| Variable  | Source | Period | Notes   | Priority (0 = not necessary; 1 = optional; 2 = essential) |
+|-----------|--------|--------|---------|-----------------------------------------------------------|
+|           |        |        |         |                                                           |
+
+### Outcomes
+
+
+### Controls
+
+  
+### Other 
+
+## Literature Review
+
+### Literature Theme
+
+- @reference1 "Paper title abbreviation" 
+
+    * Methodology: 
+    * Main findings:
+        + 
+    * Mechanism: 
+    * Extra: 
+        + 
+
+
+## References
