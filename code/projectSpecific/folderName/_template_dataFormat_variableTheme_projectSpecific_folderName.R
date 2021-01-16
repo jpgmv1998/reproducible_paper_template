@@ -75,7 +75,7 @@ sjlabelled::set_label(dataFormat.variableTheme.folderName$column1)              
 
 save(dataFormat.variableTheme.folderName,
      file = file.path("data/projectSpecific/folderName",
-                      paste0("dataFormat_variableTheme_muniLevel", ".Rdata")))
+                      paste0("dataFormat_variableTheme_folderName", ".Rdata")))
 
 
 
