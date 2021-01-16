@@ -140,7 +140,7 @@ All files with the prefix `_template_` contains the suggested structure for that
 
 * `raw2clean` - a folder containing:
 
-    * One template script and four example scripts of the `datasetName_raw2clean.R`: 
+    * The template and four examples of the `datasetName_raw2clean.R`: 
     
       * `code/raw2clean/_template_datasetName_raw2clean.R` - an R script containing only the general structure of this type of file.
       * `code/raw2clean/_example_muniDivision2015_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
@@ -148,33 +148,33 @@ All files with the prefix `_template_` contains the suggested structure for that
       * `code/raw2clean/_example_priorityMuniAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.txt format).
       * `code/raw2clean/_example_prodesDeforestationAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.pdf format).
         
-    * One template version `_template_masterfile_raw2clean.R` and one example version `_example_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
+    * The template `_template_masterfile_raw2clean.R` and an example `_example_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
     
-    * One example version `_example_timeProcessing_raw2clean.csv` of the `_timeProcessing_raw2clean.csv`.
+    * An example `_example_timeProcessing_raw2clean.csv` of the `_timeProcessing_raw2clean.csv`.
 
 * `projectSpecific` - a folder containing:
     
     * An example folder `muniLevel` with:
       
-      * The example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_folderName.R`.
+      * An example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_folderName.R`.
       
-      * Two example scripts `code/projectSpecific/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R`, and `code/projectSpecific/_example_panel_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`. 
+      * Two examples `code/projectSpecific/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R`, and `code/projectSpecific/_example_panel_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`. 
       
       * Two examples `_example_panel_forAnalysis_muniLevel.R`, and `_example_spatial_forAnalysis_muniLevel.R` of the `dataFormat_forAnalysis_folderName.R`.
       
-      * The example version `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
+      * An example `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
   
-      * The example version `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `_timeProcessing_projectSpecific_folderName.csv`.
+      * An example `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `_timeProcessing_projectSpecific_folderName.csv`.
       
     * An template folder `folderName` with:
     
-        * The template version `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
+        * The template `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
 
-        * The template script `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`: 
+        * The template `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`.
 
-        * The template version `_template_dataFormat_forAnalysis_folderName.R` of the `dataFormat_forAnalysis_folderName.R`.
+        * The template `_template_dataFormat_forAnalysis_folderName.R` of the `dataFormat_forAnalysis_folderName.R`.
 
-        * The template version `_template_masterfile_projectSpecific_folderName.R` of the `_masterfile_projectSpecific_folderName.R`.
+        * The template `_template_masterfile_projectSpecific_folderName.R` of the `_masterfile_projectSpecific_folderName.R`.
 
         
 * `analysis` - a folder containing some folders like (pending addition of examples and templates):
