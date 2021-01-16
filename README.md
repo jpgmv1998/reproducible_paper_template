@@ -21,7 +21,7 @@ Disclaimer: This project aims to incorporate reproducible workflows gathered fro
 
 * [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are adaptions of its template version using real data.
 
-* [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflects the author personal preferences and needs.
+* [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflects the structure of this template.
 
 Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
@@ -49,6 +49,8 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 - `README.md` this file, a general overview of the project in markdown format.
 
 - `randomReferences.md`, a file intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc) in markdown format.
+
+- `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
 
 ## Folders structure
 
