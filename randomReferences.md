@@ -27,6 +27,8 @@
 
 ### Templates
 
+:star: [Sample Replication Package - Julian Reif](https://github.com/reifjulian/my-project) - This repository includes a short paper and its accompanying replication code.
+
 [Generic Paper Template - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for the setup of multiple software.
 
 [Gentzkow-Shapiro Lab template](https://github.com/gslab-econ/template) - The GSLab Template is a minimal working demonstration of the tools and organization used by projects in the GSLab. We use SCons and a few custom builders to execute scripts and track dependencies in a portable and flexible manner.
