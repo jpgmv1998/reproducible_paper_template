@@ -27,6 +27,8 @@
 
 ### Templates
 
+:star: [Template for Empirical Papers - Ricardo Dahis](https://github.com/rdahis/paper_template) - This folder provides an all-encompassing working structure for empirical papers. It organizes every step of the process: merging and cleaning (several) data sets, performing analyses (tables, figures, regressions), writing the article itself and also presentations.
+
 :star: [Sample Replication Package - Julian Reif](https://github.com/reifjulian/my-project) - This repository includes a short paper and its accompanying replication code.
 
 [Generic Paper Template - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for the setup of multiple software.
