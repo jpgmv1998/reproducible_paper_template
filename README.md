@@ -4,7 +4,7 @@ Main goal: Create a template repository for starting a new paper project impleme
 
 Author: João Pedro Vieira
 
-Software: Focused on empirical projects that use mostly R for data manipulation. Tested using R version 4.0.2 and RStudio version 1.3.1073 (but may work on other versions).
+Software: Focused on empirical projects that use mostly R for data manipulation. Tested using R version 4.0.2 and RStudio version 1.3.1073 (but may work on other versions) on Windows.
 
 Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations.
 
