@@ -136,6 +136,8 @@ The default of this folder is to ignore all folders that normally contain large 
 
   * `regs` - to store regression outputs (tables/graphics).
   
+* `_temp` - a folder to store temporary files (e.g. files automatically generated when processing raster data)
+  
 
 ## File templates and examples
 
