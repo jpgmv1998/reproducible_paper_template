@@ -14,7 +14,7 @@
     - [Spatial Data](#spatial-data)
     - [R Markdown](#r-markdown)
   - [R Packages](#r-packages)
-    - [Package Reproducibility](#package-reproducibility)
+    - [Packages for Reproducibility](#packages-for-reproducibility)
     - [Data Frame Manipulation](#data-frame-manipulation)
     - [Spatial Data Manipulation](#spatial-data-manipulation)
     - [Regression Analysis and Output Presentation](#regression-analysis-and-output-presentation)
@@ -109,7 +109,7 @@
 
 ### R Packages
 
-#### Package Reproducibility
+#### Packages for Reproducibility
 
 :star: [renv](https://rstudio.github.io/renv/articles/renv.html) - Underlying the philosophy of renv is that any of your existing workflows should just work as they did before – renv helps manage library paths (and other project-specific states) to help isolate your project’s R dependencies, and the existing tools you’ve used for managing R packages (e.g. install.packages(), remove.packages()) should work as they did before
 
@@ -172,6 +172,8 @@ producing the type of “out of the box” summary tables that economists like.
 [margins](https://cran.r-project.org/web/packages/margins/vignettes/Introduction.html) - margins is an effort to port Stata’s (closed source) margins command to R as an S3 generic method for calculating the marginal effects (or “partial effects”) of covariates included in model objects (like those of classes “lm” and “glm”).
 
 #### Other Packages
+
+[DataExplorer](https://boxuancui.github.io/DataExplorer/) - This R package aims to automate most of data handling and visualization, so that users could focus on studying the data and extracting insights during Exploratory Data Analysis (EDA).
 
 [econocharts](https://github.com/R-CoderDotCom/econocharts/) - Microeconomics/macroeconomics graphs made with ggplot2. This package allows creating microeconomics or macroeconomics charts in R with simple functions
 
