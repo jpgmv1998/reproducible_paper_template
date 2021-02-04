@@ -4,6 +4,7 @@
  
 # Table of Contents
 
+- [Other Lists of Resources](#other-lists-of-resources)
 - [Reproducibility](#reproducibility)
   - [Templates](#templates)
   - [Guides](#guides)
@@ -22,6 +23,10 @@
 - [Econometrics](#econometrics)
 - [Other Data Science Tools](#other-data-science-tools)
   
+  
+## Other Lists of Resources  
+
+:star: [Resources for PhD Students - Shanjun Li](http://li.dyson.cornell.edu/phdRes.php) - For mere mortals, the road to a PhD is long, lonely, arduous, and full of twists and turns. Among other things, it demands patience, perseverance, an open mind, and the courage to seek help. Owing to the generosity of the authors, this list of resources below provides useful guidance from start to finish. Use them well and your journey will be less bumpy.
 
 ## Reproducibility 
 
