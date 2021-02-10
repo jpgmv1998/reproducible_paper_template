@@ -220,4 +220,5 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
  
  ## Writing
  
- :star: [How to Write Applied Papers in Economics](http://marcfbellemare.com/wordpress/wp-content/uploads/2020/09/BellemareHowToPaperSeptember2020.pdf)
+ :star: [How to Write Applied Papers in Economics - Marc F. Bellemare](http://marcfbellemare.com/wordpress/wp-content/uploads/2020/09/BellemareHowToPaperSeptember2020.pdf) - The goal of this paper is to teach readers how to write applied economics papers that will eventually be published in a
+peer-reviewed journal. 
