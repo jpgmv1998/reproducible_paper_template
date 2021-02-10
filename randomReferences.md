@@ -22,6 +22,7 @@
     - [Other Packages](#other-packages)
 - [Econometrics](#econometrics)
 - [Other Data Science Tools](#other-data-science-tools)
+- [Writing](#writing)
   
   
 ## Other Lists of Resources  
@@ -217,3 +218,6 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
  
 [Git Large File Storage](https://git-lfs.github.com/) - An open-source Git extension for versioning large files.
  
+ ## Writing
+ 
+ :star: [How to Write Applied Papers in Economics](http://marcfbellemare.com/wordpress/wp-content/uploads/2020/09/BellemareHowToPaperSeptember2020.pdf)
