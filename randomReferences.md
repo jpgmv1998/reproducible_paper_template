@@ -83,6 +83,8 @@
 
 [Data Wrangling Workshop with R and Tidyverse](https://github.com/NickCH-K/DataWranglingWorkshopFiles) - slides, video, and walk-through example of a workshop about data wrangling using Tidyverse in R. 
 
+[Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/index.html) - This book assumes no prerequisites: no algebra, no calculus, and no prior programming/coding experience. This is intended to be a gentle introduction to the practice of analyzing data and answering questions using data the way data scientists, statisticians, data journalists, and other researchers would.
+
 [R: Uma Introdução Para Economistas](https://danmrc.github.io/R-para-Economistas/) - introduction to R for economists (reference in portuguese)
 
 [Parallel Computing with R](https://arxiv.org/abs/1912.11144) - a comprehensive overview of all things R parallel (working paper)
