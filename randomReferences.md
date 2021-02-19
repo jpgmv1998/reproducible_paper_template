@@ -43,8 +43,6 @@
 
 ### Guides
 
-:star: [Reproducible Research in R](https://monashdatafluency.github.io/r-rep-res/) - The main aim of this workshop is to set you on the right path of making your research more reproducible and shariable.
-
 :star: [R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
 
 :star: [Unofficial guidance on various topics by the AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements.
@@ -96,6 +94,8 @@
 [R interface for Apache Spark](https://spark.rstudio.com/) - RStudio's tutorial
 
 #### R Markdown
+
+:star: [Reproducible Research in R](https://monashdatafluency.github.io/r-rep-res/) - The main aim of this workshop is to set you on the right path of making your research more reproducible and shariable.
 
 [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown) - Book for R Markdown references.
 
