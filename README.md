@@ -1,4 +1,4 @@
-# Reproducible Paper Template (UNDER CONSTRUCTION)
+# Reproducible Paper Template (:construction: UNDER CONSTRUCTION :construction:)
 
 Main goal: Create a template repository for starting a new paper project implementing good practices for reproducibility.
 
