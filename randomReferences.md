@@ -191,7 +191,13 @@ producing the type of “out of the box” summary tables that economists like.
 
 ## Econometrics
 
+:star: [Causal Inference: The Mixtape - Scott Cunningham](https://mixtape.scunning.com/index.html) - Scott Cunningham introduces students and practitioners to the methods necessary to arrive at meaningful answers to the questions of causation, using a range of modeling techniques and coding instructions for both the R and the Stata programming languages.
+
+:star: [Econometrics - Bruce Hansen](https://www.ssc.wisc.edu/~bhansen/econometrics/) -  This textbook is the second in a two-part series covering the core material typically taught in a one-year Ph.D. course in econometrics. 
+
 :star: [Literature on Recent Advances in Applied Micro Methods](https://christinecai.github.io/PublicGoods/applied_micro_methods.pdf) - List of papers with recent advances in applied micro methods
+
+:star: [How to Do Empirical Economics](http://www.crest.fr/ckfinder/userfiles/files/Pageperso/kramarz/v30i2a1.pdf) - This article presents a discussion among leading economists on how to do empirical research in economics. The participants discuss their reasons for starting research projects, database construction, the methods they use, the role of theory, and their views on the main alternative empirical approaches The article ends with a discussion of a set of articles which exemplify best practice in empirical work.
 
 :star: [World Bank Methodology Posts](https://blogs.worldbank.org/impactevaluations/curated-list-our-postings-technical-topics-your-one-stop-shop-methodology-0) - 
 This is a curated list of our technical postings, to serve as a one-stop shop for your technical reading. I’ve focused here on our posts on methodological issues in impact evaluation.
@@ -200,7 +206,7 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 
 :star: [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.]
 
-:star: [How to Do Empirical Economics](http://www.crest.fr/ckfinder/userfiles/files/Pageperso/kramarz/v30i2a1.pdf) - This article presents a discussion among leading economists on how to do empirical research in economics. The participants discuss their reasons for starting research projects, database construction, the methods they use, the role of theory, and their views on the main alternative empirical approaches The article ends with a discussion of a set of articles which exemplify best practice in empirical work.
+[Introduction to Econometrics - Bruce Hansen](https://www.ssc.wisc.edu/~bhansen/econometrics/) -  This textbook is the first in a two-part series covering the core material typically taught in a one-year Ph.D. course in econometrics.
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
 
