@@ -81,6 +81,10 @@
 
 :star: [Data Visualization with R](https://rkabacoff.github.io/datavis/) - This book helps you create the most popular visualizations - from quick and dirty plots to publication-ready graphs. The text relies heavily on the ggplot2 package for graphics, but other approaches are covered as well.
 
+:star: [Data Science for Economists - Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
+
+:star: [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
+
 [Data Wrangling Workshop with R and Tidyverse](https://github.com/NickCH-K/DataWranglingWorkshopFiles) - slides, video, and walk-through example of a workshop about data wrangling using Tidyverse in R. 
 
 [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/index.html) - This book assumes no prerequisites: no algebra, no calculus, and no prior programming/coding experience. This is intended to be a gentle introduction to the practice of analyzing data and answering questions using data the way data scientists, statisticians, data journalists, and other researchers would.
@@ -206,6 +210,8 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 
 :star: [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.]
 
+[Empirical Economics with R - Sebastian Kranz](https://github.com/skranz/empecon) - Besides lecture slides, the course consists of interactive web sites that mix video lectures with multiple choice quizzes. Even more important are interactive RTutor problem sets for each chapter. They allow you to work through the topics and applications in your own RStudio environment. You can automatically check your solutions and get hints.
+
 [Introduction to Econometrics - Bruce Hansen](https://www.ssc.wisc.edu/~bhansen/econometrics/) -  This textbook is the first in a two-part series covering the core material typically taught in a one-year Ph.D. course in econometrics.
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
@@ -217,10 +223,6 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 [Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
 ## Other Data Science Tools 
-
-:star: [Data Science for Economists - Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
-
-:star: [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
 
 [Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes.
  
