@@ -3,7 +3,7 @@ title: "Project Name"
 subtitle: "Research Project - TEMPLATE"
 author: "Author(s) name" 
 date: "`r Sys.Date()`"
-bibliography: 
+# bibliography: 
 output: 
   pdf_document:
     latex_engine: xelatex
@@ -16,29 +16,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction and Motivation
 
-
-
 ## Policy Description (in case of evaluating a policy)
 
+## Research Hypothesis/Goals
 
+Research question(s):
 
-## Research Goals
+Hypothesis 1:
 
+Goal 1:
 
-
-## Methodology 
-
-
+## Methodology
 
 ## Data
 
 ### Sample
-  * Unit of analysis:
-  * Geographic extent:
-  * Timing:
+
+-   Unit of analysis:
+-   Geographic extent:
+-   Timing:
 
 ### Variables and Sources
-
 
 | Variable  | Source | Period | Notes   | Priority (0 = not necessary; 1 = optional; 2 = essential) |
 |-----------|--------|--------|---------|-----------------------------------------------------------|
@@ -46,24 +44,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Outcomes
 
-
 ### Controls
 
-  
-### Other 
+### Other
 
 ## Literature Review
 
 ### Literature Theme
 
-- @reference1 "Paper title abbreviation" 
+-   @reference1 "Paper title abbreviation"
 
-    * Methodology: 
-    * Main findings:
-        + 
-    * Mechanism: 
-    * Extra: 
-        + 
+    -   Methodology:
 
+    -   Main findings:
+
+        -   
+
+    -   Mechanism:
+
+    -   Extra:
+
+        -   
 
 ## References
