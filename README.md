@@ -59,7 +59,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 ## Folders structure
 
-This section explains how code and data should be organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author`s personal preferences, needs, and limitations. 
+This section explains how code and data is organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author's preferences, needs, and limitations. For other references see the [Reproducibility section](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md#reproducibility) in `randomReferences.md`.
 
 ### `code`
 
