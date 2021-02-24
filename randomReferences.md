@@ -246,3 +246,5 @@ peer-reviewed journal.
 ### Other Lists of Resources
 
 :star: [Resources for PhD Students - Shanjun Li](http://li.dyson.cornell.edu/phdRes.php) - For mere mortals, the road to a PhD is long, lonely, arduous, and full of twists and turns. Among other things, it demands patience, perseverance, an open mind, and the courage to seek help. Owing to the generosity of the authors, this list of resources below provides useful guidance from start to finish. Use them well and your journey will be less bumpy.
+
+[Useful Links - Anthony Lee Zang](https://docs.google.com/document/d/10_wQWeDSU2DCJSfM3UjwXPGLZhxcQCDci69zNR_lgQI/edit)
