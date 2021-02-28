@@ -210,17 +210,19 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 
 :star: [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.]
 
+[Ph.D. Microeconometrics - Chris Colon](https://github.com/chrisconlon/micro-metrics) - This is a PhD level course in Microeconometrics targeted at students conducting applied research (as opposed to econometricians). In addition to traditional econometric approaches, this course draws connections to recent literature on machine learning.
+
 [Empirical Economics with R - Sebastian Kranz](https://github.com/skranz/empecon) - Besides lecture slides, the course consists of interactive web sites that mix video lectures with multiple choice quizzes. Even more important are interactive RTutor problem sets for each chapter. They allow you to work through the topics and applications in your own RStudio environment. You can automatically check your solutions and get hints.
+
+[Modern Difference in Difference Designs - Workshop Syllabus](https://www.dropbox.com/s/3asu2qgpxnbe6xp/Modern_DiD_II.pdf?dl=0) - This ten-day workshop will begin with the basic DiD design using two-way fixed effects and build up to the state-of-the-art applications. We will then move into advanced extensions like matching, synthetic control, asymmetric/staggered treatments, dynamic treatments, interference, and heterogeneous treatment effects. We will work through DiD designs with practical examples, assumptions, diagnostics, and code in R and Stata (when available).
+ 
+[Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
 [Introduction to Econometrics - Bruce Hansen](https://www.ssc.wisc.edu/~bhansen/econometrics/) -  This textbook is the first in a two-part series covering the core material typically taught in a one-year Ph.D. course in econometrics.
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
 
 [Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website to make it easy to execute statistical techniques in statistical software.
-
-[Modern Difference in Difference Designs - Workshop Syllabus](https://www.dropbox.com/s/3asu2qgpxnbe6xp/Modern_DiD_II.pdf?dl=0) - This ten-day workshop will begin with the basic DiD design using two-way fixed effects and build up to the state-of-the-art applications. We will then move into advanced extensions like matching, synthetic control, asymmetric/staggered treatments, dynamic treatments, interference, and heterogeneous treatment effects. We will work through DiD designs with practical examples, assumptions, diagnostics, and code in R and Stata (when available).
- 
-[Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S20) - Econometrics with R graduate course.
 
 ## Other Data Science Tools 
 
