@@ -38,9 +38,9 @@ Goal 1:
 
 ### Variables and Sources
 
-| Variable  | Source | Period | Notes   | Priority (0 = not necessary; 1 = optional; 2 = essential) |
-|-----------|--------|--------|---------|-----------------------------------------------------------|
-|           |        |        |         |                                                           |
+| Variable  | Source | Period | Notes   | Priority (1 = optional; 2 = essential) |
+|-----------|--------|--------|---------|----------------------------------------|
+|           |        |        |         |                                        |
 
 ### Outcomes
 
