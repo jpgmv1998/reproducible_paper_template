@@ -26,11 +26,11 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflect the structure of this template.
 
-* [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) retrived from a replication package stored in the AEA Deposit at openICPSR. 
+* [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) - retrieved from a replication package stored in the AEA Deposit at openICPSR. 
 
-* Custom function to automatically generate csv files containing the time of procesing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
+* Custom function to automatically generate csv files containing the time of processing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
 
-* Incorporated routine to generate codebooks for each raw dataset after initial cleaning adapted from [R guide](https://github.com/skhiggins/R_guide).
+* Incorporated routine to generate codebooks for each raw dataset after initial cleaning - adapted from [R guide](https://github.com/skhiggins/R_guide).
   ```r   
   # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
   sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
@@ -65,11 +65,11 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
       * When working on the project, use `renv::install()` to add any extra package that was not present before, and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
    * If you are starting a fresh project and want to substitute the files with prefixes `_example_` and `_template_` while developing the project, then:
       * Execute `renv::init(bare = T)`. It will activate the renv structure to the project adding the same files as mentioned above, but the argument `bare = T` will make it skip the scan step and it will not install any package automatically.
-      * When working on the project, use `renv::install()` to add any necessary package to the project library (even if you already have it installed locally or in another project), and  use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
+      * When working on the project, use `renv::install()` to add any necessary package to the project library (even if you already have it installed locally or in another project), and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
 
 ## Files description
 
-- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHub repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other types of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and folders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folder patterns in this specific file, we add one `.gitignore` file inside each relevant folder. In this way, we can preserve the folder structure, while avoiding to commit large files.
+- `.gitignore`, a text file that tells Git which files/folders should be ignored (not included in the version control system). When using GitHub repositories it is important to be aware of its [size limits](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota) and ignore large files. Also, there are other types of files that you should ignore, see more [here](https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb). In this template the default is to ignore some R files including data output, and folders in `data` that normally contain large files (`data/raw2clean/datasetName_dataSource/input`; `data/raw2clean/datasetName_dataSource/output`; `data/projectSpecific`). Instead of adding these folder patterns in this specific file, we add one `.gitignore` file inside each relevant folder. In this way, we can preserve the folder structure, while avoiding committing large files.
 
 - `LICENSE`, a file to allow others to reproduce, distribute, or create derivatives works using this project.
 
@@ -86,7 +86,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 ## Folders structure
 
-This section explains how code and data is organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author's preferences, needs, and limitations. For other references see the [Reproducibility section](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md#reproducibility) in `randomReferences.md`.
+This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author's preferences, needs, and limitations. For other references see the [Reproducibility section](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md#reproducibility) in `randomReferences.md`.
 
 ### `code`
 
@@ -168,7 +168,7 @@ The default of this folder is to ignore all folders that normally contain large 
 
 ## File templates and examples
 
-All files with the prefix `_template_` contains the suggested structure for that type of file, and all files with the prefix `_example_` contain files adapted from its template version using real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware of adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
+All files with the prefix `_template_` contain the suggested structure for that type of file, and all files with the prefix `_example_` contain files adapted from its template version using real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware of adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
 
 ### `code`
 
