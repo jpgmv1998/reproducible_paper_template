@@ -29,8 +29,8 @@ source("code/_functions/_example_ExportTimeProcessing.R")
 library(sf) # manipulate spatial data
 library(tidyverse) # manipulate tables, works with sf
 library(sjlabelled) # label columns, prefer than Hmisc::label because has function to clear labels when necessary
-
-
+library(Hmisc)      # use `describe` function to generate codebook
+library(skimr)      # use `skim` function to generate codebook
 
 
 
@@ -113,6 +113,24 @@ clean.biomeDivision <- raw.biome
 # summary(clean.biomeDivision)
 # View(clean.biomeDivision@data)
 # plot(clean.biomeDivision$geometry)
+
+
+
+# CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+sink("data/raw2clean/_example_biomeDivision_ibge/documentation/codebook_biomeDivision.txt") # create text file to be filled with console output
+
+# if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+if (any(class(clean.biomeDivision) == "sf")) {
+
+  clean.biomeDivision %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+  clean.biomeDivision %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+
+} else {
+
+  clean.biomeDivision %>% Hmisc::describe() %>% print()
+  clean.biomeDivision %>% skimr::skim() %>% print()
+}
+sink() # close the sink
 
 
 

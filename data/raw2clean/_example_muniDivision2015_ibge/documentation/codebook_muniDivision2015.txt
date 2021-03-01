@@ -1,0 +1,52 @@
+
+> # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+> if (any(class(clean.muniDivision20 .... [TRUNCATED] 
+. 
+
+ 3  Variables      5570  Observations
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+muni_name : (cross-section) municipality name 
+       n  missing distinct 
+    5570        0     5290 
+
+lowest : ABADIA DE GOIAS     ABADIA DOS DOURADOS ABADIANIA           ABAETE              ABAETETUBA         
+highest: XIQUE-XIQUE         ZABELE              ZACARIAS            ZE DOCA             ZORTEA             
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+muni_code : (cross-section) municipality code (7-digit, IBGE) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+    5570        0     5570        1  3253591  1114809  1507778  2106191  2512126  3146280  4119190  4319312  5107301 
+
+lowest : 1100015 1100023 1100031 1100049 1100056, highest: 5222005 5222054 5222203 5222302 5300108
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+state_uf : (cross-section) state name (abbreviation) 
+       n  missing distinct 
+    5570        0       27 
+
+lowest : AC AL AM AP BA, highest: RS SC SE SP TO
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Data Summary ------------------------
+                           Values    
+Name                       Piped data
+Number of rows             5570      
+Number of columns          3         
+_______________________              
+Column type frequency:               
+  character                2         
+  numeric                  1         
+________________________             
+Group variables            None      
+
+-- Variable type: character ------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 2 x 8
+  skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+* <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
+1 muni_name             0             1     3    32     0     5290          0
+2 state_uf              0             1     2     2     0       27          0
+
+-- Variable type: numeric --------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 1 x 11
+  skim_variable n_missing complete_rate     mean      sd      p0      p25     p50      p75    p100 hist 
+* <chr>             <int>         <dbl>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>    <dbl>   <dbl> <chr>
+1 muni_code             0             1 3253591. 984910. 1100015 2512126. 3146280 4119190. 5300108 <U+2582><U+2585><U+2587><U+2585><U+2582>
+
+> sink() # close the sink

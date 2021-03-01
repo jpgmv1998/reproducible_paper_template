@@ -28,7 +28,8 @@ source("code/_functions/_example_ExportTimeProcessing.R")
 library(sf) # manipulate spatial data
 library(tidyverse) # manipulate tables, works with sf
 library(sjlabelled) # label columns, prefer than Hmisc::label because has function to clear labels when necessary
-
+library(Hmisc)      # use `describe` function to generate codebook
+library(skimr)      # use `skim` function to generate codebook
 
 
 
@@ -119,7 +120,7 @@ raw.muni <- sf::st_transform(x = raw.muni, crs = 5880) # SIRGAS 2000 / Brazil Po
 
 
 
-# REMOVE POLYGONS IDENTIFIED AS BODY OF WATERS AND NOT MUNICIPALITIES - see muniDivision2007_raw2clean
+# REMOVE POLYGONS IDENTIFIED AS BODY OF WATERS AND NOT MUNICIPALITIES
 raw.muni <- raw.muni %>% dplyr::filter(!muni_code %in% c(4300001, 4300002))
 
 
@@ -150,6 +151,24 @@ clean.muniDivision2015 <- raw.muni
 # summary(clean.muniDivision2015)
 # View(clean.muniDivision2015)
 # plot(clean.muniDivision2015$geoemtry)
+
+
+
+# CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+sink("data/raw2clean/_example_muniDivision2015_ibge/documentation/codebook_muniDivision2015.txt") # create text file to be filled with console output
+
+# if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+if (any(class(clean.muniDivision2015) == "sf")) {
+
+  clean.muniDivision2015 %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+  clean.muniDivision2015 %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+
+} else {
+
+  clean.muniDivision2015 %>% Hmisc::describe() %>% print()
+  clean.muniDivision2015 %>% skimr::skim() %>% print()
+}
+sink() # close the sink
 
 
 

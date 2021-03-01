@@ -25,9 +25,11 @@ source("code/_functions/ExportTimeProcessing.R")
 
 
 # LIBRARIES
+library(tidyverse)  # manipulate tables, works with sf
+library(sjlabelled) # label columns, preferred than Hmisc::label because has function to clear labels when necessary
+library(Hmisc)      # use `describe` function to generate codebook
+library(skimr)      # use `skim` function to generate codebook
 library()
-
-
 
 
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
@@ -107,6 +109,24 @@ clean.datasetName <- raw.datasetNameAbbrev
 # summary(clean.datasetName)
 # View(clean.datasetName)
 # plot(clean.datasetName$geometry) # only for spatial data (shapefile)
+
+
+
+# CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
+
+# if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+if (any(class(clean.datasetName) == "sf")) {
+
+  clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+  clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+
+} else {
+
+  clean.datasetName %>% Hmisc::describe() %>% print()
+  clean.datasetName %>% skimr::skim() %>% print()
+}
+sink() # close the sink
 
 
 

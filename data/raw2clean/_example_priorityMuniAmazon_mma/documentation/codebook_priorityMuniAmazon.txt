@@ -1,0 +1,117 @@
+
+> # if the object is spatial (sf class) drop geometry column to simplify the codebook and avoid error in describe
+> if (any(class(clean.priorityMuniAm .... [TRUNCATED] 
+. 
+
+ 8  Variables      60  Observations
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+state_uf : (cross-section) state name (abbreviation) 
+       n  missing distinct 
+      60        0        6 
+
+lowest : AM MA MT PA RO, highest: MA MT PA RO RR
+                                              
+Value         AM    MA    MT    PA    RO    RR
+Frequency      5     2    24    21     7     1
+Proportion 0.083 0.033 0.400 0.350 0.117 0.017
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+muni_name : (cross-section) municipality name 
+       n  missing distinct 
+      60        0       60 
+
+lowest : ALTA FLORESTA         ALTAMIRA              ALTO BOA VISTA        AMARANTE DO MARANHAO  ANAPU                
+highest: SENADOR JOSE PORFIRIO TAILANDIA             TAPURAH               ULIANOPOLIS           VILA RICA            
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+entry_year : (calendar year) year when the municipality was placed on the list 
+       n  missing distinct     Info     Mean      Gmd 
+      60        0        5    0.795     2010    2.778 
+
+lowest : 2008 2009 2011 2012 2017, highest: 2008 2009 2011 2012 2017
+                                        
+Value       2008  2009  2011  2012  2017
+Frequency     35     8     7     2     8
+Proportion 0.583 0.133 0.117 0.033 0.133
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+entry_lawOrdinance : (calendar date) law ordinance name that placed the municipality on the list 
+       n  missing distinct 
+      60        0        5 
+
+lowest : Portaria n 102/2009 Portaria n 175/2011 Portaria n 28/2008  Portaria n 323/2012 Portaria n 361/2017
+highest: Portaria n 102/2009 Portaria n 175/2011 Portaria n 28/2008  Portaria n 323/2012 Portaria n 361/2017
+                                                                                                              
+Value      Portaria n 102/2009 Portaria n 175/2011  Portaria n 28/2008 Portaria n 323/2012 Portaria n 361/2017
+Frequency                    8                   7                  35                   2                   8
+Proportion               0.133               0.117               0.583               0.033               0.133
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+exit_year : (calendar year) year when the municipality was removed from the list 
+       n  missing distinct     Info     Mean      Gmd 
+      21       39        5    0.873     2014      2.8 
+
+lowest : 2010 2011 2012 2013 2017, highest: 2010 2011 2012 2013 2017
+                                        
+Value       2010  2011  2012  2013  2017
+Frequency      1     1     4     5    10
+Proportion 0.048 0.048 0.190 0.238 0.476
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+exit_lawOrdinance : (calendar date) law ordinance name that removed the municipality from the list 
+       n  missing distinct 
+      21       39        6 
+
+lowest : Portaria n 139/2011 Portaria n 187/2012 Portaria n 324/2012 Portaria n 362/2017 Portaria n 412/2013
+highest: Portaria n 187/2012 Portaria n 324/2012 Portaria n 362/2017 Portaria n 412/2013 Portaria n 67/2010 
+                                                                                                                                  
+Value      Portaria n 139/2011 Portaria n 187/2012 Portaria n 324/2012 Portaria n 362/2017 Portaria n 412/2013  Portaria n 67/2010
+Frequency                    1                   2                   2                  10                   5                   1
+Proportion               0.048               0.095               0.095               0.476               0.238               0.048
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+entry_year_prodes : (PRODES year) year when the municipality was placed on the list 
+       n  missing distinct     Info     Mean      Gmd 
+      60        0        5    0.795     2010     3.06 
+
+lowest : 2008 2009 2011 2013 2018, highest: 2008 2009 2011 2013 2018
+                                        
+Value       2008  2009  2011  2013  2018
+Frequency     35     8     7     2     8
+Proportion 0.583 0.133 0.117 0.033 0.133
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+exit_year_prodes : (PRODES year) year when the municipality was removed from the list 
+       n  missing distinct     Info     Mean      Gmd 
+      21       39        6    0.879     2015    3.124 
+
+lowest : 2010 2011 2012 2013 2014, highest: 2011 2012 2013 2014 2018
+                                              
+Value       2010  2011  2012  2013  2014  2018
+Frequency      1     1     2     2     5    10
+Proportion 0.048 0.048 0.095 0.095 0.238 0.476
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Data Summary ------------------------
+                           Values    
+Name                       Piped data
+Number of rows             60        
+Number of columns          8         
+_______________________              
+Column type frequency:               
+  character                4         
+  numeric                  4         
+________________________             
+Group variables            None      
+
+-- Variable type: character ------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 4 x 8
+  skim_variable      n_missing complete_rate   min   max empty n_unique whitespace
+* <chr>                  <int>         <dbl> <int> <int> <int>    <int>      <int>
+1 state_uf                   0          1        2     2     0        6          0
+2 muni_name                  0          1        4    25     0       60          0
+3 entry_lawOrdinance         0          1       18    19     0        5          0
+4 exit_lawOrdinance         39          0.35    18    19     0        6          0
+
+-- Variable type: numeric --------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 4 x 11
+  skim_variable     n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100 hist 
+* <chr>                 <int>         <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <chr>
+1 entry_year                0          1    2010.  3.06  2008  2008  2008  2011  2017 <U+2587><U+2581><U+2581><U+2581><U+2582>
+2 exit_year                39          0.35 2014.  2.56  2010  2012  2013  2017  2017 <U+2582><U+2583><U+2583><U+2581><U+2587>
+3 entry_year_prodes         0          1    2010.  3.41  2008  2008  2008  2011  2018 <U+2587><U+2581><U+2581><U+2581><U+2582>
+4 exit_year_prodes         39          0.35 2015.  2.83  2010  2013  2014  2018  2018 <U+2582><U+2583><U+2583><U+2581><U+2587>
+
+> sink() # close the sink

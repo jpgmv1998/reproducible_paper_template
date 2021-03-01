@@ -1,0 +1,53 @@
+
+> # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+> if (any(class(clean.biomeDivision) .... [TRUNCATED] 
+. 
+
+ 2  Variables      6  Observations
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+biome_name : (cross-section) biome name 
+       n  missing distinct 
+       6        0        6 
+
+lowest : AMAZON          ATLANTIC FOREST CAATINGA        CERRADO         PAMPA          
+highest: ATLANTIC FOREST CAATINGA        CERRADO         PAMPA           PANTANAL       
+                                                                                                          
+Value               AMAZON ATLANTIC FOREST        CAATINGA         CERRADO           PAMPA        PANTANAL
+Frequency                1               1               1               1               1               1
+Proportion           0.167           0.167           0.167           0.167           0.167           0.167
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+biome_code : (cross-section) biome code 
+       n  missing distinct     Info     Mean      Gmd 
+       6        0        6        1      3.5    2.333 
+
+lowest : 1 2 3 4 5, highest: 2 3 4 5 6
+                                              
+Value          1     2     3     4     5     6
+Frequency      1     1     1     1     1     1
+Proportion 0.167 0.167 0.167 0.167 0.167 0.167
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Data Summary ------------------------
+                           Values    
+Name                       Piped data
+Number of rows             6         
+Number of columns          2         
+_______________________              
+Column type frequency:               
+  character                1         
+  numeric                  1         
+________________________             
+Group variables            None      
+
+-- Variable type: character ------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 1 x 8
+  skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+* <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
+1 biome_name            0             1     5    15     0        6          0
+
+-- Variable type: numeric --------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 1 x 11
+  skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100 hist 
+* <chr>             <int>         <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <chr>
+1 biome_code            0             1   3.5  1.87     1  2.25   3.5  4.75     6 <U+2587><U+2583><U+2583><U+2583><U+2583>
+
+> sink() # close the sink

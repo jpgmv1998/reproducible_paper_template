@@ -31,19 +31,19 @@ Feedbacks and suggestions are welcome to improve this project. :rocket:
 
 * Incorporated routine to generate codebooks for each raw dataset after initial cleaning adapted from [R guide](https://github.com/skhiggins/R_guide).
   ```r   
-   # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+  # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
   sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
-
+  
   # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
   if (any(class(clean.datasetName) == "sf")) {
-
-    clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe()
-    clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim()
-
+  
+    clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+    clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+  
   } else {
-
-    clean.datasetName %>% Hmisc::describe()
-    clean.datasetName %>% skimr::skim()
+  
+    clean.datasetName %>% Hmisc::describe() %>% print()
+    clean.datasetName %>% skimr::skim() %>% print()
   }
   sink() # close the sink
   ```

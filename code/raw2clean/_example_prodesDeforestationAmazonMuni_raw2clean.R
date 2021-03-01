@@ -27,7 +27,8 @@ source("code/_functions/_example_ExportTimeProcessing.R")
 # LIBRARIES
 library(tidyverse) # manipulate tables, works with sf
 library(sjlabelled) # sjlabelled::set_label columns, prefer than Hmisc::sjlabelled::set_label because has function to clear sjlabelled::set_labels when necessary
-
+library(Hmisc)      # use `describe` function to generate codebook
+library(skimr)      # use `skim` function to generate codebook
 
 
 
@@ -143,6 +144,24 @@ clean.prodesDeforestationAmazonMuni <- raw.prodes
 # POST-TREATMENT OVERVIEW
 # summary(clean.prodesDeforestationAmazonMuni)
 # View(clean.prodesDeforestationAmazonMuni)
+
+
+
+# CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+sink("data/raw2clean/_example_prodesDeforestationAmazonMuni_inpe/documentation/codebook_prodesDeforestationAmazonMuni.txt") # create text file to be filled with console output
+
+# if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+if (any(class(clean.prodesDeforestationAmazonMuni) == "sf")) {
+
+  clean.prodesDeforestationAmazonMuni %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+  clean.prodesDeforestationAmazonMuni %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+
+} else {
+
+  clean.prodesDeforestationAmazonMuni %>% Hmisc::describe() %>% print()
+  clean.prodesDeforestationAmazonMuni %>% skimr::skim() %>% print()
+}
+sink() # close the sink
 
 
 

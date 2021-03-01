@@ -25,10 +25,11 @@ source("code/_functions/_example_ExportTimeProcessing.R")
 
 
 # LIBRARIES
-library(tabulizer) # extract table from pdf
-library(tidyverse) # manipulate tables, works with sf
+library(tabulizer)  # extract table from pdf
+library(tidyverse)  # manipulate tables, works with sf
 library(sjlabelled) # label columns, preferred than Hmisc::label because has function to clear labels when necessary
-
+library(Hmisc)      # use `describe` function to generate codebook
+library(skimr)      # use `skim` function to generate codebook
 
 
 
@@ -167,6 +168,21 @@ clean.priorityMuniAmazon <- raw.priorityMuniAmazon
 
 
 
+# CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+sink("data/raw2clean/_example_priorityMuniAmazon_mma/documentation/codebook_priorityMuniAmazon.txt") # create text file to be filled with console output
+
+# if the object is spatial (sf class) drop geometry column to simplify the codebook and avoid error in describe
+if (any(class(clean.priorityMuniAmazon) == "sf")) {
+
+  clean.priorityMuniAmazon %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+  clean.priorityMuniAmazon %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+
+} else {
+
+  clean.priorityMuniAmazon %>% Hmisc::describe() %>% print()
+  clean.priorityMuniAmazon %>% skimr::skim() %>% print()
+}
+sink() # close the sink
 
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------

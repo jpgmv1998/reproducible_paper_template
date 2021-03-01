@@ -1,0 +1,129 @@
+
+> # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+> if (any(class(clean.prodesDeforest .... [TRUNCATED] 
+. 
+
+ 12  Variables      15200  Observations
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+muni_name : (cross-section) municipality name 
+       n  missing distinct 
+   15200        0      755 
+
+lowest : ABAETETUBA      ABEL FIGUEIREDO ABREULANDIA     ACAILANDIA      ACARA          
+highest: WANDERLANDIA    XAMBIOA         XAPURI          XINGUARA        ZE DOCA        
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+muni_code : (cross-section) municipality code (7-digit, IBGE) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0      760        1  2292061  1289788  1101297  1300083  1502744  1712430  2109214  5105514  5107157 
+
+lowest : 1100015 1100023 1100031 1100049 1100056, highest: 5108600 5108808 5108857 5108907 5108956
+                                                                                  
+Value      1100000 1200000 1300000 1400000 1500000 1600000 1700000 2100000 5100000
+Frequency     1040     440    1240     300    2860     320    2780    3400    2820
+Proportion   0.068   0.029   0.082   0.020   0.188   0.021   0.183   0.224   0.186
+
+For the frequency table, variable is rounded to the nearest 50000
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+state_uf : (cross-section) state name (abbreviation) 
+       n  missing distinct 
+   15200        0        9 
+
+lowest : AC AM AP MA MT, highest: MT PA RO RR TO
+                                                                
+Value         AC    AM    AP    MA    MT    PA    RO    RR    TO
+Frequency    440  1240   320  3400  2820  2860  1040   300  2780
+Proportion 0.029 0.082 0.021 0.224 0.186 0.188 0.068 0.020 0.183
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_muniArea : (cross-section) municipal area (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0      724        1     6668     9118    323.4    452.8    891.8   2379.5   6422.0  14360.2  25583.0 
+
+lowest :     64    103    134    147    150, highest:  90962 107782 112476 124163 159540
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+year : (calendar or PRODES year) year of reference 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0       20    0.998     2010     6.65     2001     2002     2005     2010     2014     2017     2018 
+
+lowest : 2000 2001 2002 2003 2004, highest: 2015 2016 2017 2018 2019
+                                                                                                              
+Value      2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019
+Frequency   760  760  760  760  760  760  760  760  760  760  760  760  760  760  760  760  760  760  760  760
+Proportion 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_deforestAccumulated : (PRODES year) total deforested area through Jul/t-1 (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0     8760    0.998    942.5     1177      0.0      0.0    118.4    449.6   1245.8   2451.2   3404.0 
+
+lowest :     0.0     0.1     0.3     0.4     0.5, highest: 17885.4 18200.4 18440.2 18733.9 19277.8
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_deforestIncrement : (PRODES year) increment in deforested area from Aug/t-1 through Jul/t (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   14440      760     1368    0.978     18.7    32.23      0.0      0.0      0.0      1.2      9.7     41.3     85.5 
+
+lowest :    0.0    0.1    0.2    0.3    0.4, highest: 1407.9 1601.1 1633.3 1690.4 1808.6
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_forest : (PRODES year) remaining primary forest area (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0     8681    0.995     3966     6767      0.0      0.0     17.1    219.9   2299.2   9277.0  20432.2 
+
+lowest :      0.0      0.1      0.2      0.3      0.4, highest: 149423.6 150163.9 150776.2 151453.9 152013.6
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_cloud : (PRODES year) area covered by clouds during remote sensing (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0     2689    0.703      328    627.3    0.000    0.000    0.000    0.000    5.625  253.010 1259.245 
+
+lowest :     0.0     0.1     0.2     0.3     0.4, highest: 43129.4 46707.8 53742.7 63043.8 68394.9
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_nonobserved : (PRODES year) area blocked from view during remote sensing (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0     1087    0.869    105.4    202.2     0.00     0.00     0.00     0.00     1.60    64.27   417.90 
+
+lowest :  -379.6  -333.7  -130.4  -123.4     0.0, highest:  5314.7  5827.8  9674.9 11320.9 11321.1
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_nonforest : (cross-section) area originally covered by non-tropical forest vegetation (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0      580    0.995     1265     1914      0.0      0.0      4.6    195.9   1436.7   3765.4   5965.0 
+
+lowest :     0.0     0.1     0.2     0.3     0.4, highest: 14489.7 15557.9 16647.8 17060.1 19780.8
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+prodesAmazon_hidrography : (cross-section) area covered by bodies of water (sq km; PRODES) 
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75      .90      .95 
+   15200        0      381    0.945    148.6    257.3     0.00     0.00     0.00     4.35    65.03   432.09   850.55 
+
+lowest :    0.0    0.1    0.2    0.3    0.4, highest: 2761.8 3421.8 3761.7 3887.8 4499.9
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Data Summary ------------------------
+                           Values    
+Name                       Piped data
+Number of rows             15200     
+Number of columns          12        
+_______________________              
+Column type frequency:               
+  character                2         
+  numeric                  10        
+________________________             
+Group variables            None      
+
+-- Variable type: character ------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 2 x 8
+  skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+* <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
+1 muni_name             0             1     4    32     0      755          0
+2 state_uf              0             1     2     2     0        9          0
+
+-- Variable type: numeric --------------------------------------------------------------------------------------------------------------------------------
+# A tibble: 10 x 11
+   skim_variable                    n_missing complete_rate      mean         sd       p0       p25        p50        p75     p100 hist 
+ * <chr>                                <int>         <dbl>     <dbl>      <dbl>    <dbl>     <dbl>      <dbl>      <dbl>    <dbl> <chr>
+ 1 muni_code                                0          1    2292061.  1375418.   1100015  1502744.  1712430.   2109214.   5108956  <U+2587><U+2583><U+2581><U+2581><U+2582>
+ 2 prodesAmazon_muniArea                    0          1       6668.    13858.        64      892.     2380.      6422     159540  <U+2587><U+2581><U+2581><U+2581><U+2581>
+ 3 year                                     0          1       2010.        5.77    2000     2005.     2010.      2014.      2019  <U+2587><U+2587><U+2587><U+2587><U+2587>
+ 4 prodesAmazon_deforestAccumulated         0          1        942.     1347.         0      118.      450.      1246.     19278. <U+2587><U+2581><U+2581><U+2581><U+2581>
+ 5 prodesAmazon_deforestIncrement         760          0.95      18.7      68.7        0        0         1.2        9.7     1809. <U+2587><U+2581><U+2581><U+2581><U+2581>
+ 6 prodesAmazon_forest                      0          1       3966.    11911.         0       17.1     220.      2299.    152014. <U+2587><U+2581><U+2581><U+2581><U+2581>
+ 7 prodesAmazon_cloud                       0          1        328.     2027.         0        0         0          5.62   68395. <U+2587><U+2581><U+2581><U+2581><U+2581>
+ 8 prodesAmazon_nonobserved                 0          1        105.      589.      -380.       0         0          1.6    11321. <U+2587><U+2581><U+2581><U+2581><U+2581>
+ 9 prodesAmazon_nonforest                   0          1       1265.     2402.         0        4.6     196.      1437.     19781. <U+2587><U+2581><U+2581><U+2581><U+2581>
+10 prodesAmazon_hidrography                 0          1        149.      430.         0        0         4.35      65.0     4500. <U+2587><U+2581><U+2581><U+2581><U+2581>
+
+> sink() # close the sink
