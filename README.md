@@ -39,12 +39,12 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
   if (any(class(clean.datasetName) == "sf")) {
   
     clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
-    clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+    clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim()     %>% print()
   
   } else {
   
     clean.datasetName %>% Hmisc::describe() %>% print()
-    clean.datasetName %>% skimr::skim() %>% print()
+    clean.datasetName %>% skimr::skim()     %>% print()
   }
   sink() # close the sink
   ```
