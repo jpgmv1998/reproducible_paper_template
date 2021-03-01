@@ -25,6 +25,12 @@ Feedbacks and suggestions are welcome to improve this project. :rocket:
 
 * [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflect the structure of this template.
 
+* [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) retrived from a replication package stored in the AEA Deposit at openICPSR. 
+
+* Custom function to automatically generate csv files containing the time of procesing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
+
+* Incorporated routine to generate codebooks for each raw dataset after initial cleaning from [R guide](https://github.com/skhiggins/R_guide).
+
 Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
 ## How to use
@@ -56,6 +62,8 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 - `randomReferences.md`, a file intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc) in markdown format.
 
 - `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
+
+- `_example_README.md`, an example file for a replication README retrieved from the [AEA Deposit](https://www.openicpsr.org/openicpsr/search/aea/studies).
 
 - `brainstorming`, a folder to store research ideas, peer feedback, etc. Contains:
   * `_template_research_project.Rmd`, a template (in Rmarkdown format) to organize and structure the first ideas about the project (draft version). Produces `_template_research_project.pdf` as output.
