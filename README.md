@@ -29,7 +29,14 @@ Feedbacks and suggestions are welcome to improve this project. :rocket:
 
 * Custom function to automatically generate csv files containing the time of procesing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
 
-* Incorporated routine to generate codebooks for each raw dataset after initial cleaning from [R guide](https://github.com/skhiggins/R_guide).
+* Incorporated routine to generate codebooks for each raw dataset after initial cleaning adapted from [R guide](https://github.com/skhiggins/R_guide).
+  ```r   
+  # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+  sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
+  clean.datasetName %>% Hmisc::describe()
+  clean.datasetName %>% skimr::skim()
+  sink() # close the sink
+  ```
 
 Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
