@@ -4,7 +4,7 @@
 # LEAD: JOAO VIEIRA
 #
 # > THIS SCRIPT
-# AIM: DEFINE SAMPLE AND SAVE IT IN SPATIAL, CROSS-SECTION AND PANEL FORMATS
+# AIM: CONSTRUCT FINAL PANEL SAMPLE FOR ANALYSIS AND ADAPT IT TO SPATIAL AND CROSS-SECTION FORMATS
 # AUTHOR: JOAO VIEIRA
 #
 # > NOTES
@@ -73,7 +73,8 @@ panel.forAnalysis.muniLevel <-
 
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
-# LABELS - all labels should already be set but sometimes it is necessary to clear them before merging and here you can set them back again
+# LABELS - all labels should already be set but sometimes it is necessary to clear them before merging and here you can set them back again. >
+# Also if you are planning to export the dataset for analysis to Stata you might need to shorten the labels to fit in its characters limits
 
 
 
@@ -97,7 +98,7 @@ crossSection.forAnalysis.muniLevel <-
 
 # LABELS - set labels for new variables created
 sjlabelled::set_label(crossSection.forAnalysis.muniLevel$prodesAmazon_totalDeforestIncrement)   <- "(cross-section) total increment in deforested area from Aug/2000 through Jul/2019 (sq km; PRODES)"
-sjlabelled::set_label(crossSection.forAnalysis.muniLevel$prodesAmazon_totalDeforestAccumulated) <- "(cross-section) total deforested through Jul/2019 (sq km; PRODES)"
+sjlabelled::set_label(crossSection.forAnalysis.muniLevel$prodesAmazon_totalDeforestAccumulated) <- "(cross-section) total accumulated deforested area through Jul/2019 (sq km; PRODES)"
 
 
 

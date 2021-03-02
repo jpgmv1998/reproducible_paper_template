@@ -17,7 +17,7 @@
 # SETUP ----------------------------------------------------------------------------------------------------------------------------------------------
 
 # START TIME
-tictoc::tic(msg = "sampleConstruction_projectSpecific_muniLevel script", log = T)
+tictoc::tic(msg = "sampleConstruction_projectSpecific_folderName script", log = T)
 
 # SOURCES
 source("code/_functions/ExportTimeProcessing.R")
@@ -55,7 +55,7 @@ dataFormat.sample.folderName <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(dataFormat.sample.folderName$column1)         <- "description of column 1"
+sjlabelled::set_label(dataFormat.sample.folderName$column1) <- "description of column 1"
 
 
 
@@ -86,7 +86,7 @@ save(dataFormat.sample.folderName,
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("projectSpecific/muniLevel")
+ExportTimeProcessing("projectSpecific/folderName")
 
 
 

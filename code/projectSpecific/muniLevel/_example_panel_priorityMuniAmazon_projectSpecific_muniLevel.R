@@ -60,15 +60,16 @@ panel.priorityMuniAmazon.muniLevel <-
 
 panel.priorityMuniAmazon.muniLevel <-
   panel.priorityMuniAmazon.muniLevel %>%
-  mutate(d_priorityMuniAmazonActive = if_else(year >= entry_year & !is.na(entry_year) & # active status indicator creation
-                                              (year < exit_year | is.na(exit_year)),
-                                              1, 0)) %>%
-  mutate(d_priorityMuniAmazonActive_prodes = if_else(year >= entry_year_prodes & !is.na(entry_year_prodes) & # active status indicator creation
+  mutate(d_priorityMuniAmazonActive        = if_else(year >= entry_year & !is.na(entry_year) &
+                                                    (year < exit_year | is.na(exit_year)),
+                                                     1, 0)) %>% # active status indicator creation
+  mutate(d_priorityMuniAmazonActive_prodes = if_else(year >= entry_year_prodes & !is.na(entry_year_prodes) &
                                                     (year < exit_year_prodes | is.na(exit_year_prodes)),
-                                              1, 0)) %>%
+                                                     1, 0)) %>% # active status indicator creation (prodes)
   group_by(muni_code) %>% # define cross-section level
-  mutate(d_priorityMuniAmazonEver = if_else(any(d_priorityMuniAmazonActive == 1), 1, 0)) %>% # ever status indicator creation
-  ungroup() %>%  # remove cross-section level\
+  mutate(d_priorityMuniAmazonEver = if_else(any(d_priorityMuniAmazonActive == 1),
+                                            1, 0)) %>% # ever status indicator creation
+  ungroup() %>%  # remove cross-section level
   select(muni_code, year, starts_with("d_priority")) # select column of interest
 
 
@@ -78,10 +79,10 @@ panel.priorityMuniAmazon.muniLevel <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$muni_code)                  <- "municipality code (7-digit, IBGE - 2015)"
-sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$d_priorityMuniAmazonActive) <- "(calendar year) =1 if the muni was in the Amazon Priority list in that year, =0 otherwise"
+sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$muni_code)                         <- "municipality code (7-digit, IBGE - 2015)"
+sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$d_priorityMuniAmazonActive)        <- "(calendar year) =1 if the muni was in the Amazon Priority list in that year, =0 otherwise"
 sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$d_priorityMuniAmazonActive_prodes) <- "(PRODES year) =1 if the muni was in the Amazon Priority list in that year, =0 otherwise"
-sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$d_priorityMuniAmazonEver)   <- "=1 if the muni was ever in the Amazon Priority list, =0 otherwise"
+sjlabelled::set_label(panel.priorityMuniAmazon.muniLevel$d_priorityMuniAmazonEver)          <- "=1 if the muni was ever in the Amazon Priority list, =0 otherwise"
 
 
 # POST-TREATMENT OVERVIEW

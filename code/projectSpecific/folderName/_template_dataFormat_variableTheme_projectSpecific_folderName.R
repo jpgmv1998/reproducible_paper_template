@@ -33,7 +33,7 @@ library()
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
 # DATA FORMAT SAMPLE
-load("data/projectSpecific/muniLevel/dataFormat_sample_folderName.Rdata")
+load("data/projectSpecific/folderName/dataFormat_sample_folderName.Rdata")
 
 
 
@@ -59,7 +59,7 @@ dataFormat.variableTheme.folderName <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(dataFormat.variableTheme.folderName$column1)                  <- "description of column 1"
+sjlabelled::set_label(dataFormat.variableTheme.folderName$column1) <- "description of column 1"
 
 
 

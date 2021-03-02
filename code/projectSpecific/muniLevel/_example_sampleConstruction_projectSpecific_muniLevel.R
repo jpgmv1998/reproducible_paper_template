@@ -121,7 +121,8 @@ crossSection.sample.muniLevel <-
 
 # create panel data from crossSection and add missing label
 panel.sample.muniLevel <- tidyr::expand_grid(crossSection.sample.muniLevel, year = 2001:2019)
-sjlabelled::set_label(panel.sample.muniLevel$year)     <- "year of reference (calendar or PRODES year)"
+
+sjlabelled::set_label(panel.sample.muniLevel$year) <- "year of reference (calendar or PRODES year)"
 
 
 

@@ -1,6 +1,6 @@
 # MUNICIPALITY-LEVEL LEGAL AMAZON LAND COVER
 # files: pattern "DesmatamentoMunicipiosYYYY.txt" with YYYY varying from 2000-2019
-# content: land cover at the municipality level (aggregation), Legal Amazon (extent), yearly 2000-2019 (frequency)
+# content: land cover at the municipality level (aggregation), Legal Amazon (extent), 2000-2019 (period of reference), yearly (frequency)
 # source: Instituto Nacional de Pesquisas Espaciais (INPE) 
 # available at: http://www.dpi.inpe.br/prodesdigital/prodesmunicipal.php
 # raw data downloaded on: OCT/24/2020
