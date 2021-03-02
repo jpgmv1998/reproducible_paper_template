@@ -22,32 +22,34 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * [Code and data folders structure](#folders-structure) - suggestion of folder structure to organize all code and data files.
 
-* [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are adaptions of its template version using real data.
+* [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are applcations of the templates using real data.
 
-* [Replication Archive  README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflect the structure of this template.
+* [Replication Archive README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflect the structure of this template.
 
-* [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) - retrieved from a replication package stored in the AEA Deposit at openICPSR. 
+* [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) - Application of the provided README template based on the examples present in this project. 
 
 * Custom function to automatically generate csv files containing the time of processing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
 
-* Incorporated routine to generate codebooks for each raw dataset after initial cleaning - adapted from [R guide](https://github.com/skhiggins/R_guide).
-  ```r   
-  # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
-  sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
-  
-  # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
-  if (any(class(clean.datasetName) == "sf")) {
-  
-    clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
-    clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim()     %>% print()
-  
-  } else {
-  
-    clean.datasetName %>% Hmisc::describe() %>% print()
-    clean.datasetName %>% skimr::skim()     %>% print()
-  }
-  sink() # close the sink
-  ```
+* For each raw dataset:
+    - Added `_metadata` template and examples with data description, access, and citation to be referenced in the Data Availability Statement section of the replication README.
+    - Incorporated routine to generate codebooks after initial cleaning - adapted from [R guide](https://github.com/skhiggins/R_guide).
+    ```r   
+    # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
+    sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
+
+    # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
+    if (any(class(clean.datasetName) == "sf")) {
+
+      clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+      clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim()     %>% print()
+
+    } else {
+
+      clean.datasetName %>% Hmisc::describe() %>% print()
+      clean.datasetName %>% skimr::skim()     %>% print()
+    }
+    sink() # close the sink
+    ```
 
 ## How to use
 
@@ -168,7 +170,7 @@ The default of this folder is to ignore all folders that normally contain large 
 
 ## File templates and examples
 
-All files with the prefix `_template_` contain the suggested structure for that type of file, and all files with the prefix `_example_` contain files adapted from its template version using real data. When using this template all these files should be replaced (adjusting the file name using the pattern without the prefix) or removed from your project. Also, the example scripts may use libraries that you won't use in your project so you should beware of adding unnecessary packages to `renv` management, one alternative is to make a copy of the project to test these features.
+All files with the prefix `_template_` contain the suggested structure for that type of file, and all files with the prefix `_example_` contain files adapted from its template version using real data. When using this template all these files should be replaced or removed from your project. 
 
 ### `code`
 
@@ -237,7 +239,7 @@ All files with the prefix `_template_` contain the suggested structure for that 
   
   * For each example folder, you should follow the download instructions in `documentation/_metadata.txt` and save the data in the `input` folder. The `output` folder will be automatically populated when running the `_example_masterfile_raw2clean.R`.
   
-  * The template `_template_datasetName_dataSource` contains a skeleton of the `_metadata.txt` file and the folder structure to be used for your own datasets.
+  * The template `_template_datasetName_dataSource` contains a skeleton of the `_metadata.txt` file in `documentation` and the folder structure to be used for your own datasets.
 
 * `projectSpecific` - a folder containing:
     
