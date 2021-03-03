@@ -55,7 +55,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * Select use this template on the upper right corner (or click [here](https://github.com/jpgmv1998/reproducible_paper_template/generate)) and follow the instructions to create your own GitHub repository.
 
-* If you want to use version control within the Rstudio project with git see this [tutorial](https://happygitwithr.com/) then:
+* If you want to use version control within the RStudio project with git see this [tutorial](https://happygitwithr.com/) then:
     * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
 
 * When using R always open RStudio using the .Rproj file.
