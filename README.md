@@ -22,16 +22,16 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * [Code and data folders structure](#folders-structure) - suggestion of folder structure to organize all code and data files.
 
-* [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are applcations of the templates using real data.
+* [File templates](#file-templates) - template files contain the suggested style structure for that type of file.
 
 * [Replication Archive README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. 
 
-* [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) - Application of the provided README template based on the examples present in this project. 
+* [Replication Package example](https://github.com/jpgmv1998/reproducible_paper_example) - Application of this template using real data. It simulates a replication package in a stage ready to be deposited, thus containing only the necessary files to replicate the analysis (code and data folders; README; renv structure; license; and Rproj). Code, data, and README examples may be useful to see how the proposed structure works in "practice". The GitHub repository does not contain the datafiles because of its hard limit of 100Mb for individual files. So a version with all the data is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4579463.svg)](https://doi.org/10.5281/zenodo.4579463)
 
 * Custom function to automatically generate csv files containing the time of processing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
 
 * For each raw dataset:
-    - Added `_metadata` template and examples with data description, access, and citation to be referenced in the Data Availability Statement section of the replication README.
+    - Added `_metadata` template with data description, access, and citation to be referenced in the Data Availability Statement section of the replication README.
     - Incorporated routine to generate codebooks after initial cleaning - adapted from [R guide](https://github.com/skhiggins/R_guide).
     ```r   
     # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
@@ -62,12 +62,9 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
    * Open RProject and execute `install.packages("renv")` if you do not have it installed yet.
-   * If you already substituted all files with prefixes `_example_` and `_template_` with your own scripts, then:
-      * Execute `renv::init()` to develop a "local library" of the packages employed in a project. It will create the following files and folders in the project directory: `renv.lock`, `.Rprofile`, and `renv/.` Binaries of the project's packages will be stored in the `renv/library/` subfolder.
-      * When working on the project, use `renv::install()` to add any extra package that was not present before, and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
-   * If you are starting a fresh project and want to substitute the files with prefixes `_example_` and `_template_` while developing the project, then:
-      * Execute `renv::init(bare = T)`. It will activate the renv structure to the project adding the same files as mentioned above, but the argument `bare = T` will make it skip the scan step and it will not install any package automatically.
-      * When working on the project, use `renv::install()` to add any necessary package to the project library (even if you already have it installed locally or in another project), and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
+   * Execute `renv::init()` to develop a "local library" of the packages employed in a project. It will create the following files and folders in the project directory: `renv.lock`, `.Rprofile`, and `renv/.` Binaries of the project's packages will be stored in the `renv/library/` subfolder.
+   * When working on the project, use `renv::install()` to add any extra package that was not present before, and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
+   * If you want to collaborate with others using renv see this [vignette](https://rstudio.github.io/renv/articles/collaborating.html).
 
 ## Files description
 
@@ -81,14 +78,12 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 - `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
 
-- `_example_README.md`, an example file for a replication README retrieved from the [AEA Deposit](https://www.openicpsr.org/openicpsr/search/aea/studies).
-
 - `brainstorming`, a folder to store research ideas, peer feedback, etc. Contains:
   * `_template_research_project.Rmd`, a template (in Rmarkdown format) to organize and structure the first ideas about the project (draft version). Produces `_template_research_project.pdf` as output.
 
 ## Folders structure
 
-This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are examples and templates, thus they have the prefixes `_example_` or `_template_` in their names, and will be described in the [File templates and examples](#file-templates-and-examples) section. As noted before this template is very biased towards the author's preferences, needs, and limitations. For other references see the [Reproducibility section](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md#reproducibility) in `randomReferences.md`.
+This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are templates, thus they have the prefix `_template_` in their names, and are described in the [File templates](#file-templates) section. As noted before this template is very biased towards the author's preferences, needs, and limitations. For other references see the [Reproducibility section](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md#reproducibility) in `randomReferences.md`.
 
 ### `code`
 
@@ -137,7 +132,7 @@ The default of this folder is to ignore all folders that normally contain large 
 
     * one `data/raw2clean/datasetName_dataSource` folder for each dataset. Each folder has three folders: 
     
-        * `documentation` - containing always the `_metadata` file with information about the download and the dataset, additionally can contain other relevant documents.
+        * `documentation` - containing always the `_metadata` text file that describes the data, provides access instructions, and an example of citation following the AEA guideline. It also contains `"codebook_datasetName.txt"` text file with summary statistics and variables description. Additionally can contain other relevant documents.
         
         * `input` - containing the raw data stored in the original format you should never change it, only unzip and extract the files from the downloaded folder when necessary.
         
@@ -168,39 +163,19 @@ The default of this folder is to ignore all folders that normally contain large 
 * `_temp` - a folder to store temporary files (e.g. files automatically generated when processing raster data)
   
 
-## File templates and examples
+## File templates 
 
-All files with the prefix `_template_` contain the suggested structure for that type of file, and all files with the prefix `_example_` contain files adapted from its template version using real data. When using this template all these files should be replaced or removed from your project. 
+All files with the prefix `_template_` contain the suggested structure for that type of file. When using this template all these files should be, eventually, replaced or removed from your project. 
 
 ### `code`
 
 * `raw2clean` - a folder containing:
 
-    * The template and four examples of the `datasetName_raw2clean.R`: 
-    
-      * `code/raw2clean/_template_datasetName_raw2clean.R` - an R script containing only the general structure of this type of file.
-      * `code/raw2clean/_example_muniDivision2015_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
-      * `code/raw2clean/_example_biomesDivision_raw2clean.R` - a real example of a raw2clean R script with spatial data as input.
-      * `code/raw2clean/_example_priorityMuniAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.txt format).
-      * `code/raw2clean/_example_prodesDeforestationAmazon_raw2clean.R` - a real example of a raw2clean R script with tabular data as input (.pdf format).
+    * The template `code/raw2clean/_template_datasetName_raw2clean.R` an R script containing only the general structur of the `datasetName_raw2clean.R` type of file.
         
-    * The template `_template_masterfile_raw2clean.R` and an example `_example_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
+    * The template `_template_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
     
-    * An example `_example_timeProcessing_raw2clean.csv` of the `_timeProcessing_raw2clean.csv`.
-
 * `projectSpecific` - a folder containing:
-    
-    * An example folder `muniLevel` with:
-      
-      * An example `_example_sampleConstruction_projectSpecific_muniLevel.R` of the `sampleConstruction_projectSpecific_folderName.R`.
-      
-      * Two examples `code/projectSpecific/_example_panel_priorityMuniAmazon_projectSpecific_muniLevel.R`, and `code/projectSpecific/_example_panel_prodesDeforestationAmazon_projectSpecific_muniLevel.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`. 
-      
-      * An example `_example_sample_forAnalysis_muniLevel.R` of the `sample_forAnalysis_folderName.R`.
-      
-      * An example `_example_masterfile_projectSpecific_muniLevel.R` of the `_masterfile_projectSpecific_folderName.R`.
-  
-      * An example `_example_timeProcessing_projectSpecific_muniLevel.csv` of the `_timeProcessing_projectSpecific_folderName.csv`.
       
     * The template folder `folderName` containing:
     
@@ -229,28 +204,17 @@ All files with the prefix `_template_` contain the suggested structure for that 
 
 * `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
 
-  * `_example_ExportTimeProcessing.R` - an R script to store example_ExportTimeProcessing function used to calculate and export the time of processing of each R example script. Used only to adapt the output name adding the prefix `_example`, in practice you should exclude this function and only use the `ExporTimeProcessing.R` version.
-
+  * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R example script. 
+  
 ### `data`
 
-* `raw2clean` - a folder containing four folder examples and one template folder:
+* `raw2clean` - a folder containing:
 
-  * Examples: `example_biomeDivision_ibge`; `example_muniDivision2015_ibge`; `example_priorityMuniAmazon_mma`; `example_prodesDeforestationAmazon_inpe`. 
-  
-  * For each example folder, you should follow the download instructions in `documentation/_metadata.txt` and save the data in the `input` folder. The `output` folder will be automatically populated when running the `_example_masterfile_raw2clean.R`.
-  
-  * The template `_template_datasetName_dataSource` contains a skeleton of the `_metadata.txt` file in `documentation` and the folder structure to be used for your own datasets.
+  * The template `_template_datasetName_dataSource` folder that contains a skeleton of the `_metadata.txt` file in `documentation` and the folder structure to be used for your own datasets.
 
 * `projectSpecific` - a folder containing:
     
-    * An empty example folder `muniLevel` and an empty template folder `folderName`. The example folder `muniLevel` will be automatically populated when running the `_example_masterfile_projectSpecific_muniLevel.R` script with:
-      
-      *  Three examples `_example_spatial_sample_muniLevel.Rdata`, `_example_panel_sample_muniLevel.Rdata`, and `_example_crossSection_sample_muniLevel.Rdata` of the `dataFormat_sample_folderName.Rdata`.
-      
-      *  Two examples `_example_panel_prodesDeforestationAmazonMuni_muniLevel.Rdata`, and `_example_panel_priorityMuniAmazon_muniLevel.Rdata` of the `dataFormat_variableTheme_folderName.Rdata`.
-      
-      *  Three examples `_example_panel_forAnalysis_muniLevel.Rdata`, `_example_crossSection_forAnalysis_muniLevel.Rdata`, and `_example_spatial_forAnalysis_muniLevel.Rdata` of the `dataFormat_forAnalysis_folderName.Rdata`.
-      
+    * An empty template folder `folderName`.
   
 ## License
 The material in this repository is made available under a dual-license setup. See [LICENSE](LICENSE) for details. 
