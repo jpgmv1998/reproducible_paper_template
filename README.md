@@ -8,7 +8,7 @@ Software: Focused on empirical projects that use mostly R for data manipulation.
 
 Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations. 
 
-Feedbacks and suggestions are welcome to improve this project. :rocket:
+Feedback and suggestions are welcome to improve this project. :rocket:
 
 Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
@@ -16,7 +16,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * [Random References](randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc).
 
-* R Project with git - Allows better use of relative paths, helps with version control connecting directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
+* R Project (with git - optional) - Allows better use of relative paths, helps with version control connecting RStudio directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
 
 * R packages management - Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
 
@@ -24,7 +24,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * [File templates and examples](#file-templates-and-examples) - template files contain the suggested structure for that type of file, and example files are applcations of the templates using real data.
 
-* [Replication Archive README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. Adaptations from the original template reflect the structure of this template.
+* [Replication Archive README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. 
 
 * [Replication Archive README example - PENDING](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_example_README.md) - Application of the provided README template based on the examples present in this project. 
 

@@ -1,7 +1,7 @@
 ---
-title: "README - Code and Data Replication archive"
-subtitle: "Paper: \"title\""
-author: "Authors: "
+title: "README -- Data and Code for: \"Paper Title\""
+subtitle: "Deposit Number"
+author: "Author 1, Author 2"
 date: MON/DD/YYYY
 output:
   html_document: default
@@ -24,33 +24,38 @@ Example: The code in this replication package constructs the analysis file from 
 Files Structure 
 ----------------------------
 
-> INSTRUCTIONS: short description of folders and files in the replication archive
+> INSTRUCTIONS: short description of only the folders and files that should be included in the final replication package based on the project structure.
 
-1. `"README.md"`: a markdown file used to generate `"README.pdf"` and `"README.html"`
+> DISCLAIMER: Section not present in the original AEA template.
+
+1. `"README.md"`: a markdown file used to generate `"README.pdf"` and `"README.html"`.
  
-2. `"README.pdf"`: This document. It provides the necessary information about the structure of the replication folder, data sources and access, computational requirements, and ultimately explains how to fully replicate the analysis presented in the paper. Also available in html format `"README.html"`
+2. `"README.pdf"`: This document. It provides the necessary information about the structure of the replication folder, data sources and access, computational requirements, and ultimately explains how to fully replicate the analysis presented in the paper. Also available in html format `"README.html"` (best for reading).
  
 3. `"code`: folder containing all scripts to clean, build, merge, and analyze the data
 
-    a. `"code/raw2clean"`: R scripts that clean the data on input and save on the output for each raw data
-    b. `"code/projectSpecific"`: R scripts that select the information relevant for this project and creates the sample for analysis
-    c. `"code/analysis"`: Stata do-files and R scripts to generate the results
-    d. `"code/_functions"`: auxiliary folder with custom R functions used in multiple R scripts 
-    e. `"code/config_proj.do"`: stata do file to adjust file paths
-  
-4. `"data"`: folder containing the raw data, final datasets for analysis, analysis outputs, and other empty folder for intermediate data to be stored when running the codes 
+    a. `"code/raw2clean"`: R scripts that clean the data on input and save on the output for each dataset;
+    b. `"code/projectSpecific"`: R scripts that select/combine/construct the information relevant for this project and creates the sample for analysis;
+    c. `"code/analysis"`: R scripts to generate the results presented in the paper;
+    d. `"code/_functions"`: auxiliary folder with custom R functions used in multiple R scripts.
 
-    a. `"data/raw2clean"`: raw datasets (`"/input"`) and cleaned (`"/output"`) folder (empty) separated by theme/source/geographic scope and accompanied by a `"documentation"` folder containing at least a `"_metadata.txt"` file with some general information and instructions on how to obtain the data if a direct link is not available
-    b. `"data/projectSpecific"`: datasets containing the relevant variables for this project (empty)
-    c. `"data/analysis"`: analysis outputs, including all figures and tables presented in the paper
-    d. `"data/_temp"`: temporary files output (to be filled when running some .R scripts)
+4. `"data"`: a folder containing data in a variety of formats: raw, cleaned, intermediate, final datasets for analysis, and analysis outputs
 
-5. `".Rproj"`: R project to automatically adjust file path references. Always open RStudio from this file when running any R script.
+    a. `"data/raw2clean"`: one folder for each dataset with the following structure:
+        - `"input"`: raw datasets; 
+        - `"/output"`: cleaned dataset; 
+        - `"documentation"`: with at least two files: 
+            * `"_metadata.txt"` text file that describes the data, provides access instructions, and an example of citation following the AEA guidelines;
+            * `"codebook_datasetName.txt"` text file with summary statistics and variables description;
+    b. `"data/projectSpecific"`: sample of interest, intermediate  datasets with the variables of interest, and merged sample for analysis;
+    c. `"data/analysis"`: analysis outputs, including all figures and tables presented in the paper;
+    d. `"data/_temp"`: temporary files output (to be filled when running some .R scripts).
 
-6. `".stpr"`: Stata project to automatically set root directory file path. Always open Stata from this file when running any do file. 
+5. `"name_proj.Rproj"`: R project to automatically adjust file path references. Always open RStudio from this file when running any R script.
 
-7. `"renv"`: not present in the replication archive but will be automatically created and filled with all the necessary R packages when running any R script. It is an independent library to guarantee the use of the same versions of the packages and avoid changing personal libraries.
+6. `"renv"`: not present in the replication archive but will be automatically created and filled with all the necessary R packages when running any R script. It is an independent library to guarantee the use of the same versions of the packages and avoid changing personal libraries.
 
+7. `"LICENSE.txt"`: a text file with a dual-license setup.
 
 
 
@@ -87,7 +92,7 @@ Data Availability and Provenance Statements
 
 > INSTRUCTIONS: Most data repositories provide for a default license, but do not impose a specific license. Authors should actively select a license. This should be provided in a LICENSE.txt file, separately from the README, possibly combined with the license for any code. Some data may be subject to inherited license requirements, i.e., the data provider may allow for redistribution only if the data is licensed under specific rules - authors should check with their data providers. For instance, a data use license might require that users - the current author, but also any subsequent users - cite the data provider. Licensing can be complex. Some non-legal guidance may be found [here](https://social-science-data-editors.github.io/guidance/Licensing_guidance.html).
 
-The code is licensed under a Creative Commons/CC-BY-NC/CC0 license. See [LICENSE.txt](LICENSE.txt) for details.
+The data is licensed under a Creative Commons Attribution 4.0 International Public License. See [LICENSE.txt](LICENSE.txt) for details.
 
 
 ### Summary of Availability
@@ -97,7 +102,6 @@ The code is licensed under a Creative Commons/CC-BY-NC/CC0 license. See [LICENSE
 - [ ] **No data can be made** publicly available.
 
 ### Details on each Data Source
-
 
 > INSTRUCTIONS: For each data source, list the file that contains data from that source here; if providing combined/derived datafiles, list them separately after the DAS. For each data source or file, as appropriate, 
 > 
@@ -150,6 +154,17 @@ You must request the following datasets in your proposal:
 
 > Code for data cleaning and analysis is provided as part of the replication package. It is available at https://dropbox.com/link/to/code/XYZ123ABC for review. It will be uploaded to the [JOURNAL REPOSITORY] once the paper has been conditionally accepted.
 
+Dataset list
+------------
+
+> INSTRUCTIONS: In some cases, authors will provide one dataset (file) per data source, and the code to combine them. In others, in particular when data access might be restrictive, the replication package may only include derived/analysis data. Every file should be described. This can be provided as a Excel/CSV table, or in the table below.
+
+| Data file | Source | Notes    |Provided |
+|-----------|--------|----------|---------|
+| `data/raw/lbd.dta` | LBD | Confidential | No |
+| `data/raw/terra.dta` | IPUMS Terra | As per terms of use | Yes |
+| `data/derived/regression_input.dta`| All listed | Combines multiple data sources, serves as input for Table 2, 3 and Figure 5. | Yes |
+
 
 Computational requirements
 ---------------------------
@@ -175,13 +190,17 @@ Computational requirements
 - R 3.4.3
   - `tidyr` (0.8.3)
   - `rdrobust` (0.99.4)
-  - the file "`0_setup.R`" will install all dependencies (latest version), and should be run once prior to running other programs.
+  - the file "`code/setup.R`" will install all dependencies according to the versions provided in the "`renv.lock`". It is automatically sourced within any .R script in the project.
+  - the file `"name_proj.Rproj"` will guarantee that the working directory is set to the root of the project (always open RStudio using this file).
+
 
 Portions of the code use bash scripting, which may require Linux.
 
 Portions of the code use Powershell scripting, which may require Windows 10 or higher.
 
 ### Memory and Runtime Requirements
+
+> INSTRUCTIONS: Memory and compute-time requirements may also be relevant or even critical. Some example text follows. It may be useful to break this out by Table/Figure/section of processing. For instance, some estimation routines might run for weeks, but data prep and creating figures might only take a few minutes.
 
 #### Summary
 
@@ -224,13 +243,11 @@ Description of programs/code
 - The program `programs/00_setup.do` will populate the `programs/ado` directory with updated ado packages, but for purposes of exact reproduction, this is not needed. The file `programs/00_setup.log` identifies the versions as they were last updated.
 - The program `programs/config.do` contains parameters used by all programs, including a random seed. Note that the random seed is set once for each of the two sequences (in `02_analysis` and `03_appendix`). If running in any order other than the one outlined below, your results may differ.
 
-
 ### (Optional, but recommended) License for Code
 
 > INSTRUCTIONS: Most journal repositories provide for a default license, but do not impose a specific license. Authors should actively select a license. This should be provided in a LICENSE.txt file, separately from the README, possibly combined with the license for any data provided. Some code may be subject to inherited license requirements, i.e., the original code author may allow for redistribution only if the code is licensed under specific rules - authors should check with their sources. For instance, some code authors require that their article describing the econometrics of the package be cited. Licensing can be complex. Some non-legal guidance may be found [here](https://social-science-data-editors.github.io/guidance/Licensing_guidance.html).
 
-The code is licensed under a MIT/BSD/GPL/Creative Commons license. See [LICENSE.txt](LICENSE.txt) for details.
-
+The code is licensed under a Modified BSD License. See [LICENSE.txt](LICENSE.txt) for details.
 
 Instructions to Replicators
 ---------------------------
@@ -283,6 +300,10 @@ The provided code reproduces:
 | Figure 2          | 02_analysis/fig2.do      |             | figure2.png                      ||
 | Figure 3          | 02_analysis/fig3.do      |             | figure-robustness.png            | Requires confidential data      |
 
+## Acknowledgements
+
+Adapted from Villhuber et al (2020).
+
 ## References
 
 > INSTRUCTIONS: As in any scientific manuscript, you should have proper references. For instance, in this sample README, we cited "Ruggles et al, 2019" and "DESE, 2019" in a Data Availability Statement. The reference should thus be listed here, in the style of your journal:
@@ -295,12 +316,11 @@ U.S. Bureau of Economic Analysis (BEA). 2016. “Table 30: "Economic Profile by 
 
 Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K. Kizilova, J. Diez-Medrano, M. Lagos, P. Norris, E. Ponarin & B. Puranen et al. (eds.). 2014. World Values Survey: Round Six - Country-Pooled Datafile Version: http://www.worldvaluessurvey.org/WVSDocumentationWV6.jsp. Madrid: JD Systems Institute.
 
+Vilhuber, L., Connolly, M., Koren, M., Llull, J., and Morrow, P.. 2020. "A template README for social science replication packages (Version v1.0.0)". Zenodo. http://doi.org/10.5281/zenodo.4319999 (accessed March 2, 2021)
+
 ---
 
 
-## Acknowledgements
-
-Adapted from the [Social Science Data Editors README Template](https://social-science-data-editors.github.io/guidance/template-README.html)
 
 
  
