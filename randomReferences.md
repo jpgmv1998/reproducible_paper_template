@@ -35,6 +35,8 @@
 
 :star: [Sample Replication Package - Julian Reif](https://github.com/reifjulian/my-project) - This repository includes a short paper and its accompanying replication code.
 
+:star: [Steve's R Markdown Templates](https://github.com/svmiller/svm-r-markdown-templates) - A suite of R Markdown templates for 1) academic manuscripts, 2) Beamer presentations, and 3) academic syllabi.
+
 [Generic Paper Template - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for the setup of multiple software.
 
 [Gentzkow-Shapiro Lab template](https://github.com/gslab-econ/template) - The GSLab Template is a minimal working demonstration of the tools and organization used by projects in the GSLab. We use SCons and a few custom builders to execute scripts and track dependencies in a portable and flexible manner.
