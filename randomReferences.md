@@ -37,6 +37,8 @@
 
 :star: [Steve's R Markdown Templates](https://github.com/svmiller/svm-r-markdown-templates) - A suite of R Markdown templates for 1) academic manuscripts, 2) Beamer presentations, and 3) academic syllabi.
 
+:star: [Template for Reproducible Empirical Accounting Research](https://github.com/trr266/treat) - This repository, while predominantly being targeted at the team members of our research network, provides a structured platform for reproducible R-based research projects in general. To make it more accessible to everybody who is new to R, we also “produced” a short video series that shows you how to set up your local computing environment and to reproduce the toy analysis contained in the repository. Based on this, you should be able to build your own research projects in a reproducible way.
+
 [Generic Paper Template - Lars Vilhuber](https://github.com/labordynamicsinstitute/paper-template) - simple template with some examples of programs for the setup of multiple software.
 
 [Gentzkow-Shapiro Lab template](https://github.com/gslab-econ/template) - The GSLab Template is a minimal working demonstration of the tools and organization used by projects in the GSLab. We use SCons and a few custom builders to execute scripts and track dependencies in a portable and flexible manner.
