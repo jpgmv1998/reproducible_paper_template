@@ -47,6 +47,8 @@
 
 ### Guides
 
+:star: [Development Research in Practice: The DIME Analytics Data Handbook](https://worldbank.github.io/dime-data-handbook/) - This book is intended to teach all users of development data how to handle data effectively, efficiently, and ethically. It covers the full data workflow for a complex research project using original data.
+
 :star: [R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
 
 :star: [Unofficial guidance on various topics by the AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements.
