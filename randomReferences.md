@@ -91,6 +91,8 @@
 
 :star: [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
 
+[R Econ Visual Library](https://worldbank.github.io/r-econ-visual-library/index.html) - R code for data visualization in economics, created and maintained by DIME Analytics.
+
 [Data Wrangling Workshop with R and Tidyverse](https://github.com/NickCH-K/DataWranglingWorkshopFiles) - slides, video, and walk-through example of a workshop about data wrangling using Tidyverse in R. 
 
 [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/index.html) - This book assumes no prerequisites: no algebra, no calculus, and no prior programming/coding experience. This is intended to be a gentle introduction to the practice of analyzing data and answering questions using data the way data scientists, statisticians, data journalists, and other researchers would.
