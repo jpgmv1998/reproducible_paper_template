@@ -89,6 +89,8 @@
 
 :star: [Data Science for Economists - Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
+:star: [Telling Stories With Data - Rohan Alexander](https://www.tellingstorieswithdata.com/) - The focus is on using quantitative methods to tell stories with data.
+
 :star: [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
 
 [R Econ Visual Library](https://worldbank.github.io/r-econ-visual-library/index.html) - R code for data visualization in economics, created and maintained by DIME Analytics.
