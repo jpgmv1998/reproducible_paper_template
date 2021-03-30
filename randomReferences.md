@@ -89,6 +89,8 @@
 
 :star: [Data Science for Economists - Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
+[Data Science for Economists and Other Animals - Grant R. McDermott](http://grantmcdermott.com/ds4e/) - This is the website for Data Science for Economists and Other Animals. The book is very much in the early development stages, but draws from lecture material that we have been refining over the last several years.
+
 :star: [Telling Stories With Data - Rohan Alexander](https://www.tellingstorieswithdata.com/) - The focus is on using quantitative methods to tell stories with data.
 
 :star: [Happy Git with R](https://happygitwithr.com/) - Instructions to integrate Git(Hub) with R and RStudio.
