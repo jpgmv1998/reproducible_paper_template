@@ -223,6 +223,8 @@ producing the type of “out of the box” summary tables that economists like.
 :star: [World Bank Methodology Posts](https://blogs.worldbank.org/impactevaluations/curated-list-our-postings-technical-topics-your-one-stop-shop-methodology-0) - 
 This is a curated list of our technical postings, to serve as a one-stop shop for your technical reading. I’ve focused here on our posts on methodological issues in impact evaluation.
 
+:star: [Applied Empirical Methods - Paul Goldsmith-Pinkham](https://github.com/paulgp/applied-methods-phd) - This course is primarily designed for graduate students interested in econometric methods used in empirical research. The goal of this class is to provide an overview of different empirical methods, with an emphasis on practical implementation.
+
 :star: [Guia Brasileiro de Análise de Dados: Armadilhas e Soluções](https://repositorio.enap.gov.br/bitstream/1/6039/1/Guia%20BR%20de%20Ana%cc%81lise%20de%20Dados.pdf) - a book about Brazilian data (crime, health, education, etc.) presenting common pitfalls and solutions when working with it (reference in Portuguese).
 
 :star: [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.]
