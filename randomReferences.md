@@ -74,6 +74,10 @@
  
 [Research Compendia](https://doi.org/10.7287/peerj.preprints.3192v2) - Paper about uses of R to produce research compendia.
 
+### Examples
+
+[Suparna Chaudhry, Marc Dotson, and Andrew Heiss (2021)](https://github.com/andrewheiss/who-cares-about-crackdown#data)  
+
 
 ## R 
 
@@ -138,6 +142,8 @@
 :star: [renv](https://rstudio.github.io/renv/articles/renv.html) - Underlying the philosophy of renv is that any of your existing workflows should just work as they did before – renv helps manage library paths (and other project-specific states) to help isolate your project’s R dependencies, and the existing tools you’ve used for managing R packages (e.g. install.packages(), remove.packages()) should work as they did before
 
 :star: [workflowr](https://jdblischak.github.io/workflowr/index.html) - The workflowr R package helps researchers organize their analyses in a way that promotes effective project management, reproducibility, collaboration, and sharing of results. Workflowr combines literate programming (knitr and rmarkdown) and version control (Git, via git2r) to generate a website containing time-stamped, versioned, and documented results. Any R user can quickly and easily adopt workflowr.
+
+[targets](https://github.com/ropensci/targets) - The targets package is a Make-like pipeline toolkit for Statistics and data science in R. With targets, you can maintain a reproducible workflow without repeating yourself. targets skips costly runtime for tasks that are already up to date, runs the necessary computation with implicit parallel computing, and abstracts files as R objects. A fully up-to-date targets pipeline is tangible evidence that the output aligns with the code and data, which substantiates trust in the results
 
 [steveproj](http://svmiller.com/blog/2021/03/handle-academic-projects-steveproj-make/) - his package will allow a researcher to start and better maintain an academic project around Make, the R programming language, Rstudio, and some other features of my R ecosystem (prominently: {stevetemplates}). Features of {steveproj} are subject to change while in development but the core of it is, I think, ready to go.
 
@@ -245,9 +251,12 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 
 ## Other Data Science Tools 
 
+[Version Control with Git](https://swcarpentry.github.io/git-novice/) 
+
 [Oh Shit, Git!](https://ohshitgit.com/) - Tips for common git mistakes.
  
 [Git Large File Storage](https://git-lfs.github.com/) - An open-source Git extension for versioning large files.
+
  
 ## Other Resources  
 
