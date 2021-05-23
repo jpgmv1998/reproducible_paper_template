@@ -47,6 +47,8 @@
 
 ### Guides
 
+:star: [Tilburg Science Hub](https://tilburgsciencehub.com/) - Tilburg Science Hub (TSH) is an open-source online resource that helps individual researchers, data scientists, and teams to efficiently carry out data- and computation-intensive projects. It provides information about workflow and data management and tutorials that teach researchers how to organize and document their data and code, so the research becomes sustainable and reproducible. This in turn leads to time savings and transparency in the process.
+
 :star: [Development Research in Practice: The DIME Analytics Data Handbook](https://worldbank.github.io/dime-data-handbook/) - This book is intended to teach all users of development data how to handle data effectively, efficiently, and ethically. It covers the full data workflow for a complex research project using original data.
 
 :star: [R Guide](https://github.com/skhiggins/R_guide) - This guide provides instructions for using R on research projects. Its purpose is to use with collaborators and research assistants to make code consistent, easier to read, transparent, and reproducible.
