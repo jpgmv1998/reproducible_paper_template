@@ -226,7 +226,7 @@ producing the type of “out of the box” summary tables that economists like.
 
 :star: [Literature on Recent Advances in Applied Micro Methods](https://christinecai.github.io/PublicGoods/applied_micro_methods.pdf) - List of papers with recent advances in applied micro methods
 
-:star: [DiD Reading Group](https://taylorjwright.github.io/did-reading-group/) - Presentation of recent papers in the DiD literatura by their authors. 
+:star: [DiD Reading Group](https://taylorjwright.github.io/did-reading-group/) - Presentation of recent papers in the DiD literature by their authors. 
 
 :star: [How to Do Empirical Economics](http://www.crest.fr/ckfinder/userfiles/files/Pageperso/kramarz/v30i2a1.pdf) - This article presents a discussion among leading economists on how to do empirical research in economics. The participants discuss their reasons for starting research projects, database construction, the methods they use, the role of theory, and their views on the main alternative empirical approaches The article ends with a discussion of a set of articles which exemplify best practice in empirical work.
 
@@ -236,6 +236,8 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 :star: [Applied Empirical Methods - Paul Goldsmith-Pinkham](https://github.com/paulgp/applied-methods-phd) - This course is primarily designed for graduate students interested in econometric methods used in empirical research. The goal of this class is to provide an overview of different empirical methods, with an emphasis on practical implementation.
 
 :star: [Guia Brasileiro de Análise de Dados: Armadilhas e Soluções](https://repositorio.enap.gov.br/bitstream/1/6039/1/Guia%20BR%20de%20Ana%cc%81lise%20de%20Dados.pdf) - a book about Brazilian data (crime, health, education, etc.) presenting common pitfalls and solutions when working with it (reference in Portuguese).
+
+:star: [The Gary Chamberlain Online Seminar in Econometrics](https://www.chamberlainseminar.org/past-seminars) - Paper presentations, symposiums and tutorials about many Econometric topics.
 
 [Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S21) - Econometrics with R graduate course.
 
