@@ -239,6 +239,8 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 
 :star: [The Gary Chamberlain Online Seminar in Econometrics](https://www.chamberlainseminar.org/past-seminars) - Paper presentations, symposiums and tutorials about many Econometric topics.
 
+[Introduction to Causal Inference - Brady Neal](https://www.bradyneal.com/causal-inference-course)
+
 [Ph.D. Econometrics (III) taught with R - Ed Rubin](https://github.com/edrubin/EC607S21) - Econometrics with R graduate course.
 
 [Applied Economics with R - Hans H. Sievertsen](https://hhsievertsen.github.io/applied_econ_with_r/) - The tutorial is structured as a complete research project starting with loading the raw data and ending with a chart comparing the estimates across approaches.]
