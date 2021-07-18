@@ -173,6 +173,8 @@
 
 :star: [raster](https://cran.r-project.org/web/packages/raster/raster.pdf) - spatial manipulation (raster-based)
 
+:star: [tmap](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html) - With the tmap package, thematic maps can be generated with great flexibility. The syntax for creating plots is similar to that of ggplot2, but tailored to maps.
+
 [leaflet](https://rstudio.github.io/leaflet/) - plot interactive maps
 
 [rgee](https://github.com/r-spatial/rgee) - rgee is a binding package for calling Google Earth Engine API from within R. Additionally, several functions have been implemented to make simple the connection with the R spatial ecosystem. The current version of rgee has been built considering the earthengine-api 0.1.235. Note that access to Google Earth Engine is only available to registered users.
@@ -227,6 +229,8 @@ producing the type of “out of the box” summary tables that economists like.
 :star: [Literature on Recent Advances in Applied Micro Methods](https://christinecai.github.io/PublicGoods/applied_micro_methods.pdf) - List of papers with recent advances in applied micro methods
 
 :star: [DiD Reading Group](https://taylorjwright.github.io/did-reading-group/) - Presentation of recent papers in the DiD literature by their authors. 
+
+:star:[Diff-in-Diff Notes - Asjad Naqvi](https://github.com/asjadnaqvi/Diff-in-Diff-Notes) - This repository tracks the recent developments in the Difference-in-Difference (DiD) literature. Currently, it is just a dump of my bookmarks from different websites including Twitter, GitHub, YouTube etc. This will be sorted out over time as the literature converges to some consensus. But this might still take a while.
 
 :star: [How to Do Empirical Economics](http://www.crest.fr/ckfinder/userfiles/files/Pageperso/kramarz/v30i2a1.pdf) - This article presents a discussion among leading economists on how to do empirical research in economics. The participants discuss their reasons for starting research projects, database construction, the methods they use, the role of theory, and their views on the main alternative empirical approaches The article ends with a discussion of a set of articles which exemplify best practice in empirical work.
 
