@@ -259,7 +259,7 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 
 [Introduction to Econometrics with R](https://www.econometrics-with-r.org/index.html) -  Interactive learning material that blends R code with the contents of the well-received textbook Introduction to Econometrics by Stock and Watson (2015).
 
-[Library of Statistical Techniques (LOST)](lost-stats.github.io/) - Publicly-editable website to make it easy to execute statistical techniques in statistical software.
+[Library of Statistical Techniques (LOST)](https://lost-stats.github.io/) - Publicly-editable website to make it easy to execute statistical techniques in statistical software.
 
 ## Other Data Science Tools 
 
