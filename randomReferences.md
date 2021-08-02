@@ -57,6 +57,8 @@
 
 :star: [Unofficial guidance on various topics by the AEA Data Editor](https://aeadataeditor.github.io/aea-de-guidance/) - AEA Data Editor Unofficial Guidance on how to create data and code replicable supplements.
 
+:star: [Coding for Economists: A Language-Agnostic Guide to Programming for Economists - Ljubica “LJ” Ristovska](https://scholar.harvard.edu/files/ristovska/files/coding_for_econs_20190221.pdf) - The first part of the presentation focuses on general computer science concepts, guidelines, and programming tips. The second part of the presentation with Frank Pinter will introduce version control via Git
+
 [Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency.
 
 [Unofficial guidance on various topics by Social Science Data Editors](https://social-science-data-editors.github.io/guidance/) - Guidance on creating replicable data and program archives. Guidance on testing replicability of code.
@@ -71,6 +73,8 @@
 
 
 ### Other
+
+:star: [GitHub and Dropbox](https://github.com/kbjarkefur/GitHubDropBox) - Tutorial on how to combine GitHub and DropBox
 
 [Replicability Presentations - Lars Vilhuber](https://github.com/labordynamicsinstitute/replicability-presentation-2020) - In this talk, I describe the context in which the current discussion in the social science is occurring: what are the definitions of replicability and reproducibility, what is failing, and to what extent. I discuss progress over the past 15 years. Finally, I discuss the concrete measures that have been implemented under my guidance at the American Economic Association, and the first preliminary outcomes from those measures. I conclude with some observations on how to integrate reproducibility into the scientific workflow in the social and statistical sciences.
  
@@ -92,6 +96,8 @@
 :star: [Advanced R Book](https://adv-r.hadley.nz/) - Book designed primarily for R users who want to improve their programming skills and understanding of the language.
 
 :star: [Data Visualization with R](https://rkabacoff.github.io/datavis/) - This book helps you create the most popular visualizations - from quick and dirty plots to publication-ready graphs. The text relies heavily on the ggplot2 package for graphics, but other approaches are covered as well.
+
+:star: [Data Visualization: A practical introduction - Kieran Healy](https://socviz.co/index.html#preface) - This book is a hands-on introduction to the principles and practice of looking at and presenting data using R and ggplot. R is a powerful, widely used, and freely available programming language for data analysis. You may be interested in exploring ggplot after having used R before, or be entirely new to both R and ggplot and just want to graph your data. I do not assume you have any prior knowledge of R.
 
 :star: [Data Science for Economists - Grant R. McDermott](https://github.com/uo-ec607/lectures) - Introduction to the modern data science toolkit (focused on R) graduate course.
 
@@ -158,6 +164,8 @@
 :star: [Tidyverse](https://www.tidyverse.org/) - a collection of packages that share an underlying design philosophy, grammar, and data structures. Used for data cleaning, wrangling, visualization, and more. 
 
 :star: [data.table](https://rdatatable.gitlab.io/data.table/) - package for data manipulation. Fast, memory efficient, concise, stable, dependency-free. Recommended for large data.
+
+:star: [collapse](https://sebkrantz.github.io/collapse/index.html) - collapse is a C/C++ based package for data transformation and statistical computing in R. It’s aims are: To facilitate complex data transformation, exploration and computing tasks in R. To help make R code fast, flexible, parsimonious and programmer friendly. It further implements a class-agnostic approach to data manipulation in R, supporting base R, dplyr (tibble), data.table, sf, plm classes for panel data (‘pseries’ and ‘pdata.frame’), and non-destructively handling other matrix or data frame based classes (including most time series classes such as ‘ts’, ‘xts’ / ‘zoo’, ‘timeSeries’, ‘tsibble’, ‘tibbletime’, etc.).
 
 [dtplyr](https://dtplyr.tidyverse.org/) - dtplyr provides a data.table backend for dplyr. The goal of dtplyr is to allow you to write dplyr code that is automatically translated to the equivalent, but usually much faster, data.table code.
 
@@ -277,19 +285,31 @@ This is a curated list of our technical postings, to serve as a one-stop shop fo
 :star: [How to Write Applied Papers in Economics - Marc F. Bellemare](http://marcfbellemare.com/wordpress/wp-content/uploads/2020/09/BellemareHowToPaperSeptember2020.pdf) - The goal of this paper is to teach readers how to write applied economics papers that will eventually be published in a
 peer-reviewed journal. 
 
-[Writing Tips for Ph. D. Students - John H. Cochrane](https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/5eda74919c44fa5f87452697/1591374993570/phd_paper_writing.pdf) - Some tips on how to write academic articles
+:star: [Writing Tips for Ph. D. Students - John H. Cochrane](https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/5eda74919c44fa5f87452697/1591374993570/phd_paper_writing.pdf) - Some tips on how to write academic articles
 
-[Writing Papers: A Checklist - Michael Kremer](http://qed.econ.queensu.ca/pub/faculty/sumon/mkremer_checklist_paper.pdf) - 
+[Writing Papers: A Checklist - Michael Kremer](http://qed.econ.queensu.ca/pub/faculty/sumon/mkremer_checklist_paper.pdf) 
+
+[Writing Tips For Economics Research Papers - Plamen Nikolov](https://www.people.fas.harvard.edu/~pnikolov/resources/writingtips.pdf)
+
+[The Introduction Formula - Keith Head](http://blogs.ubc.ca/khead/research/research-advice/formula) 
+
+[Aphorisms on Writing, Speaking, and Listening - Eric Rasmusen](http://rasmusen.org/GI/reader/writing.pdf) - This article collects aphorisms on the mechanics of doing research in economics, emphasizing writing, speaking, and seminar participation. They are intended for both students and for scholars and are useful beyond just economics.
 
 ### Presentation Tips
 
-[How to Give an Applied Micro Talk - Jesse M. Shapiro](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) 
+:star: [How to Give an Applied Micro Talk - Jesse M. Shapiro](https://www.brown.edu/Research/Shapiro/pdfs/applied_micro_slides.pdf) 
+
+[Tips on how to avoid disaster in presentations - Monika Piazzesi](https://economics.ucla.edu/wp-content/uploads/2016/10/piazzesi.pdf)
+
+[How to Present Results - David Levine](http://faculty.haas.berkeley.edu/levine/cheap_advice.html#results)
+
+[Public Speaking for Academic Economists - Rachael Meager](https://www.dropbox.com/s/4h9soo9dpndjtvt/public_speaking_for_academic_economists.pdf?dl=0)
 
 ### Other Lists of Resources
 
 :star: [Resources for PhD Students - Shanjun Li](http://li.dyson.cornell.edu/phdRes.php) - For mere mortals, the road to a PhD is long, lonely, arduous, and full of twists and turns. Among other things, it demands patience, perseverance, an open mind, and the courage to seek help. Owing to the generosity of the authors, this list of resources below provides useful guidance from start to finish. Use them well and your journey will be less bumpy.
 
-[Links for Advice to PhD Students - Tobias Klein](https://www.tobiasklein.ws/ph-d-students)
+:star: [Links for Advice to PhD Students - Tobias Klein](https://www.tobiasklein.ws/ph-d-students)
 
 [Useful Links - Anthony Lee Zang](https://docs.google.com/document/d/10_wQWeDSU2DCJSfM3UjwXPGLZhxcQCDci69zNR_lgQI/edit)
 
