@@ -47,6 +47,8 @@
 
 ### Guides
 
+:star: [Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014).
+
 :star: [Tilburg Science Hub](https://tilburgsciencehub.com/) - Tilburg Science Hub (TSH) is an open-source online resource that helps individual researchers, data scientists, and teams to efficiently carry out data- and computation-intensive projects. It provides information about workflow and data management and tutorials that teach researchers how to organize and document their data and code, so the research becomes sustainable and reproducible. This in turn leads to time savings and transparency in the process.
 
 :star: [Development Research in Practice: The DIME Analytics Data Handbook](https://worldbank.github.io/dime-data-handbook/) - This book is intended to teach all users of development data how to handle data effectively, efficiently, and ethically. It covers the full data workflow for a complex research project using original data.
@@ -60,8 +62,6 @@
 [Unofficial guidance on various topics by Social Science Data Editors](https://social-science-data-editors.github.io/guidance/) - Guidance on creating replicable data and program archives. Guidance on testing replicability of code.
 
 [Replication tutorial - Lars Vilhuber](https://labordynamicsinstitute.github.io/replication-tutorial-2019/#/12) - Replication and Reproducibility in Social Sciences and Statistics: Overview and Practice (2019).
-
-[Code and Data Guide - Gentzkow & Shapiro](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) - Code and Data for the Social Sciences: A Practitioner’s Guide by Matthew Gentzkow and Jesse M. Shapiro (2014).
 
 [RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
 
