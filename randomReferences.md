@@ -232,6 +232,8 @@ producing the type of “out of the box” summary tables that economists like.
 
 :star: [Causal Inference: The Mixtape - Scott Cunningham](https://mixtape.scunning.com/index.html) - Scott Cunningham introduces students and practitioners to the methods necessary to arrive at meaningful answers to the questions of causation, using a range of modeling techniques and coding instructions for both the R and the Stata programming languages.
 
+:star: [The Effect: An Introduction to Research Design and Causality - Nick Huntington-Klein](https://theeffectbook.net/) - The Effect is a book intended to introduce students (and non-students) to the concepts of research design and causality in the context of observational data.
+
 :star: [Econometrics - Bruce Hansen](https://www.ssc.wisc.edu/~bhansen/econometrics/) -  This textbook is the second in a two-part series covering the core material typically taught in a one-year Ph.D. course in econometrics. 
 
 :star: [Literature on Recent Advances in Applied Micro Methods](https://christinecai.github.io/PublicGoods/applied_micro_methods.pdf) - List of papers with recent advances in applied micro methods
