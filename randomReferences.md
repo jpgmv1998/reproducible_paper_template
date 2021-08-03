@@ -208,6 +208,10 @@ producing the type of “out of the box” summary tables that economists like.
 
 [HonestDiD](https://github.com/asheshrambachan/HonestDiD) - Robust inference in differences-in-differences and event study designs using methods developed in Rambachan and Roth (2019).
 
+[RDD Packages](https://rdpackages.github.io/) - Software packages for analysis and interpretation of regression discontinuity designs and related methods. Replication files and illustration codes employing these packages are also available.
+
+[NP Packages](https://nppackages.github.io/) - Software packages for nonparametric and semiparametric smoothing methods with application to causal inference, treatment effect and program evaluation estimation and inference. Replication files and illustration codes employing these packages are also available.
+
 [RDDtools](https://github.com/MatthieuStigler/RDDtools) - RDDtools is a new R package under development, designed to offer a set of tools to run all the steps required for a Regression Discontinuity Design (RDD) Analysis, from primary data visualisation to discontinuity estimation, sensitivity and placebo testing.
 
 [gsynth](https://yiqingxu.org/software/gsynth/gsynth_examples.html) - R package for [Generalized Synthetic Control Method: for Causal Inference with Interactive Fixed Effect Models](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2584200).
