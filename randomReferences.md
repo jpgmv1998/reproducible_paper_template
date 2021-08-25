@@ -315,6 +315,10 @@ peer-reviewed journal.
 
 [Public Speaking for Academic Economists - Rachael Meager](https://www.dropbox.com/s/4h9soo9dpndjtvt/public_speaking_for_academic_economists.pdf?dl=0)
 
+### References Manager
+
+[Managing references for research - Alex Hollingsworth](https://hollina.github.io/managing-references.html) - This article will outline one approach to setting up the free reference manager Zotero that can be easily integrated with Latex. While I use Latex and Zotero, there are of course other (and likely better) workflows. Certainly a similar set-up can be created using many different software combinations (e.g., Microsoft Word + EndNote). This is only meant as an introduction to see what’s possible. With the goal of reducing the cost of writing and producing research papers.
+
 ### Other Lists of Resources
 
 :star: [Resources for PhD Students - Shanjun Li](http://li.dyson.cornell.edu/phdRes.php) - For mere mortals, the road to a PhD is long, lonely, arduous, and full of twists and turns. Among other things, it demands patience, perseverance, an open mind, and the courage to seek help. Owing to the generosity of the authors, this list of resources below provides useful guidance from start to finish. Use them well and your journey will be less bumpy.
