@@ -59,6 +59,8 @@
 
 :star: [Coding for Economists: A Language-Agnostic Guide to Programming for Economists - Ljubica “LJ” Ristovska](https://scholar.harvard.edu/files/ristovska/files/coding_for_econs_20190221.pdf) - The first part of the presentation focuses on general computer science concepts, guidelines, and programming tips. The second part of the presentation with Frank Pinter will introduce version control via Git
 
+[Social Science Reproduction Platform](https://www.socialsciencereproduction.org/) - The Social Science Reproduction Platform (SSRP) crowdsources and catalogs attempts to assess and improve the computational reproducibility of social science research. Instructors can use the SSRP in applied social science courses at the graduate or undergraduate levels to teach fundamental concepts, methods, and reproducible research practices.
+
 [Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency.
 
 [Unofficial guidance on various topics by Social Science Data Editors](https://social-science-data-editors.github.io/guidance/) - Guidance on creating replicable data and program archives. Guidance on testing replicability of code.
