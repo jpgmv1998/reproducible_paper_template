@@ -325,6 +325,12 @@ peer-reviewed journal.
 
 :star: [Links for Advice to PhD Students - Tobias Klein](https://www.tobiasklein.ws/ph-d-students)
 
+[Resources - Jennifer Doleac](http://jenniferdoleac.com/resources/)
+
+[Resources - Ryan B Edwards](http://www.ryanbedwards.com/resources)
+
+[Resources - Patrick Button](https://www.patrickbutton.com/resources)
+
 [Useful Links - Anthony Lee Zang](https://docs.google.com/document/d/10_wQWeDSU2DCJSfM3UjwXPGLZhxcQCDci69zNR_lgQI/edit)
 
 [An unofficial guidebook for PhD students in economics and education](https://static1.squarespace.com/static/55c143d9e4b0cb07521c6d17/t/5b4f409f575d1ff83c2f12d8/1531920545061/PhDGuidebook.pdf)
