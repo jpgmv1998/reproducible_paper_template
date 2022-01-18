@@ -59,6 +59,8 @@
 
 :star: [Coding for Economists: A Language-Agnostic Guide to Programming for Economists - Ljubica “LJ” Ristovska](https://scholar.harvard.edu/files/ristovska/files/coding_for_econs_20190221.pdf) - The first part of the presentation focuses on general computer science concepts, guidelines, and programming tips. The second part of the presentation with Frank Pinter will introduce version control via Git
 
+:star: [Translating Stata to R](https://stata2r.github.io/) - This website is for Stata users who are interested in learning R. We provide side-by-side code snippets for common tasks in both Stata and R, so that users have a dictionary for navigating across the two languages.
+
 [Social Science Reproduction Platform](https://www.socialsciencereproduction.org/) - The Social Science Reproduction Platform (SSRP) crowdsources and catalogs attempts to assess and improve the computational reproducibility of social science research. Instructors can use the SSRP in applied social science courses at the graduate or undergraduate levels to teach fundamental concepts, methods, and reproducible research practices.
 
 [Project TIER](https://www.projecttier.org/about/about-project-tier/) - Project dedicated to developing methods and tools for enhancing research transparency.
