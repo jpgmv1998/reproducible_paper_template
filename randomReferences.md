@@ -69,6 +69,8 @@
 
 [Replication tutorial - Lars Vilhuber](https://labordynamicsinstitute.github.io/replication-tutorial-2019/#/12) - Replication and Reproducibility in Social Sciences and Statistics: Overview and Practice (2019).
 
+[Cutting Edge Reproducibility in Economics - Lars Vilhuber](https://labordynamicsinstitute.github.io/bitss-cutting-edge-2022/#1) - Prepared for presentation at BITSS 2022 Annual Meeting on 2022-02-11. This presentation is about reproducibility, and it is created in a reproducible way.
+
 [RA Manual - Gentzkow & Shapiro Lab](https://github.com/gslab-econ/ra-manual/wiki) - Manual intended to introduce their workflow for new Research Assistants 
 
 [Archive GitHub repo with Zenodo](https://guides.github.com/activities/citable-code/) - Guide on how to archive GitHub repository and assign a DOI with Zenodo.
