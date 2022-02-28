@@ -147,6 +147,8 @@
 
 [R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/) - This book aims particularly at spatial data processing for econometric projects, where spatial variables become part of econometric analysis. 
 
+[Open-Source Spatial Analytics (R)](http://www.wvview.org/Open_Source_Spatial_Analytics.html) - In this course, you will learn to work within the free and open-source R environment with a specific focus on working with and analyzing spatial data.
+
 [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) - Book about spatial statistics topics
 
 [Spatial Data Science with R and “terra”](https://rspatial.org/terra/index.html) - Resources that teach spatial data analysis using the new package "terra" that will substitute the  "raster" package
