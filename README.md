@@ -14,8 +14,6 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 ## Features
 
-* [Random References](randomReferences.md) - File intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc).
-
 * R Project (with git - optional) - Allows better use of relative paths, helps with version control connecting RStudio directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
 
 * R packages management - Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
@@ -78,8 +76,6 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 - `README.md` this file, a general overview of the project in markdown format.
 
-- `randomReferences.md`, a file intended to store links for references that may be useful for empirical work (e.g. R, Econometrics, Git, etc) in markdown format.
-
 - `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
 
 - `brainstorming`, a folder to store research ideas, peer feedback, etc. Contains:
@@ -87,7 +83,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 ## Folders structure
 
-This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are templates, thus they have the prefix `_template_` in their names, and are described in the [File templates](#file-templates) section. As noted before this template is very biased towards the author's preferences, needs, and limitations. For other references see the [Reproducibility section](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/randomReferences.md#reproducibility) in `randomReferences.md`.
+This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are templates, thus they have the prefix `_template_` in their names, and are described in the [File templates](#file-templates) section. As noted before this template is very biased towards the author's preferences, needs, and limitations.
 
 ### `code`
 
