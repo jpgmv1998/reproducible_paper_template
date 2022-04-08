@@ -16,16 +16,27 @@
 
 # SETUP ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+# INITIAL SETUP
+source(here::here("code/_setup.R"))
+
+
+# DECLARE LOCATION OF CURRENT SCRIPT TO SET UP PROJECT ROOT CORRECTLY
+here::i_am("code/raw2clean/sample_forAnalysis_folderName.R", uuid = "b4b389a8-43fc-4b08-89ed-b45b09efdbf1") # change uuid using uuid::UUIDgenerate()
+
+
 # START TIME
 tictoc::tic(msg = "sample_forAnalysis_folderName script", log = T)
 
-# SOURCES
-source("code/_functions/ExportTimeProcessing.R")
+
+
+# SOURCE FUNCTIONS
+source(here::here("code/_functions/ExportTimeProcessing.R"))
 
 
 
 # LIBRARIES
-library()
+groundhog::groundhog.library(pkg = , groundhog.date)
 
 
 
@@ -36,20 +47,20 @@ library()
 # SAMPLES
 
 # PANEL
-load("data/projectSpecific/folderName/panel_sample_folderName.Rdata")
+load(here::here("data/projectSpecific/folderName/panel_sample_folderName.Rdata"))
 
 # SPATIAL
-load("data/projectSpecific/folderName/spatial_sample_folderName.Rdata")
+load(here::here("data/projectSpecific/folderName/spatial_sample_folderName.Rdata"))
 
 # CROSS-SECTION
-load("data/projectSpecific/folderName/crossSection_sample_folderName.Rdata")
+load(here::here("data/projectSpecific/folderName/crossSection_sample_folderName.Rdata"))
 
 
 
 # VARIABLES
 
 # VARIABLE 1
-load("data/projectSpecific/folderName/dataFormat_variableTheme_folderName.Rdata")
+load(here::here("data/projectSpecific/folderName/dataFormat_variableTheme_folderName.Rdata"))
 
 
 
@@ -104,15 +115,15 @@ sjlabelled::set_label(crossSection.forAnalysis.folderName$columnName)   <- "(cro
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
 save(panel.forAnalysis.folderName,
-     file = file.path("data/projectSpecific/folderName",
+     file = here::here("data/projectSpecific/folderName",
                       "panel_forAnalysis_folderName.Rdata"))
 
 save(spatial.forAnalysis.folderName,
-     file = file.path("data/projectSpecific/folderName",
+     file = here::here("data/projectSpecific/folderName",
                       "spatial_forAnalysis_folderName.Rdata"))
 
 save(crossSection.forAnalysis.folderName,
-     file = file.path("data/projectSpecific/folderName",
+     file = here::here("data/projectSpecific/folderName",
                       "crossSection_forAnalysis_folderName.Rdata"))
 
 

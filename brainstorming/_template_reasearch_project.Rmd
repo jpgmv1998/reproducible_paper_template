@@ -11,6 +11,14 @@ citation_package: natbib
 ---
 
 ```{r setup, include=FALSE}
+# INITIAL SETUP
+source(here::here("code/_setup.R"))
+
+
+# DECLARE LOCATION OF CURRENT SCRIPT TO SET UP PROJECT ROOT CORRECTLY
+here::i_am("brainstorming/_template_research_project.Rmd", uuid = "1d47d414-586b-4f18-b8c0-a9d94de3477e") # change uuid using uuid::UUIDgenerate()
+
+# KNIT R OPTIONS 
 knitr::opts_chunk$set(echo = TRUE)
 ```
 

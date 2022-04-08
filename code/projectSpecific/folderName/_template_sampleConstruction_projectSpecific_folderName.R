@@ -16,29 +16,38 @@
 
 # SETUP ----------------------------------------------------------------------------------------------------------------------------------------------
 
+# INITIAL SETUP
+source(here::here("code/_setup.R"))
+
+
+# DECLARE LOCATION OF CURRENT SCRIPT TO SET UP PROJECT ROOT CORRECTLY
+here::i_am("code/raw2clean/sampleConstruction_projectSpecific_folderName.R", uuid = "b4b389a8-43fc-4b08-89ed-b45b09efdbf1") # change uuid using uuid::UUIDgenerate()
+
+
 # START TIME
 tictoc::tic(msg = "sampleConstruction_projectSpecific_folderName script", log = T)
 
-# SOURCES
-source("code/_functions/ExportTimeProcessing.R")
+
+
+# SOURCE FUNCTIONS
+source(here::here("code/_functions/ExportTimeProcessing.R"))
 
 
 
 # LIBRARIES
-library()
-
+groundhog::groundhog.library(pkg = , groundhog.date)
 
 
 
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
 # DATASET 1 NAME
-load("data/raw2clean/")
+load(here::here("data/raw2clean/"))
 
 
 
 # DATASET 2 NAME
-load("data/raw2clean/")
+load(here::here("data/raw2clean/"))
 
 
 
@@ -76,7 +85,7 @@ sjlabelled::set_label(dataFormat.sample.folderName$column1) <- "description of c
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
 save(dataFormat.sample.folderName,
-     file = file.path("data/projectSpecific/folderName",
+     file = here::here("data/projectSpecific/folderName",
                       "dataFormat_sample_folderName.Rdata"))
 
 

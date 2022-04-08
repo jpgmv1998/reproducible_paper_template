@@ -16,6 +16,8 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * R Project (with git - optional) - Allows better use of relative paths, helps with version control connecting RStudio directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
 
+* File paths - Use of `here` package for easy file referencing by using the top-level directory of a file project to easily build file paths (see more about [here](https://cran.r-project.org/web/packages/here/vignettes/here.html))
+
 * R packages management - Use of `groundhog` package to help with package version management and reproducibility (see more about [here](https://groundhogr.com/)).
 
 * [Code and data folders structure](#folders-structure) - suggestion of folder structure to organize all code and data files.
@@ -78,6 +80,8 @@ This section explains how code and data are organized, the structure of folders,
 ### `code`
 
 All files inside this folder should be in version control and committed regularly when changes are made.
+
+* `_setup.R` - script to establish the initial setup, need to uncomment `# install.packages("groundhog") # necessary only in the first time` to install groundhog package for the first time (package version management with groundhog and relative path with here)
 
 * `raw2clean` - a folder containing:
 

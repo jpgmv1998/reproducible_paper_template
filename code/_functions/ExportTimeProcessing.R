@@ -1,10 +1,10 @@
 
 # > PROJECT INFO
-# NAME: CERRADO PRIORITY MUNICIPALITIES
-# LEAD: JOAO VIEIRA
+# NAME: PROJECT NAME - TEMPLATE
+# LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: EXPORT TIME OF PROCESSING
+# AIM: EXPORT TIME OF PROCESSING FUNCTION
 # AUTHOR: JOAO VIEIRA
 #
 # > NOTES
@@ -30,6 +30,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
   # LIBRARIES
   require("tidyverse")
   require("tictoc")
+  require("here")
 
 
   # checks if tic.log only have one time information
@@ -184,7 +185,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
       # save table
       readr::write_csv(time.table,
                        col_names = F,
-                       file = paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"))
+                       file = here::here(paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv")))
 
 
 
