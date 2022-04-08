@@ -16,7 +16,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * R Project (with git - optional) - Allows better use of relative paths, helps with version control connecting RStudio directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
 
-* R packages management - Use of `renv` package to help with package version management and reproducibility (see more about [here](https://rstudio.github.io/renv/articles/renv.html)).
+* R packages management - Use of `groundhog` package to help with package version management and reproducibility (see more about [here](https://groundhogr.com/)).
 
 * [Code and data folders structure](#folders-structure) - suggestion of folder structure to organize all code and data files.
 
@@ -57,16 +57,6 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
     * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
 
 * When using R always open RStudio using the .Rproj file.
-
-* If you want to use R packages management see this [vignette](https://rstudio.github.io/renv/articles/renv.html) then:
-   * Open RProject and execute `install.packages("renv")` if you do not have it installed yet.
-   * If you already substituted all files with prefix `_template_` with your own scripts or want to use the same packages (`tidyverse`, `Hmisc`, `tictoc`, `skimr`, `sf`, `sjlabelled`) used in the template scripts, then:
-      * Execute `renv::init()` to develop a "local library" of the packages employed in the project. It will create the following files and folders in the project directory: `renv.lock`, `.Rprofile`, and `renv/.` Binaries of the project's packages will be stored in the `renv/library/` subfolder.
-      * When working on the project, use `renv::install()` to add any extra package that was not present before, and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
-   * If you want to start a fresh project without any initial packages, then:
-      * Execute `renv::init(bare = T)`. It will activate the renv structure to the project adding the same files as mentioned above, but the argument `bare = T` will make it skip the scan step and it will not install any package automatically.
-      * When working on the project, use `renv::install()` to add any necessary package to the project library (even if you already have it installed locally or in another project), and use `renv::snapshot()` to update your renv-related files. Make sure these are updated when pushing project changes to GitHub, sharing files with others, or preparing the replication package.
-    * If you want to collaborate with others using renv see this [vignette](https://rstudio.github.io/renv/articles/collaborating.html).
 
 ## Files description
 
