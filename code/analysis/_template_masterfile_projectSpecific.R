@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: MASTERFILE SCRIPT TO SOURCE ALL RAW2CLEAN SCRIPTS - TEMPLATE
+# AIM: MASTERFILE SCRIPT TO SOURCE ALL ANALYSIS SCRIPTS - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -42,29 +42,27 @@ groundhog::groundhog.library("tictoc", groundhog.date) # load package tictoc
 
 
 # DECLARE LOCATION OF CURRENT SCRIPT TO SET UP PROJECT ROOT CORRECTLY
-here::i_am("code/raw2clean/_masterfile_raw2clean.R", uuid = "") # set uuid using uuid::UUIDgenerate()
+here::i_am("code/analysis/_masterfile_analysis.R", uuid = "") # set uuid using uuid::UUIDgenerate()
 
 
 # START TIME
-tictoc::tic(msg = "_masterfile_raw2clean script", log = T)
+tictoc::tic(msg = "_masterfile_analysis script", log = T)
 
 
 # LIBRARIES
 groundhog::groundhog.library("sf", groundhog.date)         # to manipulate spatial data (vector format)
 groundhog::groundhog.library("tidyverse", groundhog.date)  # manipulate tables, works with sf
 groundhog::groundhog.library("sjlabelled", groundhog.date) # label columns, preferred than Hmisc::label because has function to clear labels when necessary
-groundhog::groundhog.library("Hmisc", groundhog.date)      # use `describe` function to generate codebook
-groundhog::groundhog.library("skimr", groundhog.date)      # use `skim` function to generate codebook
-groundhog::groundhog.library("", groundhog.date)           # brief description for the use of the package
+groundhog::groundhog.library("", groundhog.date)
 
 
 
 
 
-# SOURCE ----------------------------------------------------------------------------------------------------------------------------------------------
+# FOLDER NAME ----------------------------------------------------------------------------------------------------------------------------------------
 
-# SHORT DESCRIPTION
-source(here::here("code/raw2clean/datasetName_dataSource.R"), encoding = "UTF-8", echo = T)
+# BRIEF DESCRIPTION
+source(here::here("code/analysis/_analysis.R"), encoding = "UTF-8", echo = T)
 
 # clear enviromnet
 rm(list = ls())
@@ -83,7 +81,8 @@ tictoc::toc(log = T)
 source(here::here("code/_functions/ExportTimeProcessing.R"))
 
 # export time to csv table
-ExportTimeProcessing("raw2clean")
+ExportTimeProcessing("analysis")
+
 
 
 

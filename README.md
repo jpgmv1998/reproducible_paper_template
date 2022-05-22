@@ -4,7 +4,7 @@ Main goal: Create a template repository for starting a new paper project impleme
 
 Author: João Pedro Vieira
 
-Software: Focused on empirical projects that use mostly R for data manipulation. Tested using R version 4.0.2 and RStudio version 1.4.1103 on Windows.
+Software: Focused on empirical projects that use mostly R for data manipulation. Tested using R version 4.1.3 and RStudio version 1.4.1103 on Windows.
 
 Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations. 
 
@@ -26,7 +26,7 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 * [Replication Archive README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. 
 
-* [Replication Package example](https://github.com/jpgmv1998/reproducible_paper_example) - Application of this template using real data. It simulates a replication package in a stage ready to be deposited, thus containing only the necessary files to replicate the analysis (code and data folders; README; renv structure; license; and Rproj). Code, data, and README examples may be useful to see how the proposed structure works in "practice". The GitHub repository does not contain the datafiles because of its hard limit of 100Mb for individual files. So a version with all the data is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4579463.svg)](https://doi.org/10.5281/zenodo.4579463)
+* [Replication Package example](https://github.com/jpgmv1998/reproducible_paper_example) - Application of this template (old version) using real data. It simulates a replication package in a stage ready to be deposited, thus containing only the necessary files to replicate the analysis (code and data folders; README; renv structure; license; and Rproj). Code, data, and README examples may be useful to see how the proposed structure works in "practice". The GitHub repository does not contain the datafiles because of its hard limit of 100Mb for individual files. So a version with all the data is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4579463.svg)](https://doi.org/10.5281/zenodo.4579463)
 
 * Custom function to automatically generate csv files containing the time of processing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
 
@@ -70,9 +70,6 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 - `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
 
-- `brainstorming`, a folder to store research ideas, peer feedback, etc. Contains:
-  * `_template_research_project.Rmd`, a template (in Rmarkdown format) to organize and structure the first ideas about the project (draft version). Produces `_template_research_project.pdf` as output.
-
 ## Folders structure
 
 This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are templates, thus they have the prefix `_template_` in their names, and are described in the [File templates](#file-templates) section. As noted before this template is very biased towards the author's preferences, needs, and limitations.
@@ -80,8 +77,6 @@ This section explains how code and data are organized, the structure of folders,
 ### `code`
 
 All files inside this folder should be in version control and committed regularly when changes are made.
-
-* `_setup.R` - script to establish the initial setup, need to uncomment `# install.packages("groundhog") # necessary only in the first time` to install groundhog package for the first time (package version management with groundhog and relative path with here)
 
 * `raw2clean` - a folder containing:
 
@@ -92,7 +87,15 @@ All files inside this folder should be in version control and committed regularl
     * `_timeProcessing_raw2clean.csv` - a csv file containing the time each script took to run.
 
 * `projectSpecific` - a folder containing:
+
+    * `_masterfile_projectSpecific.R` - an R script to source all `projectSpecifc` R scripts in the desired sequence.
+
+    * `_timeProcessing_projectSpecific.csv` - a csv file containing the total time of all project-specific scripts
     
+    * `prepData` - a folder containing scripts to manipulate cleaned data before generating the samples of interest with:
+      
+      * multiple R scripts with pattern `variableTheme_projectSpecific_prepData.R`
+
     * possibly multiple folders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each folder should contain:
       
       * `sampleConstruction_projectSpecific_folderName.R` - an R script to create the samples of interest (e.g. panel, cross-section, spatial).
@@ -101,17 +104,9 @@ All files inside this folder should be in version control and committed regularl
     
       * `dataFormat_forAnalysis_folderName.R` - R script(s) to combine all relevant files in `data/projectSpecific/folderName` into an output file for analysis, with `dataFormat` being at least one of the following: `spatial`, `panel`, `crossSection`. If there is only one relevant format exclude the prefix `dataFormat`.
       
-      * `_masterfile_projectSpecific_folderName.R` - an R script to source all `projectSpecifc/folderName` R scripts in the desired sequence.
-      
       * `_timeProcessing_projectSpecific_folderName.csv` - a csv file containing the time each script took to run.  
-      
-* `analysis` - a folder containing some folders like:
-  
-  * `maps` - to generate maps when using spatial data.
-  
-  * `stats` - to generate descriptive statistics (tables/graphics)
 
-  * `regs` - to generate regression outputs (tables/graphics).
+* `analysis` - a folder to store scripts that generate figures and tables with results of interest:
   
 
 * `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
@@ -135,6 +130,8 @@ The default of this folder is to ignore all folders that normally contain large 
 
 * `projectSpecific` - a folder containing:
     
+    * `prepData` - a folder containing prepared data necessary before generating the samples of interest.
+    
     * possibly multiple folders, if the project has more than one base sample for analysis (e.g one sample at the municipality level and the other at the individual level). Each folder should contain:
     
       * whenever `dataFormat` is used it can represent at least one of the following: `spatial`, `panel`, `crossSection`. If there is only one relevant format exclude the prefix `dataFormat`.
@@ -146,13 +143,7 @@ The default of this folder is to ignore all folders that normally contain large 
       * the output(s) of `sample_forAnalysis_folderName.R` file with the following name pattern: `dataFormat_forAnalysis_folderName.Rdata`.
       
      
-* `analysis` - a folder, that may need more adaptations accordingly to the project, containing some folders like:
-  
-  * `maps` - to store maps when using spatial data.
-  
-  * `stats` - to store descriptive statistics (tables/graphics)
-
-  * `regs` - to store regression outputs (tables/graphics).
+* `analysis` - a folder to store figures and tables with results of interest.
   
 * `_temp` - a folder to store temporary files (e.g. files automatically generated when processing raster data)
   
@@ -160,55 +151,6 @@ The default of this folder is to ignore all folders that normally contain large 
 ## File templates 
 
 All files with the prefix `_template_` contain the suggested structure for that type of file. When using this template all these files should be, eventually, replaced or removed from your project. 
-
-### `code`
-
-* `raw2clean` - a folder containing:
-
-    * The template `code/raw2clean/_template_datasetName_raw2clean.R` an R script containing only the general structur of the `datasetName_raw2clean.R` type of file.
-        
-    * The template `_template_masterfile_raw2clean.R` of the `masterfile_raw2clean.R`.
-    
-* `projectSpecific` - a folder containing:
-      
-    * The template folder `folderName` containing:
-    
-        * The template `_template_sampleConstruction_projectSpecific_folderName.R` of the `sampleConstruction_projectSpecific_folderName.R`.
-
-        * The template `code/projectSpecific/_template_dataFormat_variableTheme_projectSpecific_folderName.R` of the `dataFormat_variableTheme_projectSpecific_folderName.R`.
-
-        * The template `_template_sample_forAnalysis_folderName.R` of the `sample_forAnalysis_folderName.R`.
-
-        * The template `_template_masterfile_projectSpecific_folderName.R` of the `_masterfile_projectSpecific_folderName.R`.
-
-        
-* `analysis` - a folder containing some folders like (pending addition of examples and templates):
-  
-  * `maps` - a folder containing:
-  
-    *
-  
-  * `stats` - a folder containing:
-  
-    *
-
-  * `regs` - a folder containing:
-  
-    *
-
-* `_functions` - a folder containing R scripts with custom functions used in multiple scripts across the project like:
-
-  * `ExportTimeProcessing.R` - an R script to store ExportTimeProcessing function used to calculate and export the time of processing of each R example script. 
-  
-### `data`
-
-* `raw2clean` - a folder containing:
-
-  * The template `_template_datasetName_dataSource` folder that contains a skeleton of the `_metadata.txt` file in `documentation` and the folder structure to be used for your own datasets.
-
-* `projectSpecific` - a folder containing:
-    
-    * An empty template folder `folderName`.
   
 ## License
 The material in this repository is made available under a dual-license setup. See [LICENSE](LICENSE) for details. 

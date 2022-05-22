@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: ADD VARIABLE THEME INFO TO PROJECT DATA FORMAT SAMPLE - TEMPLATE
+# AIM: PREPARE VARIABLE THEME - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -41,11 +41,11 @@ groundhog::groundhog.library("tictoc", groundhog.date) # load package tictoc
 
 
 # DECLARE LOCATION OF CURRENT SCRIPT TO SET UP PROJECT ROOT CORRECTLY
-here::i_am("code/projectSpecific/folderName/dataFormat_variableTheme_projectSpecific_folderName.R", uuid = "") # set uuid using uuid::UUIDgenerate()
+here::i_am("code/projectSpecific/prepData/variableTheme_projectSpecific_prepData.R", uuid = "") # set uuid using uuid::UUIDgenerate()
 
 
 # START TIME
-tictoc::tic(msg = "dataFormat_variableTheme_projectSpecific_folderName script", log = T)
+tictoc::tic(msg = "variableTheme_projectSpecific_prepData script", log = T)
 
 
 
@@ -65,11 +65,6 @@ groundhog::groundhog.library("", groundhog.date)
 
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
-# DATA FORMAT SAMPLE
-load(here::here("data/projectSpecific/folderName/dataFormat_sample_folderName.Rdata"))
-
-
-
 # CLEANED DATA
 load(here::here("data/raw2clean/datasetName_dataSource/output/clean_datasetName.Rdata"))
 
@@ -80,8 +75,8 @@ load(here::here("data/raw2clean/datasetName_dataSource/output/clean_datasetName.
 # DATA MANIPULATION ----------------------------------------------------------------------------------------------------------------------------------
 
 # MERGE WITH SAMPLE
-dataFormat.variableTheme.folderName <-
-  dataFormat.sample.folderName %>%
+dataFormat.variableTheme.prepData <-
+  dataFormat.sample.prepData %>%
   dplyr::left_join(clean.datasetName)
 
 
@@ -91,13 +86,13 @@ dataFormat.variableTheme.folderName <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(dataFormat.variableTheme.folderName$column1) <- "description of column 1"
+sjlabelled::set_label(dataFormat.variableTheme.prepData$column1) <- "description of column 1"
 
 
 
 # POST-TREATMENT OVERVIEW
-# summary(dataFormat.variableTheme.folderName)
-# View(dataFormat.variableTheme.folderName)
+# summary(dataFormat.variableTheme.prepData)
+# View(dataFormat.variableTheme.prepData)
 
 
 
@@ -105,9 +100,9 @@ sjlabelled::set_label(dataFormat.variableTheme.folderName$column1) <- "descripti
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-save(dataFormat.variableTheme.folderName,
-     file = here::here("data/projectSpecific/folderName",
-                      paste0("dataFormat_variableTheme_folderName", ".Rdata")))
+save(dataFormat.variableTheme.prepData,
+     file = here::here("data/projectSpecific/prepData",
+                      paste0("dataFormat_variableTheme_prepData", ".Rdata")))
 
 
 
@@ -115,7 +110,7 @@ save(dataFormat.variableTheme.folderName,
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("projectSpecific/folderName")
+ExportTimeProcessing("projectSpecific/prepData")
 
 
 
