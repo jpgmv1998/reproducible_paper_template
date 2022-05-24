@@ -56,7 +56,9 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 
 - `_template_README.md`, a template file for a replication README adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/).
 
-## Folders structure
+- `paper`, a folder with LaTeX template files to write an empirical paper.
+
+## Code and Data Folders Structure
 
 This section explains how code and data are organized, the structure of folders, and suggestions of patterns for file names. In practice, the files inside the folders are templates, thus they have the prefix `_template_` in their names, and are described in the [File templates](#file-templates) section. As noted before this template is very biased towards the author's preferences, needs, and limitations.
 
@@ -133,6 +135,9 @@ The default of this folder is to ignore all folders that normally contain large 
   
 * `_temp` - a folder to store temporary files (e.g. files automatically generated when processing raster data)
   
+### `output`
+
+Contains two folders `_figures` and `_tables` to store the final figures and tables used in the paper and/or slides.
 
 ## File templates 
 
