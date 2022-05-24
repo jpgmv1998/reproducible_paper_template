@@ -12,6 +12,15 @@ Feedback and suggestions are welcome to improve this project. :rocket:
 
 Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
+## How to use
+
+* Select use this template on the upper right corner (or click [here](https://github.com/jpgmv1998/reproducible_paper_template/generate)) and follow the instructions to create your own GitHub repository.
+
+* If you want to use version control within the RStudio project with git see this [tutorial](https://happygitwithr.com/) then:
+    * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
+
+* When using R always open RStudio using the .Rproj file.
+
 ## Features
 
 * R Project (with git - optional) - Allows better use of relative paths, helps with version control connecting RStudio directly to a GitHub project (requires previous setup - see more about [here](https://happygitwithr.com/)).
@@ -33,32 +42,9 @@ Ideas for implementation are stored on [Issues](https://github.com/jpgmv1998/rep
 * For each raw dataset:
     - Added `_metadata` template with data description, access, and citation to be referenced in the Data Availability Statement section of the replication README.
     - Incorporated routine to generate codebooks after initial cleaning - adapted from [R guide](https://github.com/skhiggins/R_guide).
-    ```r   
-    # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
-    sink("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt") # create text file to be filled with console output
+   
+* Added [empirical paper LaTeX template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/paper) - adapted from [Template for Empirical Papers - Ricardo Dahis](https://github.com/rdahis/paper_template)
 
-    # if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
-    if (any(class(clean.datasetName) == "sf")) {
-
-      clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
-      clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim()     %>% print()
-
-    } else {
-
-      clean.datasetName %>% Hmisc::describe() %>% print()
-      clean.datasetName %>% skimr::skim()     %>% print()
-    }
-    sink() # close the sink
-    ```
-
-## How to use
-
-* Select use this template on the upper right corner (or click [here](https://github.com/jpgmv1998/reproducible_paper_template/generate)) and follow the instructions to create your own GitHub repository.
-
-* If you want to use version control within the RStudio project with git see this [tutorial](https://happygitwithr.com/) then:
-    * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
-
-* When using R always open RStudio using the .Rproj file.
 
 ## Files description
 
