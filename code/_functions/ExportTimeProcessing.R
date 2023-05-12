@@ -5,7 +5,7 @@
 #
 # > THIS SCRIPT
 # AIM: EXPORT TIME OF PROCESSING FUNCTION
-# AUTHOR: JOAO VIEIRA
+# AUTHOR: JOÃO PEDRO VIEIRA
 #
 # > NOTES
 # 1: -
@@ -32,7 +32,6 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
   require("tictoc")
   require("here")
 
-
   # checks if tic.log only have one time information
   if (length(tictoc::tic.log(format = TRUE)) != 1) {
 
@@ -42,7 +41,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
 
 
   # checks if file exists or not
-  if (!file.exists(paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"))) {
+  if (!file.exists(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv"))) {
 
     # extract time in seconds
     time.in.seconds <-
@@ -58,11 +57,11 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
 
       # creates csv file with the first entry
       tictoc::tic.log(format = T) %>%
-      as.character() %>%
-      str_replace(pattern = "\\d{1,7}\\.\\d{1,3} sec", time.in.days) %>%
-      tibble::tibble(.name_repair = ~ "time") %>%
-      readr::write_csv(col_names = F,
-                       file = paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"))
+        as.character() %>%
+        str_replace(pattern = "\\d{1,7}\\.\\d{1,3} sec", time.in.days) %>%
+        tibble::tibble(.name_repair = ~ "time") %>%
+        readr::write_csv(col_names = F,
+                         file = here::here(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv")))
 
 
     } else if (time.in.seconds > 3600) {
@@ -76,7 +75,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
         str_replace(pattern = "\\d{1,7}\\.\\d{1,3} sec", time.in.hours) %>%
         tibble::tibble(.name_repair = ~ "time") %>%
         readr::write_csv(col_names = F,
-                         file = paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"))
+                         file = here::here(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv")))
 
     } else if (time.in.seconds > 60) {
 
@@ -90,7 +89,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
         str_replace(pattern = "\\d{1,7}\\.\\d{1,3} sec", time.in.minutes) %>%
         tibble::tibble(.name_repair = ~ "time") %>%
         readr::write_csv(col_names = F,
-                         file = paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"))
+                         file = here::here(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv")))
 
     } else {
 
@@ -102,7 +101,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
         str_replace(pattern = "\\d{1,7}\\.\\d{1,3} sec", time.in.seconds) %>%
         tibble::tibble(.name_repair = ~ "time") %>%
         readr::write_csv(col_names = F,
-                         file = paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"))
+                         file = here::here(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv")))
     }
 
     # clear tic toc log
@@ -111,7 +110,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
   } else {
 
     # read existing table of times
-    time.table <- readr::read_csv(paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv"),
+    time.table <- readr::read_csv(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv"),
                                   col_names = "time")
 
     # extract script name
@@ -138,9 +137,9 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
 
         # appends new time (in days) to existing table
         time.table <- dplyr::bind_rows(time.table, tictoc::tic.log(format = T) %>%
-                                                   as.character() %>%
-                                                   str_replace(pattern = "\\d{1,6}.\\d{1,2} sec", time.in.days) %>%
-                                                   tibble::tibble(.name_repair = ~ "time"))
+                                         as.character() %>%
+                                         str_replace(pattern = "\\d{1,6}.\\d{1,2} sec", time.in.days) %>%
+                                         tibble::tibble(.name_repair = ~ "time"))
 
 
       } else if (time.in.seconds > 3600) {
@@ -178,14 +177,14 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
                                          tibble::tibble(.name_repair = ~ "time"))
 
 
-     }
+      }
 
 
 
       # save table
       readr::write_csv(time.table,
                        col_names = F,
-                       file = here::here(paste0("code/", fctn.codeDir, "/_timeProcessing_", stringr::str_replace(fctn.codeDir, "/", "_"), ".csv")))
+                       file = here::here(paste0(fctn.codeDir, "/_timeProcessing_", stringr::str_replace_all(fctn.codeDir, "/", "_"), ".csv")))
 
 
 

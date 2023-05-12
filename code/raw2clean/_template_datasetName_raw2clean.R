@@ -16,52 +16,12 @@
 
 # SETUP ----------------------------------------------------------------------------------------------------------------------------------------------
 
-# GROUNDHOG (REPRODUCIBILITY SOLUTION TO HANDLING DIFFERENT VERSIONS OF R AND ITS PACKAGES)
-
-# check if groundhog is installed and load it
-if ("groundhog" %in% installed.packages()) {
-  library("groundhog")
-} else {
-  install.packages("groundhog")
-  library("groundhog")
-}
-
-# define date of reference to load all packages
-groundhog.date <- "YYYY-MM-DD" # CHANGE TO THE DESIRED REFERENCE DATE TO DOWNLOAD THE PACKAGE'S VERSIONS
-
-# guarantee version 1.5 of groundhog is being used (if you another version change the date)
-groundhog::meta.groundhog(date = "2022-04-01")
+# RUN 'setup.R' TO CONFIGURE INITIAL SETUP (mostly installing/loading packages)
+source("code/setup.R")
 
 
-# HERE
-groundhog::groundhog.library("here", groundhog.date) # load package here
-
-
-# TICTOC
-groundhog::groundhog.library("tictoc", groundhog.date) # load package tictoc
-
-
-# DECLARE LOCATION OF CURRENT SCRIPT TO SET UP PROJECT ROOT CORRECTLY
-here::i_am("code/raw2clean/datasetName_raw2clean.R", uuid = "") # set uuid using uuid::UUIDgenerate()
-
-
-# START TIME
-tictoc::tic(msg = "datasetName_raw2clean script", log = T)
-
-
-
-# SOURCE FUNCTIONS
-source(here::here("code/_functions/ExportTimeProcessing.R"))
-
-
-
-# LIBRARIES
-groundhog::groundhog.library("sf", groundhog.date)         # to manipulate spatial data (vector format)
-groundhog::groundhog.library("tidyverse", groundhog.date)  # manipulate tables, works with sf
-groundhog::groundhog.library("sjlabelled", groundhog.date) # label columns, preferred than Hmisc::label because has function to clear labels when necessary
-groundhog::groundhog.library("Hmisc", groundhog.date)      # use `describe` function to generate codebook
-groundhog::groundhog.library("skimr", groundhog.date)      # use `skim` function to generate codebook
-groundhog::groundhog.library("", groundhog.date)
+# START TIMER
+tictoc::tic(msg = "datasetName_raw2clean.R script", log = T)
 
 
 
@@ -74,10 +34,10 @@ raw.datasetNameAbbrev <-
 
 
 
-# DATA EXPLORATION [disabled for speed]
+# DATA EXPLORATION (use when building the script to understand the input data)
 # summary(raw.datasetNameAbbrev)
-# View(raw.datasetNameAbbrev)
-# plot(raw.datasetNameAbbrev$geometry) # only for spatial data (shapefile)
+# str(raw.datasetNameAbbrev)
+# plot(raw.datasetNameAbbrev$geometry) # only for spatial data (vector)
 
 
 
@@ -86,7 +46,8 @@ raw.datasetNameAbbrev <-
 # DATASET CLEANUP AND PREP ---------------------------------------------------------------------------------------------------------------------------
 
 # COLUMN CLEANUP
-# names
+
+# extract column names
 colnames(raw.datasetNameAbbrev)
 
 # translate column names
@@ -105,21 +66,23 @@ raw.datasetNameAbbrev <-
 
 
 # LATIN CHARACTER TREATMENT
+
+# convert enconding to remove special characters (may not be necessary or need use other encoding)
 raw.datasetNameAbbrev <-
   raw.datasetNameAbbrev %>%
   dplyr::mutate(dplyr::across(tidyselect:::where(is.character),
                               iconv,
                               from = "UTF-8",
-                              to = "ASCII//TRANSLIT")) # may not be necessary or need use other encoding
+                              to = "ASCII//TRANSLIT"))
 
 
 
-# PROJECTION - only for spatial data (shapefile)
-raw.datasetNameAbbrev <- sf::st_transform(x = raw.datasetNameAbbrev, crs = 5880) # SIRGAS 2000 / Brazil Polyconic (https://epsg.io/5880)
+# SPATIAL DATA TREATMENT (vector)
 
+# project to SIRGAS 2000 / Brazil Polyconic (https://epsg.io/5880)
+raw.datasetNameAbbrev <- sf::st_transform(x = raw.datasetNameAbbrev, crs = 5880)
 
-
-# GEOMETRY CLEANUP - only for spatial data (shapefile)
+# check and clean geometries
 raw.datasetNameAbbrev <- sf::st_make_valid(raw.datasetNameAbbrev)
 
 
@@ -129,39 +92,37 @@ raw.datasetNameAbbrev <- sf::st_make_valid(raw.datasetNameAbbrev)
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(raw.datasetNameAbbrev$column1)            <- "description of column 1"
-sjlabelled::set_label(raw.datasetNameAbbrev$column2)            <- "description of column 2"
-
-
-
-
-# change object name for exportation
-clean.datasetName <- raw.datasetNameAbbrev
+sjlabelled::set_label(raw.datasetNameAbbrev$column1) <- "description of column 1"
+sjlabelled::set_label(raw.datasetNameAbbrev$column2) <- "description of column 2"
 
 
 
 # POST-TREATMENT OVERVIEW
-# summary(clean.datasetName)
-# View(clean.datasetName)
-# plot(clean.datasetName$geometry) # only for spatial data (shapefile)
+# summary(raw.datasetNameAbbrev)
+# str(raw.datasetNameAbbrev)
+# plot(raw.datasetNameAbbrev$geometry) # only for spatial data (vector)
 
 
 
 # CODEBOOK GENERATION (VARIABLES DESCRIPTION + SUMMARY STATISTICS)
-sink(here::here("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt")) # create text file to be filled with console output
 
-# if the object is spatial (sf class) drop geoemtry column to simplify the codebook and avoid error in describe
-if (any(class(clean.datasetName) == "sf")) {
+# create text file to be filled with console output
+sink(here::here("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt"))
 
-  clean.datasetName %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
-  clean.datasetName %>% sf::st_drop_geometry() %>% skimr::skim() %>% print()
+# if the object is spatial (sf class) drop geometry column to simplify the codebook and avoid error in describe
+if (any(class(raw.datasetNameAbbrev) == "sf")) {
+
+  raw.datasetNameAbbrev %>% sf::st_drop_geometry() %>% Hmisc::describe() %>% print()
+  raw.datasetNameAbbrev %>% sf::st_drop_geometry() %>% modelsummary::datasummary_skim() %>% print()
 
 } else {
 
-  clean.datasetName %>% Hmisc::describe() %>% print()
-  clean.datasetName %>% skimr::skim() %>% print()
+  raw.datasetNameAbbrev %>% Hmisc::describe() %>% print()
+  raw.datasetNameAbbrev %>% modelsummary::datasummary_skim() %>% print()
 }
-sink() # close the sink
+
+# end printing console output to text file
+sink()
 
 
 
@@ -169,16 +130,15 @@ sink() # close the sink
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-save(clean.datasetName,
-     file = here::here("data/raw2clean/datasetName_dataSource/output",
-                      "clean_datasetName.Rdata"))
+saveRDS(raw.datasetNameAbbrev,
+        file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
 
 # END TIMER
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("raw2clean")
+ExportTimeProcessing("code/raw2clean")
 
 
 

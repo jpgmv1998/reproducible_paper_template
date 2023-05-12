@@ -1,0 +1,115 @@
+---
+title: "Title:"
+subtitle: "Subtitle"
+author: 
+   - Author Name$^1$
+   - Author Name$^2$
+institute: 
+   - $^1$Institution
+   - $^2$Institution
+date: "Month, Year"
+output: 
+  beamer_presentation:
+    slide_level: 2
+    theme: "Berlin"
+    colortheme: "spruce"
+    keep_tex: true
+    includes: 
+      in_header: "../aux_files/preamble_slides.tex"
+classoption: "aspectratio=169"
+section-titles: true  # add Appendix section title transition slide
+urlcolor: blue
+bibliography: "../../references/references_bib.bib"
+---
+
+```{r setup, include=FALSE}
+# RUN 'setup.R' TO CONFIGURE INITIAL SETUP (mostly installing/loading packages)
+source("../../code/setup.R")
+
+
+# KNITR OPTIONS 
+knitr::opts_chunk$set(fig.pos = 'H!', warning = F, message = F, echo = F, include = T, fig.align = 'center', fig.height = 6, fig.width = 9)
+```
+
+
+# Introduction 
+
+## Motivation 
+
+\label{motivation}
+
+## This paper
+
+\label{thisPaper}
+
+## Preview of results
+
+\label{previewResults}
+
+
+## Related literature
+
+- **Lit1**
+  - \begingroup \footnotesize\color{gray} @; @ \endgroup
+  - **Contribution**: 
+
+\pause
+
+- **Lit2** 
+  - \begingroup \footnotesize\color{gray} @; @ \endgroup
+  - **Contribution**: 
+
+\pause
+
+- **Lit3** 
+  - \begingroup \footnotesize\color{gray} @; @ \endgroup
+  - **Contribution**: 
+
+# Institutional context
+
+# Data
+
+## Main datasets
+
+- **Dataset1** (Data source)
+
+
+# Empirical strategy
+
+# Results  
+
+## Robustness exercises
+
+\label{robustness}
+
+
+# Conclusion
+
+## Summary 
+
+\label{conclusion}
+
+## Policy implications
+  
+
+``` {=latex}
+\newcounter{finalframe}
+\setcounter{finalframe}{\value{framenumber}}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{center}
+\Large Thank you
+\end{center}
+\end{frame}
+
+\appendix
+\begin{frame}[allowframebreaks]{References}
+```
+
+
+\tiny
+
+<div id="refs"></div>
+
+\backupend

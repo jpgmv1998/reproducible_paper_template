@@ -1,0 +1,85 @@
+
+\documentclass[12pt, a4paper, hidelinks]{article}
+
+% Packages and Formatting
+\usepackage{aux_files/style/mystyle_general}
+\usepackage{aux_files/style/mystyle_article}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+\title{\Large \textbf{Title}\\ \large \textbf{Subtitle}\thanks{We thank ... Person 1, Person 2, and audiences at Place 1, Conference 1, for helpful comments and suggestions. Any errors are our own. Financial support for this research came, in part, from Funder 1 and Funder 2.}}
+\author{Author Name 1\thanks{Department of Economics, Institution. E-mail: X} \\ \large Institution \and Author Name 2\thanks{Department of Economics, Institution. E-mail: Y}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+\noindent  \\ % X words
+
+% Long version of abstract (X words):
+
+\noindent\textit{Keywords:} keyword1, keyword2, keyword3, keyword4 \\
+\noindent\textit{JEL Codes:} jel1, jel2, jel3, jel4 \\
+\end{abstract}
+\setcounter{page}{0}
+\thispagestyle{empty}
+\end{titlepage}
+\pagebreak \newpage
+
+% Introduction
+\section{Introduction} \label{sec:introduction}
+
+\setlength{\parskip}{0.5em} % increase space across paragraphs
+%\setlength{\parindent}{0cm} % adjust paragraph indentation
+
+
+% Institutional Context
+\section{Institutional Context} \label{sec:institutional}
+
+% Data
+\section{Data} \label{sec:data}
+
+% Empirical Strategy
+
+\section{Empirical Strategy} \label{sec:empirical}
+
+% Results
+\section{Results} \label{sec:results}
+
+% Conclusion
+\section{Conclusion} \label{sec:conclusion}
+
+% References
+\newpage
+\bibliographystyle{apalike}
+\bibliography{../../references/references_bib.bib}
+\pagebreak
+
+% Figures
+\section{Figures} \label{sec:figures}
+\input{../../results/figures/figures.tex}
+
+\pagebreak
+
+% Tables
+\section{Tables} \label{sec:tables}
+\input{../../results/tables/tables.tex}
+
+
+
+% Appendices
+\newpage
+\appendix
+\pagenumbering{arabic} % resets `page` counter to 1
+\section{Appendix} \label{sec:appendix}
+\renewcommand{\thefigure}{A.\arabic{figure}}
+\renewcommand{\thetable}{A.\arabic{table}}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{footnote}{0}
+\input{appendix_paper.tex}
+
+\end{document}
+

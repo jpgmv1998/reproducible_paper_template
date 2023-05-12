@@ -1,0 +1,95 @@
+---
+title: "Prelimary Results for"
+subtitle: "Title: Subtitle"
+author: 
+   - Author Name$^1$
+   - Author Name$^2$
+institute: 
+   - $^1$Institution
+   - $^2$Institution
+date: "Month, Year"
+output: 
+  beamer_presentation:
+    slide_level: 1
+    theme: "Berlin"
+    colortheme: "spruce"
+    keep_tex: true
+    includes: 
+      in_header: "../aux_files/preamble_slides.tex"
+classoption: "aspectratio=169"
+section-titles: true  # add Appendix section title transition slide
+urlcolor: blue
+bibliography: "../../references/references_bib.bib"
+---
+
+```{r setup, include=FALSE}
+# RUN 'setup.R' TO CONFIGURE INITIAL SETUP (mostly installing/loading packages)
+source("../../code/setup.R")
+
+
+# KNITR OPTIONS 
+knitr::opts_chunk$set(fig.pos = 'H!', warning = F, message = F, echo = F, include = T, fig.align = 'center', fig.height = 6, fig.width = 9)
+```
+
+
+# Figure 1 
+
+<!-- % \begin{figure}[H] -->
+<!-- % \caption{Title} -->
+<!-- % \centering -->
+<!-- % \begin{minipage}{\textwidth} % choose width suitably -->
+<!-- % %\includegraphics[width=\textwidth]{../../results/figures/fig1_name.png} -->
+<!-- % \scriptsize -->
+<!--     % \RaggedRight -->
+<!--     % \textit{Notes:} . \\ -->
+<!--     % \textit{Data Sources:} . -->
+<!-- % \end{minipage} -->
+<!-- % \label{fig:} -->
+<!-- % \end{figure} -->
+
+# Table 1 
+
+<!-- % \begin{table}[H] -->
+<!-- % \caption{Title} -->
+<!-- % \centering -->
+<!-- % \scalebox{1}{ -->
+<!-- % \begin{threeparttable} -->
+<!-- %     %\input{../../results/tables/tab1_name.tex} -->
+<!-- % \begin{tablenotes}[flushleft] -->
+<!-- % \item \footnotesize \textit{Notes}: . -->
+<!-- % \item \footnotesize \textit{Data Sources}: . -->
+<!-- % \end{tablenotes} -->
+<!-- % \end{threeparttable}} -->
+<!-- % \label{tab:} -->
+<!-- % \end{table} -->
+
+# Figure A1 
+
+<!-- % \begin{figure}[H] -->
+<!-- % \caption{Title} -->
+<!-- % \centering -->
+<!-- % \begin{minipage}{\textwidth} % choose width suitably -->
+<!-- % %\includegraphics[width=\textwidth]{../../results/figures/figA1_name.png} -->
+<!-- % \scriptsize -->
+<!--     % \RaggedRight -->
+<!--     % \textit{Notes:} . \\ -->
+<!--     % \textit{Data Sources:} . -->
+<!-- % \end{minipage} -->
+<!-- % \label{fig:} -->
+<!-- % \end{figure} -->
+
+# Table A1 
+
+<!-- % \begin{table}[H] -->
+<!-- % \caption{Title} -->
+<!-- % \centering -->
+<!-- % \scalebox{1}{ -->
+<!-- % \begin{threeparttable} -->
+<!-- %     %\input{../../results/tables/tabA1_name.tex} -->
+<!-- % \begin{tablenotes}[flushleft] -->
+<!-- % \item \footnotesize \textit{Notes}: . -->
+<!-- % \item \footnotesize \textit{Data Sources}: . -->
+<!-- % \end{tablenotes} -->
+<!-- % \end{threeparttable}} -->
+<!-- % \label{tab:} -->
+<!-- % \end{table} -->
