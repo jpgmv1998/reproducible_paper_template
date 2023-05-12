@@ -2,15 +2,15 @@
 \documentclass[12pt, a4paper, hidelinks]{article}
 
 % Packages and Formatting
-\usepackage{aux_files/style/mystyle_general}
-\usepackage{aux_files/style/mystyle_article}
+\usepackage{../aux_files/mystyle_general}
+\usepackage{../aux_files/mystyle_article}
 
 \begin{document}
 
 % Title Page
 \begin{titlepage}
 \title{\Large \textbf{Title}\\ \large \textbf{Subtitle}\thanks{We thank ... Person 1, Person 2, and audiences at Place 1, Conference 1, for helpful comments and suggestions. Any errors are our own. Financial support for this research came, in part, from Funder 1 and Funder 2.}}
-\author{Author Name 1\thanks{Department of Economics, Institution. E-mail: X} \\ \large Institution \and Author Name 2\thanks{Department of Economics, Institution. E-mail: Y}
+\author{Author Name 1\thanks{Department of Economics, Institution. E-mail: X} \\ \large Institution \and Author Name 2\thanks{Department of Economics, Institution. E-mail: Y} \\ \large Institution}
 \date{\today}
 
 \maketitle
@@ -79,7 +79,7 @@
 \setcounter{figure}{0}
 \setcounter{table}{0}
 \setcounter{footnote}{0}
-\input{appendix_paper.tex}
+\input{_template_appendix_paper.tex}
 
 \end{document}
 
