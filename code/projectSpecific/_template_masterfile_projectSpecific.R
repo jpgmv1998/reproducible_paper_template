@@ -28,10 +28,10 @@ tictoc::tic(msg = "_masterfile_projectSpecific.R script", log = T)
 
 
 
-# RUN ALL SCRIPTS IN PREP DATA FOLDER ------------------------------------------------------------------------------------------------------------------------------------------
+# RUN ALL PREP DATA SCRIPTS --------------------------------------------------------------------------------------------------------------------------
 
 # PREPARE VARIABLE THEME
-source(here::here("code/projectSpecific/prepData/variableTheme_projectSpecific_prepData.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/variableTheme_projectSpecific_prepData.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -40,10 +40,10 @@ rm(list = ls())
 
 
 
-# RUN ALL SCRIPTS IN UNIT LEVEL FOLDER ----------------------------------------------------------------------------------------------------------------------------------------
+# RUN ALL UNIT LEVEL SCRIPTS -------------------------------------------------------------------------------------------------------------------------
 
 # CONSTRUCT SAMPLE(S) OF INTEREST AT UNIT LEVEL
-source(here::here("code/projectSpecific/unitLevel/sampleConstruction_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/sampleConstruction_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -51,7 +51,7 @@ rm(list = ls())
 
 
 # PREPARE VARIABLE THEME
-source(here::here("code/projectSpecific/unitLevel/variableTheme_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/variableTheme_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -59,7 +59,7 @@ rm(list = ls())
 
 
 # GENERATE SAMPLE(S) FOR ANALYSIS
-source(here::here("code/projectSpecific/unitLevel/sampleForAnalysis_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/sampleForAnalysis_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())

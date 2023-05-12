@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: MASTERFILE SCRIPT TO RUN ALL FOLDER MASTERFILES - TEMPLATE
+# AIM: MASTERFILE SCRIPT TO RUN ALL SUBFOLDER MASTERFILES - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "_MASTERFILE.R script", log = T)
+tictoc::tic(msg = "MASTERFILE.R script", log = T)
 
 
 
@@ -30,21 +30,21 @@ tictoc::tic(msg = "_MASTERFILE.R script", log = T)
 # RUN MASTERFILES ------------------------------------------------------------------------------------------------------------------------------------
 
 # RUN RAW2CLEAN SCRIPTS
-source(file = here::here("code/raw2clean/_masterfile_raw2clean.R"), encoding = "UTF-8", echo = T)
+source(file = here::here("code/raw2clean/masterfile_raw2clean.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # RUN PROJECT-SPECIFIC SCRIPTS
-source(file = here::here("code/raw2clean/_masterfile_projectSpecific.R"), encoding = "UTF-8", echo = T)
+source(file = here::here("code/raw2clean/masterfile_projectSpecific.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # RUN ANALYSIS SCRIPTS
-source(file = here::here("code/raw2clean/_masterfile_analysis.R"), encoding = "UTF-8", echo = T)
+source(file = here::here("code/raw2clean/masterfile_analysis.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
