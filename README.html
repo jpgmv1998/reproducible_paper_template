@@ -369,24 +369,24 @@ preferences, needs, and limitations.</p>
 <div id="how-to-use" class="section level2">
 <h2>How to use</h2>
 <ul>
-<li><p>Select use this template on the upper right corner (or click <a href="https://github.com/jpgmv1998/reproducible_paper_template/generate">here</a>)
+<li><p>Select “Use this template” in the upper right corner (or click <a href="https://github.com/jpgmv1998/reproducible_paper_template/generate">here</a>)
 and follow the instructions to create your GitHub repository using this
 template.</p></li>
 <li><p>If you want to use version control within the RStudio project
-with git see this <a href="https://happygitwithr.com/">tutorial</a>
+with git, see this <a href="https://happygitwithr.com/">tutorial</a>
 then:</p>
 <ul>
 <li>Open RStudio &gt; File &gt; New Project… &gt; Version Control &gt;
-Git &gt; insert the url, that appears when clicking on code in your
-GitHub repository, on Repository URL.</li>
+Git &gt; Insert the URL that appears when clicking on code in your
+GitHub repository on the Repository URL.</li>
 </ul></li>
-<li><p>When using R always open RStudio using the .Rproj file.</p></li>
+<li><p>When using R, always open RStudio using the .Rproj file.</p></li>
 <li><p>In Tools &gt; Project Options… &gt; Sweave &gt; select
 <code>pdfLaTeX</code> for Typset LaTeX. To render .tex and .Rmd files as
 tested in this template.</p></li>
 <li><p>Eventually, all files with the prefix <code>_template_</code>
 should be replaced by your scripts, adjusting the script name
-accordingly, or deleted from your project.</p></li>
+accordingly or deleting from your project.</p></li>
 </ul>
 </div>
 <div id="template-features" class="section level2">
@@ -395,9 +395,9 @@ accordingly, or deleted from your project.</p></li>
 <li><p>R Project (with git - optional) - Allows better use of relative
 paths, helps with version control connecting RStudio directly to a
 GitHub project (requires previous <a href="https://happygitwithr.com/">setup</a>).</p></li>
-<li><p>File paths - Use of <a href="https://cran.r-project.org/web/packages/here/vignettes/here.html">here</a>
+<li><p>File paths - Use <a href="https://cran.r-project.org/web/packages/here/vignettes/here.html">here</a>
 package for easy file referencing by using the top-level directory of a
-file project to easily build file paths.</p></li>
+file project to build file paths.</p></li>
 <li><p>R packages management - Use of <a href="https://groundhogr.com/">groundhog</a> package to help with
 package version management and reproducibility.</p></li>
 <li><p><a href="#folders-structure">Folders structure</a> - suggestion
@@ -424,10 +424,10 @@ simulates a replication package in a stage ready to be deposited, thus
 containing only the necessary files to replicate the analysis (code and
 data folders; README; license; and Rproj). Code, data, and README
 examples may be useful to see how the proposed structure works in
-“practice”. The GitHub repository does not contain the datafiles because
-of its hard limit of 100Mb for individual files. So a version with all
-the data is available at <a href="https://doi.org/10.5281/zenodo.4579463"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4Mj0iMCIgeTI9IjEwMCUiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxODYiIGhlaWdodD0iMjAiIHJ4PSIzIgogICAgICAgICAgICBmaWxsPSIjZmZmIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDxnIG1hc2s9InVybCgjYSkiPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDMxdjIwSDB6IiAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDA3ZWM2IgogICAgICAgICAgICBkPSJNMzEgMGgxNTV2MjBIMzF6IgogICAgICAgICAgICAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwaDE4NnYyMEgweiIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLAogICAgICAgIFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICAgICAgICA8dGV4dCB4PSIxNiIgeT0iMTUiIGZpbGw9IiMwMTAxMDEiCiAgICAgICAgICAgIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgRE9JCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgPHRleHQgeD0iMTYiIHk9IjE0Ij4KICAgICAgICAgICAgICAgIERPSQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIKICAgICAgICAgICAgeT0iMTUiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uNDU3OTQ2MwogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIgeT0iMTQiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uNDU3OTQ2MwogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgPC9nPgogICAgPC9zdmc+" alt="DOI" /></a></p></li>
-<li><p>Custom function to automatically generate csv files containing
+“practice”. The GitHub repository does not contain the data files
+because of its hard limit of 100Mb for individual files. So a version
+with all the data is available at <a href="https://doi.org/10.5281/zenodo.4579463"><img src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4Mj0iMCIgeTI9IjEwMCUiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjE4NiIgaGVpZ2h0PSIyMCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxODYiIGhlaWdodD0iMjAiIHJ4PSIzIgogICAgICAgICAgICBmaWxsPSIjZmZmIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDxnIG1hc2s9InVybCgjYSkiPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDMxdjIwSDB6IiAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDA3ZWM2IgogICAgICAgICAgICBkPSJNMzEgMGgxNTV2MjBIMzF6IgogICAgICAgICAgICAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwaDE4NnYyMEgweiIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLAogICAgICAgIFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICAgICAgICA8dGV4dCB4PSIxNiIgeT0iMTUiIGZpbGw9IiMwMTAxMDEiCiAgICAgICAgICAgIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgRE9JCiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgPHRleHQgeD0iMTYiIHk9IjE0Ij4KICAgICAgICAgICAgICAgIERPSQogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIKICAgICAgICAgICAgeT0iMTUiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uNDU3OTQ2MwogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjEwOCIgeT0iMTQiPgogICAgICAgICAgICAgICAgMTAuNTI4MS96ZW5vZG8uNDU3OTQ2MwogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgPC9nPgogICAgPC9zdmc+" alt="DOI" /></a></p></li>
+<li><p>Custom function to automatically generate CSV files containing
 the time of processing of each script - <a href="https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R">ExportTimeProcessing</a>.</p></li>
 <li><p>For each raw dataset:</p>
 <ul>
@@ -445,29 +445,29 @@ guide</a>.</li>
 <ul>
 <li><p><code>root</code></p>
 <ul>
-<li><p><code>README.md</code> this file, a general overview of the
-project in markdown format. <code>README.html</code> is the html version
+<li><p><code>README.md</code>: this file. A general overview of the
+project in markdown format. <code>README.html</code> is the HTML version
 of this same file.</p></li>
 <li><p><code>_template_README_replicationPackage.md</code>, a template
 file for a replication README adapted from the <a href="https://social-science-data-editors.github.io/template_README/">AEA
 Template</a>.</p></li>
-<li><p><code>.gitignore</code>, a text file that tells Git which
+<li><p><code>.gitignore</code>, a text file that tells git which
 files/folders should be ignored (not included in the version control
-system). When using GitHub repositories it is important to be aware of
+system). When using GitHub repositories, it is essential to be aware of
 its <a href="https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota">size
-limits</a> and ignore large files. Also, there are other types of files
-that you should ignore, see more <a href="https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb">here</a>.
-In this template the default is to ignore some R files including data
-output, and folders that normally contain large files (most subfolder
+limits</a> and ignore large files. Also, you should ignore other types
+of files; see more <a href="https://henriquesd.medium.com/the-gitignore-file-dc293f6c80fb">here</a>.
+In this template, the default is to ignore some R files, including data
+output and folders that typically contain large files (most subfolders
 inside <code>data</code> and <code>references/references_pdf/</code>.
 Instead of adding these folder patterns in this specific file, we add
 one <code>.gitignore</code> file inside each relevant folder to ignore
-all except the gitignore itself. In this way, we can preserve the folder
+all except the gitignore itself. This way, we can preserve the folder
 structure in GitHub, while avoiding committing large files. In other
-empty folders that ignoring might be optional we only include an empty
+empty folders that ignoring might be optional, we only include an empty
 <code>.gitignore</code>.</p></li>
 <li><p><code>LICENSE</code>, a file to allow others to reproduce,
-distribute, or create derivatives works using this project.</p></li>
+distribute, or create derivative works using this project.</p></li>
 </ul></li>
 <li><p><code>brainstorming</code></p>
 <ul>
@@ -478,23 +478,23 @@ for version control, update it accordingly.</li>
 <li><p><code>code</code></p>
 <ul>
 <li><p>All files inside this folder should be in version control and
-committed regularly when changes are made. all files with the prefix
+regularly committed when changes are made. All files with the prefix
 <code>_template_</code> should be replaced by your scripts, adjusting
-the script name accordingly, or deleted from your project.</p></li>
+the script name accordingly or deleted from your project.</p></li>
 <li><p><code>_template_MASTERFILE.R</code> - main MASTERFILE R script to
-run all subfolders masterfiles, including all R scripts.</p></li>
+run all subfolders master files, including all R scripts.</p></li>
 <li><p><code>setup.R</code> - R script for initial R setup. Install/load
 relevant R packages, configure <code>groundhog</code> to select all
 packages based on a specific date, install <code>tinytex</code> to
 generate PDFs from .tex and .Rmd files, describe additional packages
-that might be useful, source personal functions to use across multiple
-scripts.</p></li>
+that might be useful, and source personal functions to use across
+multiple scripts.</p></li>
 <li><p><code>_functions</code> - a folder containing R scripts with
 custom functions used in multiple scripts across the project like:</p>
 <ul>
-<li><code>ExportTimeProcessing.R</code> - an R script to store
+<li><code>ExportTimeProcessing.R</code> - an R script to store the
 <code>ExportTimeProcessing</code> function used to calculate and export
-the time of processing of each R script to csv files.</li>
+each R script’s processing time to CSV files.</li>
 </ul></li>
 <li><p><code>raw2clean</code> - a folder containing:</p>
 <ul>
@@ -503,14 +503,14 @@ each dataset folder in <code>data/raw2clean</code>. The goal of each
 script is to read the file(s) in the
 <code>data/raw2clean/datasetName_dataSource/input</code> folder, perform
 simple cleaning tasks, and save the cleaned data in the
-<code>data/raw2clean/datasetName_dataSource/output</code> folder
+<code>data/raw2clean/datasetName_dataSource/output</code> folder,
 preferably in <code>.rds</code> format.</p></li>
 <li><p><code>_template_masterfile_raw2clean.R</code> - an R script to
 source all raw2clean R scripts and specify the order when
 relevant.</p></li>
-<li><p><code>_timeProcessing_raw2clean.csv</code> - a csv file
-containing the time each script took to run (not present, but is
-automatically generated after running
+<li><p><code>_timeProcessing_raw2clean.csv</code> - a CSV file
+containing each script’s time to run (not present, but is automatically
+generated after running
 <code>_template_masterfile_raw2clean.R</code>).</p></li>
 </ul></li>
 <li><p><code>projectSpecific</code> - a folder containing:</p>
@@ -518,7 +518,7 @@ automatically generated after running
 <li><p><code>_template_masterfile_projectSpecific.R</code> - an R script
 to source all <code>projectSpecifc</code> R scripts in the desired
 sequence.</p></li>
-<li><p><code>_timeProcessing_projectSpecific.csv</code> - a csv file
+<li><p><code>_timeProcessing_projectSpecific.csv</code> - a CSV file
 containing the total time of all project-specific scripts (not present,
 but is automatically generated after running
 <code>_template_masterfile_projectSpecific.R</code>)</p></li>
@@ -526,17 +526,17 @@ but is automatically generated after running
 R script(s) to manipulate cleaned dataset(s) before generating the
 sample(s) of interest</p></li>
 <li><p><code>_template_sampleConstruction_projectSpecific_unitLevel.R</code>
-- R script to create the sample(s) of interest (e.g. panel,
-cross-section, spatial) at a given unit level (e.g. farm, municipality,
+- R script to create the sample(s) of interest (e.g., panel,
+cross-section, spatial) at a given unit level (e.g., farm, municipality,
 country).</p></li>
 <li><p><code>_template_dataFormat_variableTheme_projectSpecific_unitLevel.R</code>
 - R script(s) to extract/create the variables of interest and merge with
-the relevant sample (according to <code>dataFormat</code>) for a give
-unit level. If there is only one relevant format exclude the prefix
+the relevant sample (according to <code>dataFormat</code>) for a given
+unit level. If there is only one relevant format, exclude the prefix
 <code>dataFormat</code>.</p></li>
 <li><p><code>_template_sampleForAnalysis_unitLevel.R</code> - R script
 to combine all relevant files in
-<code>data/projectSpecific/unitLevel</code> into output file(s) for
+<code>data/projectSpecific/unitLevel</code> into the output file(s) for
 analysis at a given unit level.</p></li>
 </ul></li>
 <li><p><code>analysis</code> - a folder to store scripts that generate
@@ -554,18 +554,18 @@ generate figure 1</p></li>
 <li><p><code>_template_figA1_name_analysis.R</code> - R script to
 generate appendix figure A1</p></li>
 <li><p><code>_template_tab1_name_analysis.R</code> - R script to
-generate table 1</p></li>
+generate Table 1</p></li>
 <li><p><code>_template_tabA1_name_analysis.R</code> - R script to
 generate appendix table A1</p></li>
 </ul></li>
 </ul></li>
 <li><p><code>data</code></p>
 <ul>
-<li><p>The default of this folder is to ignore all folders that normally
-contain large files, the only exception are the documentation folders
-that store <code>_metadata.txt</code> files. However, if your project
-only has small files respecting <a href="https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota">GitHub
-limits</a> (in my experience this is a rare case) you can have
+<li><p>The default of this folder is to ignore all folders that
+typically contain large files. The only exceptions are the documentation
+folders that store <code>_metadata.txt</code> files. However, if your
+project only has small files respecting <a href="https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/what-is-my-disk-quota">GitHub
+limits</a> (in my experience, this is a rare case) you can have
 everything in the version control (which is ideal) just by removing the
 <code>.gitignore</code> files inside the <code>data</code> folders and
 adjusting the <code>.gitignore</code> in the root removing
@@ -576,18 +576,19 @@ patterns.</p></li>
 <li><p>one <code>data/raw2clean/datasetName_dataSource</code> folder for
 each dataset. Each folder has three folders:</p>
 <ul>
-<li><p><code>documentation</code> - containing always the
+<li><p><code>documentation</code> - always containing the
 <code>_metadata</code> text file that describes the data, provides
 access instructions, and an example of citation following the AEA
 guideline. It is also filled with
 <code>&quot;codebook_datasetName.txt&quot;</code> text file with summary
 statistics and variables description after running the raw2clean script.
-Can also include additional documentats.</p></li>
+It can also include additional documentation.</p></li>
 <li><p><code>input</code> - containing the raw data stored in the
-original format. You should never change the raw data, only unzip and
-extract the files from a downloaded folder when necessary.</p></li>
-<li><p><code>output</code> - containing usually a single
-<code>.rds</code> file with the cleaned data.</p></li>
+original format. You should always keep the raw data the same, only
+unzip and extract the files from a downloaded folder when
+necessary.</p></li>
+<li><p><code>output</code> - usually a single <code>.rds</code> file
+with the cleaned data.</p></li>
 </ul></li>
 </ul></li>
 <li><p><code>projectSpecific</code> - a folder containing:</p>
@@ -602,38 +603,37 @@ interest at a given unit level</p></li>
 <li><code>regression</code>: a folder containing regression outputs to
 be used as input for figures and tables</li>
 </ul></li>
-<li><p><code>_temp</code> - a folder to store temporary files
-(e.g. files automatically generated when processing raster
-data)</p></li>
+<li><p><code>_temp</code> - a folder to store temporary files (e.g.,
+files automatically generated when processing raster data)</p></li>
 </ul></li>
-<li><p><code>results</code> - contains three folders <code>stats</code>,
-<code>figures</code>, and <code>tables</code> to store the stats,
-figures, and tables used in the paper and slides.</p></li>
+<li><p><code>results</code> - contains three folders,
+<code>stats</code>, <code>figures</code>, and <code>tables</code>, to
+store the stats, figures, and tables used in the paper and
+slides.</p></li>
 <li><p><code>products</code> - a folder containing:</p>
 <ul>
 <li><p><code>aux_files</code> - a folder with .sty and .tex auxiliary
-files to be used as input in the .tex and .Rmd paper and slides
-files.</p></li>
+files to input in the .tex and .Rmd paper and slides files.</p></li>
 <li><p><code>paper</code> - a folder with the LaTeX paper template
-separated in main paper and appendix.</p></li>
+separated into the main paper and appendix.</p></li>
 <li><p><code>slides</code> - a folder with the R Markdown beamer slides
 template for a presentation and with the preliminary results (only
 figures and tables)</p></li>
 </ul></li>
 <li><p><code>references</code> - a folder containing:</p>
 <ul>
-<li><p><code>references_literature.bib</code> - a bibtex file to store
+<li><p><code>references_literature.bib</code> - a BibTeX file to store
 all literature references for citation</p></li>
-<li><p><code>references_data.bib</code> - a bibtex file to store all
+<li><p><code>references_data.bib</code> - a BibTeX file to store all
 data references for citation</p></li>
-<li><p><code>references_software.bib</code> - a bibtex file to store all
+<li><p><code>references_software.bib</code> - a BibTeX file to store all
 software references for citation</p></li>
 <li><p><code>refereces_pdf</code> - a folder to store all pdfs of the
 relevant references</p></li>
 </ul></li>
 <li><p><code>submission</code> - a folder containing:</p>
 <ul>
-<li><p><code>confereces</code> - a folder with one subfolder for each
+<li><p><code>conferences</code> - a folder with one subfolder for each
 conference of interest to store all relevant materials</p></li>
 <li><p><code>journals</code> - a folder with one subfolder for each
 journal of interest to store all relevant materials</p></li>

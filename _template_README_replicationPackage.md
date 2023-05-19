@@ -25,9 +25,9 @@ Overview
 
 > INSTRUCTIONS: The typical README in social science journals serves the purpose of guiding a reader through the available material and a route to replicating the results in the research paper. Start by providing a brief overview of the available material and a brief guide as to how to proceed from beginning to end.
 
-Original Example: The code in this replication package constructs the analysis file from the three data sources (Ruggles et al, 2018; Inglehart et al, 2019; BEA, 2016) using Stata and Julia. Two master files run all of the code to generate the data for the 15 figures and 3 tables in the paper. The replicator should expect the code to run for about 14 hours.
+Original Example: The code in this replication package constructs the analysis file from the three data sources (Ruggles et al., 2018; Inglehart et al., 2019; BEA, 2016) using Stata and Julia. Two master files run all of the code to generate the data for the 15 figures and 3 tables in the paper. The replicator should expect the code to run for about 14 hours.
 
-Additional Example: The code in this replication package cleans the raw data for each data source (approximately 20 sources), builds intermediate datasets, extracts the relevant information specifically for the project, combines it, and generates the results using R and Stata. Two master files (one for the R scripts and the other for the Stata do-files) run all of the code to generate the data for the 3 figures and 4 tables in the paper (2 figures and 3 tables in the online appendix). The replicator should expect the code to run for about 22 days divided into 14 days in the cleaning part, 7 days in the building part, 4 hours in the extraction/merge part, and less than 1 hour in the final analysis part. The majority of the individual scripts are fast (few seconds or minutes) but there a few scripts that require a very long time of processing (one of them is responsible for 7 days for example), specific times for individual scripts are reported in the master files. All the data is provided, from raw to final including intermediate, so it is possible to skip any individual script.
+Additional Example: The code in this replication package cleans the raw data for each data source (approximately 20 sources), builds intermediate datasets, extracts the relevant information specifically for the project, combines it, and generates the results using R and Stata. Two master files (one for the R scripts and the other for the Stata do-files) run all of the code to generate the data for the 3 figures and 4 tables in the paper (2 figures and 3 tables in the online appendix). The replicator should expect the code to run for about 22 days, divided into 14 days in the cleaning part, 7 days in the building part, 4 hours in the extraction/merge part, and less than 1 hour in the final analysis part. Most of the individual scripts are fast (a few seconds or minutes), but a few scripts require a very long processing time (one of them is responsible for 7 days, for example). Specific times for individual scripts are reported in the master files. All the data is provided, from raw to final, including intermediate, so it is possible to skip any individual script.
 
 Description of Files Structure 
 ----------------------------
@@ -36,33 +36,33 @@ Description of Files Structure
 
 > DISCLAIMER: Section not present in the original AEA template.
 
-- `"README.md"`:  This document. A markdown file used to generate `"README.pdf"` and `"README.html"` (best for reading). It provides the necessary information about the structure of the replication folder, data sources and access, computational requirements, and ultimately explains how to fully replicate the analysis presented in the paper.
+- `"README.md"`:  This document. A markdown file to generate `"README.pdf"` and `"README.html"` (best for reading). It provides the necessary information about the structure of the replication folder, data sources, data access, computational requirements, and ultimately explains how to fully replicate the analysis presented in the paper.
  
-- `"code`: folder containing all scripts to clean, build, merge, and analyze the data
+- `"code`: a folder containing all scripts to clean, build, merge, and analyze the data
   - `"code/MASTERFILE.R"`: R script to run all scripts from data cleaning to generating the final results;
-  - `"code/setup.R"`: R script to install/load R packages and configure initial setup. Uses `"groundhog"` to keep all packages version fixes at the specified date (YYYY-MM-DD);
+  - `"code/setup.R"`: R script to install/load R packages and configure the initial setup. Uses `"groundhog"` to keep all packages version fixes at the specified date (YYYY-MM-DD);
   - `"code/raw2clean"`: R scripts that clean the data on input and save on the output for each dataset;
-  - `"code/projectSpecific"`: R scripts that select/combine/construct the information relevant for this project and creates the sample(s) for analysis;
-  - `"code/analysis"`: R scripts to generate the results presented in the paper (statistics, figures, and tables);
+  - `"code/projectSpecific"`: R scripts that select/combine/construct the information relevant to this project and create the sample(s) for analysis;
+  - `"code/analysis" `: R scripts to generate the results presented in the paper (statistics, figures, and tables);
   - `"code/_functions"`: auxiliary folder with custom R functions used in multiple R scripts.
 
 - `"data"`: a folder containing data in a variety of formats: raw, cleaned, intermediate, final datasets for analysis, and analysis outputs
   - `"data/raw2clean"`: one folder for each dataset with the following structure:
     - `"/input"`: folder with raw datasets; 
-    - `"/output"`: folder with cleaned dataset; 
-    - `"/documentation"`: folder with at least two files: 
+    - `"/output"`: folder with the cleaned dataset; 
+    - `"/documentation" `: folder with at least two files: 
       - `"_metadata.txt"` text file that describes the data and provides access instructions;
       - `"codebook_datasetName.txt"` text file with summary statistics and variables description.
   - `"data/projectSpecific"`: folder with the sample(s) of interest, intermediate datasets with the variables of interest, and merged sample(s) for analysis:
-    - `"/prepData"`: folder with intermediate datasets with the variables of interest;
+    - `"/prepData" `: folder with intermediate datasets with the variables of interest;
     - `"/unitLevel"`: folder with the sample(s) of interest at the *unit level*.
-  - `"data/analysis"`: folder with all regression outputs in `"/regressions"`;
+  - `"data/analysis" `: folder with all regression outputs in `"/regressions" `;
   - `"data/_temp"`: folder to hold temporary files output (filled when running some .R scripts).
 
 - `"references"`: folder with three BibTeX files to record all references for citation (literature: `"references_literature.bib"`, data: `"references_data.bib"`, and software: `"references_lsoftware.bib"`)
 
 - `"results"`: folder with the main results used in the paper
-  - `"figures"`: folder with all figures. The figures of main paper are listed in `"figures.tex"`. The figures of the appendix are listed in `"figures_appendix.tex"`;
+  - `"figures"`: folder with all figures. The figures of the main paper are listed in `"figures.tex"`. The figures of the appendix are listed in `"figures_appendix.tex"`;
   - `"tables"`: folder with all tables. The tables of the main paper are listed in `"tables.tex"`. The tables of the appendix are listed in `"tables_appendix.tex"`;
   - `"stats"`: folder with the log output from the R script that calculates all the statistics cited in the text `".txt"`.
 
@@ -75,7 +75,7 @@ Description of Files Structure
 Data Availability and Provenance Statements
 ----------------------------
 
-> INSTRUCTIONS: Every README should contain a description of the origin (provenance), location and accessibility (data availability) of the data used in the article. These descriptions are generally referred to as "Data Availability Statements" (DAS). However, in some cases, there is no external data used.
+> INSTRUCTIONS: Every README should contain a description of the origin (provenance), location, and accessibility (data availability) of the data used in the article. These descriptions are generally referred to as "Data Availability Statements" (DAS). However, in some cases, there is no external data used.
 
 - [ ] This paper does not involve analysis of external data (i.e., no data are used or the only data are generated by the authors via simulation in their code).
 
@@ -84,11 +84,11 @@ Data Availability and Provenance Statements
 > INSTRUCTIONS: 
 > - When the authors are **secondary data users** (they did not generate the data), the provenance and DAS coincide, and should describe the condition under which (a) the current authors (b) any future users might access the data. 
 > - When the data were generated (by the authors) in the course of conducting (lab or field) **experiments**, or were collected as part of **surveys**, then the description of the provenance should describe the data generating process, i.e., survey or experimental procedures:
->   - Experiments: complete sets of experimental instructions, questionnaires, stimuli for all conditions, potentially screenshots, scripts for experimenters or research assistants, as well as for subject eligibility criteria (e.g. selection criteria, exclusions), recruitment waves, demographics of subject pool used. 
+>   - Experiments: complete sets of experimental instructions, questionnaires, stimuli for all conditions, potentially screenshots, scripts for experimenters or research assistants, as well as for subject eligibility criteria (e.g., selection criteria, exclusions), recruitment waves, demographics of subject pool used. 
 >   - For lab experiments specifically, a description of any pilot sessions/studies, and computer programs, configuration files, or scripts used to run the experiment. 
 >   - For surveys, the whole questionnaire (code or images/PDF) including survey logic if not linear, interviewer instructions, enumeration lists, sample selection criteria.
 >
->  The information should describe ALL data used, regardless of whether they are provided as part of the replication archive or not, and regardless of size or scope. For instance, if using GDP deflators, the source of the deflators (e.g. at the national statistical office) should also be listed here. If any of this information has been provided in a pre-registration, then a link to that registration may (partially) suffice.
+>  The information should describe ALL data used, regardless of whether they are provided as part of the replication archive or not, and regardless of size or scope. For instance, if using GDP deflators, the source of the deflators (e.g., at the national statistical office) should also be listed here. If any of this information has been provided in a pre-registration, then a link to that registration may (partially) suffice.
 >
 > DAS can be complex and varied. Examples are provided [here](https://social-science-data-editors.github.io/guidance/Requested_information_dcas.html), and below.
 >
@@ -114,19 +114,19 @@ The data is licensed under a Creative Commons Attribution 4.0 International Publ
 - [ ] Some data **cannot be made** publicly available.
 - [ ] **No data can be made** publicly available.
 
-Additional Example: The data used to support the findings of this study comes from multiple data sources, all of them are publicly available online, and have been deposited in the AEA Data and Code Repository @assuncao2023replication. Each raw dataset is listed and described in more detail below. Access to download from the original source is guaranteed by either providing a persistent link, using the Save a Page feature from Archive.org, pointing directly to the data download, or by providing the original link and directions on where to find more detailed instructions:
+Additional Example: The data used to support the findings of this study comes from multiple data sources. All of them are publicly available online and have been deposited in the AEA Data and Code Repository @assuncao2023replication. Each raw dataset is listed and described in more detail below. Access to download from the original source is guaranteed by either providing a persistent link, using the Save a Page feature from Archive.org, pointing directly to the data download, or by providing the original link and directions on where to find more detailed instructions:
 
 ### Details on each Data Source
 
-> INSTRUCTIONS: For each data source, list the file that contains data from that source here; if providing combined/derived datafiles, list them separately after the DAS. For each data source or file, as appropriate, 
+> INSTRUCTIONS: For each data source, list the file that contains data from that source here; if providing combined/derived data files, list them separately after the DAS. For each data source or file, as appropriate, 
 > 
 > - Describe the format (open formats preferred, but some software-specific formats OK if open-source readers available): `.dta`, `.xlsx`, `.csv`, `netCDF`, etc.
-> - Provide a data dictionairy, either as part of the archive (list the file name), or at a URL (list the URL). Some formats are self-describing *if* they have the requisite information (e.g., `.dta` should have both variable and value labels).
+> - Provide a data dictionary, either as part of the archive (list the file name), or at a URL (list the URL). Some formats are self-describing *if* they have the requisite information (e.g., `.dta` should have both variable and value labels).
 
 
 ### Original Example for public use data collected by the authors
 
-> The [DATA TYPE] data used to support the findings of this study have been deposited in the [NAME] repository ([DOI or OTHER PERSISTENT IDENTIFIER]). [[1](https://www.hindawi.com/research.data/#statement.templates)]. The data were collected by the authors, and are available under a Creative Commons Non-commercial license.
+> The [DATA TYPE] data used to support the findings of this study have been deposited in the [NAME] repository ([DOI or OTHER PERSISTENT IDENTIFIER]). [[1](https://www.hindawi.com/research.data/#statement.templates)]. The data were collected by the authors and are available under a Creative Commons Non-commercial license.
 
 ### Original Example for public use data sourced from elsewhere and provided
 
@@ -183,13 +183,13 @@ You must request the following datasets in your proposal:
 Dataset list
 ------------
 
-> INSTRUCTIONS: In some cases, authors will provide one dataset (file) per data source, and the code to combine them. In others, in particular when data access might be restrictive, the replication package may only include derived/analysis data. Every file should be described. This can be provided as a Excel/CSV table, or in the table below.
+> INSTRUCTIONS: In some cases, authors will provide one dataset (file) per data source, and the code to combine them. In others, in particular when data access might be restrictive, the replication package may only include derived/analysis data. Every file should be described. This can be provided as an Excel/CSV table, or in the table below.
 
 | Data file | Source | Notes    |Provided |
 |-----------|--------|----------|---------|
 | `data/raw/lbd.dta` | LBD | Confidential | No |
 | `data/raw/terra.dta` | IPUMS Terra | As per terms of use | Yes |
-| `data/derived/regression_input.dta`| All listed | Combines multiple data sources, serves as input for Table 2, 3 and Figure 5. | Yes |
+| `data/derived/regression_input.dta`| All listed | Combines multiple data sources, serves as input for Tables 2, 3 and Figure 5. | Yes |
 
 
 Computational requirements
@@ -207,17 +207,17 @@ Original Example:
 - Stata (code was last run with version 15)
   - `estout` (as of 2018-05-12)
   - `rdrobust` (as of 2019-01-05)
-  - the program "`0_setup.do`" will install all dependencies locally, and should be run once.
+  - the program" `0_setup.do`" will install all dependencies locally, and should be run once.
 - Python 3.6.4
   - `pandas` 0.24.2
   - `numpy` 1.16.4
-  - the file "`requirements.txt`" lists these dependencies, please run "`pip install -r requirements.txt`" as the first step. See [https://pip.readthedocs.io/en/1.1/requirements.html](https://pip.readthedocs.io/en/1.1/requirements.html) for further instructions on using the "`requirements.txt`" file.
+  - the file "`requirements.txt`" lists these dependencies, please run" `pip install -r requirements.txt`" as the first step. See [https://pip.readthedocs.io/en/1.1/requirements.html](https://pip.readthedocs.io/en/1.1/requirements.html) for further instructions on using the "`requirements.txt`" file.
 - Intel Fortran Compiler version 20200104
 - Matlab (code was run with Matlab Release 2018a)
 - R 3.4.3
   - `tidyr` (0.8.3)
   - `rdrobust` (0.99.4)
-  - the file "`0_setup.R`" will install all dependencies (latest version), and should be run once prior to running other programs.
+  - the file" `0_setup.R`" will install all dependencies (latest version), and should be run once prior to running other programs.
 
 Portions of the code use bash scripting, which may require Linux.
 
@@ -227,8 +227,8 @@ Portions of the code use Powershell scripting, which may require Windows 10 or h
 Additional Example:
 
 - R (code was last run with version 4.3.0 (2023-04-21 ucrt))
-  - the file `"code/setup.R"` will install/load R packages and configure initial setup. It uses the R package `"groundhog"` (version 3.1.0) to keep all packages version fixed at the specified date (2023-05-06). It also uses `knitr::write_bib` record all R packages as software citations in a BibTeX file `"references/references_software.bib"`. It is automatically sourced within any .R script in the project.
-  - the file `"name_proj.Rproj"` will guarantee that the working directory is set to the root of the project (always open RStudio using this file).
+  - the file `"code/setup.R"` will install/load R packages and configure the initial setup. It uses the R package `"groundhog"` (version 3.1.0) to keep all package versions fixed at the specified date (2023-05-06). It also uses `knitr::write_bib` to record all R packages as software citations in a BibTeX file `"references/references_software.bib"`. It is automatically sourced within any .R script in the project.
+  - the file `" name_proj.Rproj"` will guarantee that the working directory is set to the root of the project (always open RStudio using this file).
   - List of R packages: 
     - groundhog (version 3.1.0) [@R-groundhog] 
     - softbib (version 0.0.1) [@R-softbib]
@@ -336,9 +336,9 @@ Original Example:
 
 Additional Example:
 
-- Download replication package.
+- Download the replication package.
 - Unzip `"data/raw2clean/land_cover/deter_inpe/input.zip"` extracting the files to   
-`"data/raw2clean/land_cover/deter_inpe"` in order to fill the existing and empty folder `"data/raw2clean/land_cover/deter_inpe/input"` without creating redundant directory levels.
+`"data/raw2clean/land_cover/deter_inpe"` in order to fill the existing and empty folder `"data/raw2clean/land_cover/deter_inpe/input" ` without creating redundant directory levels.
 - Open RStudio using `"deter_proj.Rproj"` to set the working directory to the project root.
 - Run `"code/_MASTERFILE.R"` to run all R scripts in sequence (mostly data preparation).
 - Access Code Ocean replication capsule (provisional DOI: 10.24433/CO.5098352.v1) for analysis-specific code, data, and documentation.
@@ -356,9 +356,9 @@ Additional Example:
    - If running programs individually, note that ORDER IS IMPORTANT. 
    - The programs were last run top to bottom on July 4, 2019.
 - `programs/03_appendix/master-appendix.do`. The programs were last run top to bottom on July 4, 2019.
-- Figure 1: The figure can be reproduced using the data provided in the folder “2_data/data_map”, and ArcGIS Desktop (Version 10.7.1) by following these (manual) instructions:
+- Figure 1: The figure can be reproduced using the data provided in the folder "2_data/data_map", and ArcGIS Desktop (Version 10.7.1) by following these (manual) instructions:
   - Create a new map document in ArcGIS ArcMap, browse to the folder
-“2_data/data_map” in the “Catalog”, with files  "provinceborders.shp", "lakes.shp", and "cities.shp". 
+"2_data/data_map" in the "Catalog", with files "provinceborders.shp", "lakes.shp", and "cities.shp". 
   - Drop the files listed above onto the new map, creating three separate layers. Order them with "lakes" in the top layer and "cities" in the bottom layer.
   - Right-click on the cities file, in properties choose the variable "health"... (more details)
 
@@ -367,13 +367,13 @@ Additional Example:
 - `"code/_functions/_setup.R"`: will be the first script sourced by `"code/_MASTERFILE.R"`, and will install the `"checkpoint"` package, create the project library, and populate it with all needed packages with the correct versions.
   * Use of R version "3.6.1" is highly recommended to guarantee a successful installation of the necessary packages. It can be downloaded [here for Windows](https://cran.r-project.org/bin/windows/base/old/3.6.1/).
   * If you have more than one R version and need to select the 3.6.1 you can follow these [instructions](https://support.rstudio.com/hc/en-us/articles/200486138-Changing-R-versions-for-RStudio-desktop).
-  * If you are trying to use a different R version you will need to manually change the line 40 of the script `"code/_functions/_setup.R"` from `"checkpoint::checkpoint(R.version = "3.6.1", snapshotDate = "2019-09-03", checkpointLocation = getwd())"` to   
+  * If you are trying to use a different R version you will need to manually change the line 40 of the script `"code/_functions/_setup.R"` from `"checkpoint::checkpoint(R.version = "3.6.1", snapshotDate = "2019-09-03", checkpointLocation = getwd())" ` to   
   `"checkpoint::checkpoint(R.version = "numberOfYourVersion", snapshotDate = "2019-09-03", checkpointLocation = getwd())"`. However, this option is not recommended. For example, we tested it using R version "4.0.2" and it gave an error in the installation of the first package (`"cleangeo"`).
   
 - Skipping one individual R program will not prevent others from running correctly, because all intermediate datasets are available. There are only two exceptions that require an additional manual step:
-  * If you want to skip `"code/raw2clean/geography/weather_CPCG/geography_br_weather_CPCG_raw2clean.R"` (time of processing: 6 days), unzip `"data/raw2clean/geography/weather_CPCG/output.zip"` extracting the files to `"data/raw2clean/geography/weather_CPCG"` in order to fill the existing and empty folder `"data/raw2clean/geography/weather_CPCG/output"` without creating redundant directory levels.
+  * If you want to skip `"code/raw2clean/geography/weather_CPCG/geography_br_weather_CPCG_raw2clean.R"` (time of processing: 6 days), unzip `"data/raw2clean/geography/weather_CPCG/output.zip"` extracting the files to `"data/raw2clean/geography/weather_CPCG"` in order to fill the existing and empty folder `"data/raw2clean/geography/weather_CPCG/output" ` without creating redundant directory levels.
    * If you want to skip   
-   `"code/raw2clean/geography/weather_ncepDoeReanalysis/geo_br_weather_reanalysis_raw2clean.R"` (time of processing: 1 hour), unzip `"data/raw2clean/geography/weather_ncepDoeReanalysis/output.zip"` extracting the files to `"data/raw2clean/geography/weather_ncepDoeReanalysis"` in order to fill the existing and empty folder `"data/raw2clean/geography/weather_ncepDoeReanalysis/output"` without creating redundant directory levels.
+   `"code/raw2clean/geography/weather_ncepDoeReanalysis/geo_br_weather_reanalysis_raw2clean.R"` (time of processing: 1 hour), unzip `"data/raw2clean/geography/weather_ncepDoeReanalysis/output.zip"` extracting the files to `"data/raw2clean/geography/weather_ncepDoeReanalysis"` in order to fill the existing and empty folder `"data/raw2clean/geography/weather_ncepDoeReanalysis/output" ` without creating redundant directory levels.
    * The two output folders above and the input folder mentioned in the instructions had to be zipped due to the limit in the number of files allowed in the openICPSR deposit (1,000 files). We opted for the zip solution because the number of files was very concentrated in these 3 folders (~24,000 files), so even though it added an additional manual step it also allowed us to preserve a similar workflow structure for all data sources. 
    
 - Skipping individual do-files is not recommended, there are some dependencies across do-files and the setup is only done in the `"code/_MASTERFILE.do"`.
