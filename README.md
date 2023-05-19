@@ -4,7 +4,7 @@ Main goal: Create a template repository for starting a new paper project impleme
 
 Author: João Pedro Vieira
 
-Software: Focused on empirical projects that use mostly R for data manipulation. Tested using R version 4.3.0 and RStudio 2023.03.0+386 "Cherry Blossom" for Windows.
+Software: Focused on empirical projects that use mostly R. Tested using R version 4.3.0 and RStudio 2023.03.0+386 "Cherry Blossom" for Windows.
 
 Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations. 
 
@@ -19,7 +19,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * If you want to use version control within the RStudio project with git see this [tutorial](https://happygitwithr.com/) then:
     * Open RStudio > File > New Project... > Version Control > Git > insert the url, that appears when clicking on code in your GitHub repository, on Repository URL.
 
-* When using R always open RStudio using the .Rproj file.
+* When using R always open RStudio using the .Rproj file. 
 
 * In Tools > Project Options... > Sweave > select `pdfLaTeX` for Typset LaTeX. To render .tex and .Rmd files as tested in this template. 
 
@@ -54,7 +54,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
     * Incorporated routine to generate codebooks after initial cleaning - adapted from [R guide](https://github.com/skhiggins/R_guide).
    
 
-## Folders Structure/Files Description
+## Folders Structure
 
 * `root`
  
@@ -159,9 +159,14 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
   
 * `references` - a folder containing:
   
-  * `references_bib.bib` - a bibtex file to store all references for citation in the paper and slides
+  * `references_literature.bib` - a bibtex file to store all literature references for citation 
+  
+  * `references_data.bib` - a bibtex file to store all data references for citation
+  
+  * `references_software.bib` - a bibtex file to store all software references for citation 
   
   * `refereces_pdf` - a folder to store all pdfs of the relevant references
+
 * `submission` - a folder containing:
   
   * `confereces` - a folder with one subfolder for each conference of interest to store all relevant materials

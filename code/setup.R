@@ -64,13 +64,13 @@ groundhog::groundhog.library("sf", groundhog.date)
 # tidyverse - an opinionated collection of R packages designed for data science that share an underlying design philosophy, grammar, and data structures
 groundhog::groundhog.library("tidyverse", groundhog.date)
 
-# label columns, preferred than Hmisc::label because has function to clear labels when necessary
+# sjlabelled - to label columns, preferred than Hmisc::label because has function to clear labels when necessary
 groundhog::groundhog.library("sjlabelled", groundhog.date)
 
-# use `describe` function to generate codebook
+# Hmisc - to use `describe` function to generate codebook
 groundhog::groundhog.library("Hmisc", groundhog.date)
 
-# use `datasummary_skim` function to generate codebook
+# modelsummary - to use `datasummary_skim` function to generate codebook
 groundhog::groundhog.library("modelsummary", groundhog.date)
 
 # conflicted - to provide an alternative conflict resolution strategy when multiple packages have functions with the same name
@@ -90,6 +90,13 @@ groundhog::groundhog.library("conflicted", groundhog.date)
 
 # ExportTimeProcessing - function to export scripts time processing, registered with ticotoc,to csv files
 source(here::here("code/_functions/ExportTimeProcessing.R"))
+
+
+# SOFTWARE CITATION ----------------------------------------------------------------------------------------------------------------------------------
+
+# record all R packages as software citations in a BibTeX file
+knitr::write_bib(c(.packages()), here::here("references/references_software.bib"))
+
 
 
 
