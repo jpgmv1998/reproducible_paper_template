@@ -171,14 +171,18 @@ You must request the following datasets in your proposal:
 
 ### Additional Example
 
-* Brazilian Municipalities Division (IBGE, 2007)
-    + input file path (raw data): `"data/raw2clean/administrative/territorial_ibge/brazil/input/2007"`
-    + source: Brazilian Institute for Geography and Statistics (IBGE)
-    + original link: [Downloaded on MAR/29/2017](ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2007/escala_2500mil/proj_policonica_sad69/brasil/)
-    * web archive link: [Archived on SEP/08/2020](https://web.archive.org/web/20200908153308/ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2007/escala_2500mil/proj_policonica_sad69/brasil/55mu2500psd.zip)
-    * description: shapefile of 2007 administrative municipalities boundaries 
-    * notes: the shapefile is composed of multiple files with name pattern `"55mu2500gsd"`
-    * provided: yes
+* Brazilian Biomes [@ibge2019biome]
+  * folder file path: `"data/raw2clean/administrative/territorial_ibge/brazil"`
+  * content: biomes perimeter (polygons data frame); Brazil (extent); 2019 (year of reference)
+  * source: Brazilian Institute for Geography and Statistics (IBGE)
+  * original link: https://www.ibge.gov.br/geociencias/informacoes-ambientais/15842-biomas.html?=&t=sobre
+  * raw data downloaded on: SEP/16/2020
+  * web archive link (used for download): 
+https://web.archive.org/web/20200916173523/ftp://geoftp.ibge.gov.br/informacoes_ambientais/estudos_ambientais/biomas/vetores/Biomas_250mil.zip
+  * raw data archived on: SEP/16/2020
+  * CRS: LongLat (coordinate system); SIRGAS2000; not projected (EPSG: 4674)  
+  * notes: downloaded zip file containing multiple files that compose the shapefile (.shp, .prj, .shx, etc), using the web archive link. Manually unziped the folder and moved the files to "input" folder, then deleted the "Biomas_250mil" folders.
+  * provided: yes
 
 Dataset list
 ------------

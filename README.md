@@ -8,7 +8,7 @@ Software: Focused on empirical projects that use mostly R. Tested using R versio
 
 Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations. 
 
-Feedback and suggestions are welcome to improve this project. :rocket:
+Feedback and suggestions are welcome to improve this project. 
 
 Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1998/reproducible_paper_template/issues).
 
@@ -23,7 +23,12 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 * In Tools > Project Options... > Sweave > select `pdfLaTeX` for Typset LaTeX. To render .tex and .Rmd files as tested in this template. 
 
-* Eventually, all files with the prefix `_template_` should be replaced by your scripts, adjusting the script name accordingly or deleting from your project. 
+* Eventually...
+  * all .gitignore files should be carefully adjusted to avoid commiting unnecessary files (e.g., large data files);
+  * the LICENSE.txt should be revised;
+  * the `code/setup.R` R file should be adjusted changing the packages of interest and selecting the reference date;
+  * all files with the prefix `_template_` should be replaced by your scripts, adjusting the script name and header informations accordingly or deleting from your project;
+  * the README.md and README.htlm files should be substituted by a new README file detailing how to replicate the paper, following the _template_README_replicationPackage.md file.
   
 ## Template Features
 
@@ -43,7 +48,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
   
   * [R Markdown beamer slides](https://github.com/jpgmv1998/reproducible_paper_template/tree/master/products/slides)
 
-* [Replication Package README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README_replicationPackage.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. 
+  * [Replication Package README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README_replicationPackage.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. 
 
 * [Replication Package example](https://github.com/jpgmv1998/reproducible_paper_example) - Application of this template using real data. It simulates a replication package in a stage ready to be deposited, thus containing only the necessary files to replicate the analysis (code and data folders; README; license; and Rproj). Code, data, and README examples may be useful to see how the proposed structure works in "practice". The GitHub repository does not contain the data files because of its hard limit of 100Mb for individual files. So a version with all the data is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4579463.svg)](https://doi.org/10.5281/zenodo.4579463)
 

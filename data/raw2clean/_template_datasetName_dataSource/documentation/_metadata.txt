@@ -1,13 +1,12 @@
-# DATASET NAME
-# files: file type x + file name x
-# content: x; x (extent); x (year/period of reference); x (frequency)
-# source: data source x
-# available at: url
-# raw data downloaded on: MON/DD/YYYY
-# web archive link: url from Web Archive Save a Page feature (https://web.archive.org/save/)
-# raw data archived on: MON/DD/YYYY
-# CRS (only for spatial data): x (coordinate system); x; x (EPSG: x)
-#
-# citation: **x**. YYYY. "dataset name: detail 1, detail 2". source. url (accessed via Archive.org Month DD, YYYY).
-#
-# additional information about the download: 
+* DATASET NAME [@sourceYYYYname]
+ * folder file path: "data/raw2clean/datasetName_source"
+ * content:x; x (extent); x (year/period of reference); x (frequency)
+ * source: data source x
+ * original link: url
+ * raw data downloaded on:  MON/DD/YYYY
+ * web archive link (used for download):
+url from Web Archive Save a Page feature (https://web.archive.org/save/)
+ * raw data archived on:  MON/DD/YYYY
+ * CRS(only for spatial data): x (coordinate system); x; x (EPSG: x)
+ * notes: additional information about the download
+ * provided: yes or no

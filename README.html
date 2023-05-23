@@ -363,8 +363,7 @@ Windows.</p>
 <p>Disclaimer: This project aims to incorporate reproducible workflows
 gathered from multiple sources based on the author’s personal
 preferences, needs, and limitations.</p>
-<p>Feedback and suggestions are welcome to improve this project.
-:rocket:</p>
+<p>Feedback and suggestions are welcome to improve this project.</p>
 <p>Ideas for future implementation are stored on <a href="https://github.com/jpgmv1998/reproducible_paper_template/issues">Issues</a>.</p>
 <div id="how-to-use" class="section level2">
 <h2>How to use</h2>
@@ -384,9 +383,18 @@ GitHub repository on the Repository URL.</li>
 <li><p>In Tools &gt; Project Options… &gt; Sweave &gt; select
 <code>pdfLaTeX</code> for Typset LaTeX. To render .tex and .Rmd files as
 tested in this template.</p></li>
-<li><p>Eventually, all files with the prefix <code>_template_</code>
-should be replaced by your scripts, adjusting the script name
-accordingly or deleting from your project.</p></li>
+<li><p>Eventually…</p>
+<ul>
+<li>all files with the prefix <code>_template_</code> should be replaced
+by your scripts, adjusting the script name accordingly or deleting from
+your project;</li>
+<li>all .gitignore files should be carefully adjusted to avoid commiting
+unnecessary files (e.g., large data files)</li>
+<li>the LICENSE.txt should be revised</li>
+<li>the README.md and README.htlm files should be substituted by a new
+README file detailing how to replicate the paper, following the
+_template_README_replicationPackage.md file.</li>
+</ul></li>
 </ul>
 </div>
 <div id="template-features" class="section level2">
@@ -412,12 +420,12 @@ paper</a> - adapted from <a href="https://github.com/rdahis/paper_template">Temp
 Papers - Ricardo Dahis</a></p></li>
 <li><p><a href="https://github.com/jpgmv1998/reproducible_paper_template/tree/master/products/slides">R
 Markdown beamer slides</a></p></li>
-</ul></li>
 <li><p><a href="https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README_replicationPackage.md">Replication
 Package README template</a> adapted from the <a href="https://social-science-data-editors.github.io/template_README/">AEA
 Template</a> - The AEA template README is in a form that follows best
 practices as defined by a number of data editors at social science
 journals.</p></li>
+</ul></li>
 <li><p><a href="https://github.com/jpgmv1998/reproducible_paper_example">Replication
 Package example</a> - Application of this template using real data. It
 simulates a replication package in a stage ready to be deposited, thus

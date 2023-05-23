@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "_masterfile_raw2clean.R script", log = T)
+tictoc::tic(msg = "masterfile_raw2clean.R script", log = T)
 
 
 

@@ -70,19 +70,31 @@ groundhog::groundhog.library("sjlabelled", groundhog.date)
 # Hmisc - to use `describe` function to generate codebook
 groundhog::groundhog.library("Hmisc", groundhog.date)
 
-# modelsummary - to use `datasummary_skim` function to generate codebook
-groundhog::groundhog.library("modelsummary", groundhog.date)
-
 # conflicted - to provide an alternative conflict resolution strategy when multiple packages have functions with the same name
 #  making every conflict an error and forcing you to choose which function to use
 groundhog::groundhog.library("conflicted", groundhog.date)
+
+# janitor - to use simple functions for examining and cleaning dirty data
+groundhog::groundhog.library("janitor", groundhog.date)
 
 
 
 # LIST OF ADDITIONAL PACKAGES THAT MIGHT BE USEFUL
 
-# brief description
-# groundhog::groundhog.library("kableExtra", groundhog.date)
+# kableExtra - to create beautiful and flexible tables in R
+#groundhog::groundhog.library("kableExtra", groundhog.date)
+
+# modelsummary - to create and customize tables of model output
+#groundhog::groundhog.library("modelsummary", groundhog.date)
+
+# tabulizer - to extract table from pdf
+# /!\ needed to install Java 64-bits after receiving the following error in the first try:
+#  erro: .onLoad falhou em loadNamespace() para 'rJava', detalhes:
+#  chamada: fun(libname, pkgname)
+#  erro: JAVA_HOME cannot be determined from the Registry
+# ref: (https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava)
+#groundhog::groundhog.library("tabulizer", groundhog.date)
+
 
 
 
@@ -90,6 +102,9 @@ groundhog::groundhog.library("conflicted", groundhog.date)
 
 # ExportTimeProcessing - function to export scripts time processing, registered with ticotoc,to csv files
 source(here::here("code/_functions/ExportTimeProcessing.R"))
+
+
+
 
 
 # SOFTWARE CITATION ----------------------------------------------------------------------------------------------------------------------------------
