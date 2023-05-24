@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: MERGE VARIABLES OF INTEREST AND EXPORT IT IN POSSIBLY MULTIPLE DATA FORMATS - TEMPLATE
+# AIM: CONSTRUCT FINAL SAMPLE(S) FOR ANALYSIS - TEMPLATE
 # AUTHOR: JOAO VIEIRA
 #
 # > NOTES
@@ -54,8 +54,11 @@ dataFormat.forAnalysis.unitLevel <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(dataFormat.forAnalysis.unitLevel$column1) <- "description of column 1"
+# check existing labels
+sjlabelled::get_label(dataFormat.forAnalysis.unitLevel)
 
+# add labels when missing
+sjlabelled::set_label(dataFormat.forAnalysis.unitLevel$column1) <- "description of column 1"
 
 
 # POST-TREATMENT OVERVIEW
@@ -67,16 +70,15 @@ sjlabelled::set_label(dataFormat.forAnalysis.unitLevel$column1) <- "description 
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-save(dataFormat.forAnalysis.unitLevel,
-     file = here::here("data/projectSpecific/unitLevel",
-                      "dataFormat_forAnalysis_unitLevel.Rdata"))
+saveRDS(dataFormat.forAnalysis.unitLevel,
+        file = here::here("data/projectSpecific/unitLevel", "dataFormat_forAnalysis_unitLevel.rds"))
 
 
 # END TIMER
 tictoc::toc(log = T)
 
 # export time to csv table
-example_ExportTimeProcessing("code/projectSpecific/unitLevel")
+example_ExportTimeProcessing("code/projectSpecific")
 
 
 

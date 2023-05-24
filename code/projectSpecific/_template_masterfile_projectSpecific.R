@@ -49,16 +49,14 @@ source(here::here("code/projectSpecific/sampleConstruction_projectSpecific_unitL
 rm(list = ls())
 
 
-
-# PREPARE VARIABLE THEME
-source(here::here("code/projectSpecific/variableTheme_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+# ADD VARIABLE THEME
+source(here::here("code/projectSpecific/dataFormat_variableTheme_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
-
-# GENERATE SAMPLE(S) FOR ANALYSIS
+# CONSTRUCT FINAL SAMPLE(S) FOR ANALYSUS
 source(here::here("code/projectSpecific/sampleForAnalysis_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
@@ -74,7 +72,7 @@ rm(list = ls())
 tictoc::toc(log = T)
 
 
-# SOURCE EXPORT TIME PROCESSING AGAIN BECAUSE OF rm(list = ls()
+# SOURCE EXPORT TIME PROCESSING AGAIN BECAUSE OF rm(list = ls())
 source(here::here("code/_functions/ExportTimeProcessing.R"))
 
 # export time to csv table

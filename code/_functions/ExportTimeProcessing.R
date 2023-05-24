@@ -105,7 +105,7 @@ ExportTimeProcessing <- function(fctn.codeDir = "") {
     if(any(stringr::str_detect(time.table$time, (tictoc::tic.log(format = FALSE))[[1]]$msg))) {
 
       # prints message
-      print(paste0(code.name, " already registered! If you want to re-register first manually exclude the entry in the csv file"))
+      print(paste0((tictoc::tic.log(format = FALSE))[[1]]$msg, " already registered! If you want to re-register first manually exclude the entry in the csv file"))
 
     } else {
 

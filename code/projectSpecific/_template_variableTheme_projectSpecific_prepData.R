@@ -29,10 +29,10 @@ tictoc::tic(msg = "variableTheme_projectSpecific_prepData.R script", log = T)
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
 # CLEANED DATA 1
-clean.datasetNameAbbrev <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
+clean.datasetName <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
 # CLEANED DATA 2
-clean.datasetNameAbbrev2 <- readRDS(file = here::here("data/raw2clean/datasetName2_dataSource/output", "clean_datasetName2.rds"))
+clean.datasetName2 <- readRDS(file = here::here("data/raw2clean/datasetName2_dataSource/output", "clean_datasetName2.rds"))
 
 
 
@@ -46,8 +46,11 @@ prep.variableTheme <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(prep.variableTheme$column1) <- "description of column 1"
+# check existing labels
+sjlabelled::get_label(prep.variableTheme)
 
+# add labels when missing
+sjlabelled::set_label(prep.variableTheme$column1) <- "description of column 1"
 
 
 # POST-TREATMENT OVERVIEW
@@ -68,7 +71,7 @@ saveRDS(prep.variableTheme,
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("code/projectSpecific/prepData")
+ExportTimeProcessing("code/projectSpecific")
 
 
 

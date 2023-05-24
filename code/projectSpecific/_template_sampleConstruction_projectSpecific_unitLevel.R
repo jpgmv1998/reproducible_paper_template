@@ -30,7 +30,7 @@ tictoc::tic(msg = "sampleConstruction_projectSpecific_unitLevel.R script", log =
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
 # CLEAN DATA NAME
-clean.datasetNameAbbrev <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
+clean.datasetName <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
 
 # PREP DATA NAME
@@ -50,12 +50,14 @@ dataFormat.sample.unitLevel <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
+# check existing labels
+sjlabelled::get_label(dataFormat.sample.unitLevel)
+
+# add labels when missing
 sjlabelled::set_label(dataFormat.sample.unitLevel$column1) <- "description of column 1"
 
 
-
 # OTHER EXPORT FORMATS
-
 
 
 
@@ -79,7 +81,7 @@ saveRDS(dataFormat.sample.unitLevel,
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("code/projectSpecific/unitLevel")
+ExportTimeProcessing("code/projectSpecific")
 
 
 

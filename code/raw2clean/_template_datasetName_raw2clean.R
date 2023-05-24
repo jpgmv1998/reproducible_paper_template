@@ -30,16 +30,16 @@ tictoc::tic(msg = "datasetName_raw2clean.R script", log = T)
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
 # read input file
-# raw.datasetNameAbbrev <- sf::st_read(dsn = here::here("data/raw2clean/dataName_source/input"),
+# raw.datasetName <- sf::st_read(dsn = here::here("data/raw2clean/dataName_source/input"),
 #                                      layer = "layerName") # only for spatial data (vector)
 
 
 
 
 # DATA EXPLORATION (use when building the script to understand the input data)
-# summary(raw.datasetNameAbbrev)
-# str(raw.datasetNameAbbrev) # avoid with spatial data
-# plot(raw.datasetNameAbbrev$geometry) # only for spatial data (vector)
+# summary(raw.datasetName)
+# str(raw.datasetName) # avoid with spatial data
+# plot(raw.datasetName$geometry) # only for spatial data (vector)
 
 
 
@@ -50,41 +50,41 @@ tictoc::tic(msg = "datasetName_raw2clean.R script", log = T)
 # COLUMN CLEANUP
 
 # extract column names
-colnames(raw.datasetNameAbbrev)
+colnames(raw.datasetName)
 
 # clean column names
-raw.datasetNameAbbrev <-
-  raw.datasetNameAbbrev %>%
+raw.datasetName <-
+  raw.datasetName %>%
   janitor::clean_names()
 
 # extract column names
-colnames(raw.datasetNameAbbrev)
+colnames(raw.datasetName)
 
 # translate column names
-raw.datasetNameAbbrev <-
-  raw.datasetNameAbbrev %>%
+raw.datasetName <-
+  raw.datasetName %>%
   dplyr::rename()
 
 # check columns class
-lapply(raw.datasetNameAbbrev, class)
+lapply(raw.datasetName, class)
 
 # change columns class
-raw.datasetNameAbbrev <-
-  raw.datasetNameAbbrev %>%
+raw.datasetName <-
+  raw.datasetName %>%
   dplyr::mutate()
 
 
 # CHARACTER TREATMENT
 
 # clean latin characters
-raw.datasetNameAbbrev <-
-  raw.datasetNameAbbrev %>%
+raw.datasetName <-
+  raw.datasetName %>%
   dplyr::mutate(dplyr::across(tidyselect:::where(is.character),
                               \(x) iconv(x, from = "UTF-8", to = "ASCII//TRANSLIT")))
 
 # translate characters
-raw.datasetNameAbbrev <-
-  raw.datasetNameAbbrev %>%
+raw.datasetName <-
+  raw.datasetName %>%
   dplyr::mutate(column_name = dplyr::case_when(column_name == "character1" ~ "translation1",
                                                column_name == "character2" ~ "translation2",
                                                TRUE ~ column_name))
@@ -94,10 +94,10 @@ raw.datasetNameAbbrev <-
 
 # project to SIRGAS 2000 / Brazil Polyconic (https://epsg.io/5880)
 # /!\ ADJUST THE CRS
-raw.datasetNameAbbrev <- sf::st_transform(x = raw.datasetNameAbbrev, crs = 5880)
+raw.datasetName <- sf::st_transform(x = raw.datasetName, crs = 5880)
 
 # check and clean geometries
-raw.datasetNameAbbrev <- sf::st_make_valid(raw.datasetNameAbbrev)
+raw.datasetName <- sf::st_make_valid(raw.datasetName)
 
 
 
@@ -106,15 +106,15 @@ raw.datasetNameAbbrev <- sf::st_make_valid(raw.datasetNameAbbrev)
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(raw.datasetNameAbbrev$column1) <- "description of column 1"
-sjlabelled::set_label(raw.datasetNameAbbrev$column2) <- "description of column 2"
+sjlabelled::set_label(raw.datasetName$column1) <- "description of column 1"
+sjlabelled::set_label(raw.datasetName$column2) <- "description of column 2"
 
 
 
 # POST-TREATMENT OVERVIEW
-# summary(raw.datasetNameAbbrev)
-# str(raw.datasetNameAbbrev)
-# plot(raw.datasetNameAbbrev$geometry) # only for spatial data (vector)
+# summary(raw.datasetName)
+# str(raw.datasetName)
+# plot(raw.datasetName$geometry) # only for spatial data (vector)
 
 
 
@@ -124,10 +124,10 @@ sjlabelled::set_label(raw.datasetNameAbbrev$column2) <- "description of column 2
 sink(here::here("data/raw2clean/datasetName_dataSource/documentation/codebook_datasetName.txt"))
 
 # if the object is spatial (sf class) drop geometry column to simplify the codebook and avoid error in describe
-if (any(class(raw.datasetNameAbbrev) == "sf")) {
+if (any(class(raw.datasetName) == "sf")) {
 
   # describe all variables
-  raw.datasetNameAbbrev %>%
+  raw.datasetName %>%
     sf::st_drop_geometry() %>%
     Hmisc::describe() %>%
     print()
@@ -135,7 +135,7 @@ if (any(class(raw.datasetNameAbbrev) == "sf")) {
 } else {
 
   # describe all variables
-  raw.datasetNameAbbrev %>%
+  raw.datasetName %>%
     Hmisc::describe() %>%
     print()
 }
@@ -149,7 +149,7 @@ sink()
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-saveRDS(raw.datasetNameAbbrev,
+saveRDS(raw.datasetName,
         file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
 

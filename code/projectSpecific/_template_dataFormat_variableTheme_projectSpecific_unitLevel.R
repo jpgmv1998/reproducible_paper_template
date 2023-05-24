@@ -33,7 +33,7 @@ dataFormat.sample.unitLevel <- readRDS(file = here::here("data/projectSpecific/u
 
 
 # CLEAN DATA NAME
-clean.datasetNameAbbrev <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
+clean.datasetName <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
 
 # PREP DATA NAME
@@ -45,11 +45,12 @@ prep.variableTheme <- readRDS(file = here::here("data/projectSpecific/prepData",
 
 # DATA MANIPULATION ----------------------------------------------------------------------------------------------------------------------------------
 
-# MERGE WITH SAMPLE
+# MERGE DATA NAME WITH DATA FORMAT SAMPLE
+# merge
 dataFormat.variableTheme.unitLevel <-
   dataFormat.sample.unitLevel %>%
-  dplyr::left_join(clean.datasetNameAbbrev) %>%
-  dplyr::left_join(prep.variableTheme)
+  tidylog::left_join(clean.datasetName, by = c("unitLevel")) %>%
+  tidylog::left_join(prep.variableTheme, by = c("unitLevel"))
 
 
 
@@ -58,8 +59,11 @@ dataFormat.variableTheme.unitLevel <-
 # EXPORT PREP ----------------------------------------------------------------------------------------------------------------------------------------
 
 # LABELS
-sjlabelled::set_label(dataFormat.variableTheme.unitLevel$column1) <- "description of column 1"
+# check existing labels
+sjlabelled::get_label(dataFormat.variableTheme.unitLevel)
 
+# add labels when missing
+sjlabelled::set_label(dataFormat.variableTheme.unitLevel$column1) <- "description of column 1"
 
 
 # POST-TREATMENT OVERVIEW
@@ -80,7 +84,7 @@ saveRDS(dataFormat.variableTheme.unitLevel,
 tictoc::toc(log = T)
 
 # export time to csv table
-ExportTimeProcessing("code/projectSpecific/unitLevel")
+ExportTimeProcessing("code/projectSpecific")
 
 
 
