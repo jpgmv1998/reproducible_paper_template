@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: GENERATE FIGURE 1 NAME - TEMPLATE
+# AIM: GENERATE FIGURE 1: NAME - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -36,6 +36,15 @@ tictoc::tic(msg = "fig1_name_analysis.R script", log = T)
 
 # GENERATE FIGURE ------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+# EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
+
+ggplot2::ggsave(plot = plot.type.name,
+                filename = here::here(glue::glue("results/figures/fig1_name.png")),
+                width = 12, height = 6, dpi = 300) # adjust width, height, dpi
 
 
 # END TIMER

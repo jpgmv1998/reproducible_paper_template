@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: GENERATE TABLE 1 NAME - TEMPLATE
+# AIM: GENERATE TABLE 1: NAME - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -33,9 +33,13 @@ tictoc::tic(msg = "tab1_name_analysis.R script", log = T)
 
 
 
-
 # GENERATE TABLE ------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+# EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # END TIMER

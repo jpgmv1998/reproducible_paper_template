@@ -43,7 +43,7 @@ dataFormat.variableTheme.unitLevel <- readRDS(file = here::here("data/projectSpe
 # DATA MERGE -----------------------------------------------------------------------------------------------------------------------------------------
 
 # merge sample with all variables of interest
-dataFormat.forAnalysis.unitLevel <-
+dataFormat.sampleForAnalysis.unitLevel <-
   dataFormat.sample.unitLevel %>%
   dplyr::left_join(dataFormat.variableTheme.unitLevel)
 
@@ -55,14 +55,14 @@ dataFormat.forAnalysis.unitLevel <-
 
 # LABELS
 # check existing labels
-sjlabelled::get_label(dataFormat.forAnalysis.unitLevel)
+sjlabelled::get_label(dataFormat.sampleForAnalysis.unitLevel)
 
 # add labels when missing
-sjlabelled::set_label(dataFormat.forAnalysis.unitLevel$column1) <- "description of column 1"
+sjlabelled::set_label(dataFormat.sampleForAnalysis.unitLevel$column1) <- "description of column 1"
 
 
 # POST-TREATMENT OVERVIEW
-# summary(dataFormat.forAnalysis.unitLevel)
+# summary(dataFormat.sampleForAnalysis.unitLevel)
 
 
 
@@ -70,8 +70,8 @@ sjlabelled::set_label(dataFormat.forAnalysis.unitLevel$column1) <- "description 
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-saveRDS(dataFormat.forAnalysis.unitLevel,
-        file = here::here("data/projectSpecific/unitLevel", "dataFormat_forAnalysis_unitLevel.rds"))
+saveRDS(dataFormat.sampleForAnalysis.unitLevel,
+        file = here::here("data/projectSpecific/unitLevel", "dataFormat_sampleForAnalysis_unitLevel.rds"))
 
 
 # END TIMER

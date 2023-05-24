@@ -44,13 +44,19 @@ tictoc::tic(msg = "supportingStats_analysis.R script", log = T)
 sink(here::here("results/stats/supportingStats.txt"))
 
 # in-text citation 1
+print("(page X): in-text citation 1")
+
+# print the statistic
+print()
 
 # in-text citation 2
+print("(page X): in-text citation 2")
 
+# print the statistic
+print()
 
 # end printing console output to text file
 sink()
-
 
 
 # END TIMER

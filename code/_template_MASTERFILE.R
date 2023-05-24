@@ -37,14 +37,14 @@ rm(list = ls())
 
 
 # RUN PROJECT-SPECIFIC SCRIPTS
-source(file = here::here("code/raw2clean/masterfile_projectSpecific.R"), encoding = "UTF-8", echo = T)
+source(file = here::here("code/projectSpecific/masterfile_projectSpecific.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # RUN ANALYSIS SCRIPTS
-source(file = here::here("code/raw2clean/masterfile_analysis.R"), encoding = "UTF-8", echo = T)
+source(file = here::here("code/analysis/masterfile_analysis.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
