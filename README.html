@@ -362,7 +362,8 @@ using R version 4.3.0 and RStudio 2023.03.0+386 “Cherry Blossom” for
 Windows.</p>
 <p>Disclaimer: This project aims to incorporate reproducible workflows
 gathered from multiple sources based on the author’s personal
-preferences, needs, and limitations.</p>
+preferences, needs, and limitations. It was not tested using different R
+versions or on other OS systems.</p>
 <p>Feedback and suggestions are welcome to improve this project.</p>
 <p>Ideas for future implementation are stored on <a href="https://github.com/jpgmv1998/reproducible_paper_template/issues">Issues</a>.</p>
 <div id="how-to-use" class="section level2">
@@ -389,6 +390,10 @@ useful solution is to run
 <code>tinytex::parse_install(here::here(&quot;products/paper/_template_main_paper.log&quot;))</code>
 in R (substituting the file name and path with the relevant for your
 case).</li>
+<li>If there is already a LaTeX distribution installed but rendering
+.tex and .Rmd files is not working, a possible solution is to install
+the same tinytex version as used in the template
+<code>tinytex::install_tinytex(version = &quot;2023.05&quot;)</code>.</li>
 </ul></li>
 <li><p>Eventually…</p>
 <ul>
@@ -403,6 +408,16 @@ accordingly or deleting from your project;</li>
 <li>the README.md and README.htlm files should be substituted by a new
 README file detailing how to replicate the paper, following the
 _template_README_replicationPackage.md file.</li>
+</ul></li>
+<li><p>When running <code>&quot;code/setup.R&quot;</code> for the first time, I
+strongly recommend to run it line by line</p>
+<ul>
+<li><code>&quot;groundhog&quot;</code> might give the following message
+<code>&quot;IMPORTANT. R does not have a personal library to save packages to. The default location for it is: &#39;C:\Users\username\AppData\Local/R/win-library/4.3&#39;. 1) Type &#39;create&#39; to create that directory 2) Otherwise type &#39;stop&#39;&quot;</code>.
+Answer with <code>create</code> in the console to proceed;</li>
+<li>In some cases Rtools might be necessary (<a href="https://groundhogr.com/rtools/" class="uri">https://groundhogr.com/rtools/</a>);</li>
+<li>In some cases re-running the script might solve possible
+installation issues.</li>
 </ul></li>
 </ul>
 </div>

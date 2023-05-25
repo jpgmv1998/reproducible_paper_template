@@ -6,7 +6,7 @@ Author: João Pedro Vieira
 
 Software: Focused on empirical projects that use mostly R. Tested using R version 4.3.0 and RStudio 2023.03.0+386 "Cherry Blossom" for Windows.
 
-Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations. 
+Disclaimer: This project aims to incorporate reproducible workflows gathered from multiple sources based on the author's personal preferences, needs, and limitations. It was not tested using different R versions or on other OS systems.
 
 Feedback and suggestions are welcome to improve this project. 
 
@@ -23,6 +23,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
 * In Tools > Project Options... > Sweave > select `pdfLaTeX` for Typset LaTeX. To render .tex and .Rmd files as tested in this template. 
   * If you encounter missing package errors when compiling to pdf a useful solution is to run `tinytex::parse_install(here::here("products/paper/_template_main_paper.log"))` in R (substituting the file name and path with the relevant for your case).
+  * If there is already a LaTeX distribution installed but rendering .tex and .Rmd files is not working, a possible solution is to install the same tinytex version as used in the template `tinytex::install_tinytex(version = "2023.05")`.
 
 * Eventually...
   * all .gitignore files should be carefully adjusted to avoid commiting unnecessary files (e.g., large data files);
@@ -30,6 +31,11 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
   * the `code/setup.R` R file should be adjusted changing the packages of interest and selecting the reference date;
   * all files with the prefix `_template_` should be replaced by your scripts, adjusting the script name and header informations accordingly or deleting from your project;
   * the README.md and README.htlm files should be substituted by a new README file detailing how to replicate the paper, following the _template_README_replicationPackage.md file.
+  
+* When running `"code/setup.R"` for the first time, I strongly recommend to run it line by line
+  * `"groundhog"` might give the following message `"IMPORTANT. R does not have a personal library to save packages to. The default location for it is: 'C:\Users\username\AppData\Local/R/win-library/4.3'. 1) Type 'create' to create that directory 2) Otherwise type 'stop'"`. Answer with `create` in the console to proceed;
+  * In some cases Rtools might be necessary (https://groundhogr.com/rtools/);
+  * In some cases re-running the script might solve possible installation issues.
   
 ## Template Features
 

@@ -333,11 +333,17 @@ Original Example:
 
 Additional Example:
 
-- Download the replication package.
+- (Only in the first time)  Download the replication package.
+- (Only in the first time)  Download R 4.3.0 (strongly recommended).
 - Open RStudio using `"reproducible_paper_example2.Rproj"` to set the working directory to the project root.
-- Run `"code/MASTERFILE.R"` to run all R scripts in sequence, including the initial setup.
+- (Only in the first time) Run `"code/setup.R"` to install all the necessary R packages with the same version as when it was last run.
+  - Strongly recommended to run line by line to answer possible prompts from `groundhog`;
+  - `"groundhog"` might give the following message `"IMPORTANT. R does not have a personal library to save packages to. The default location for it is: 'C:\Users\username\AppData\Local/R/win-library/4.3'. 1) Type 'create' to create that directory 2) Otherwise type 'stop'"`. Answer with `create` in the console to proceed;
+  - Package `tabulizer` might require installing Java 64-bits (https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava)
+  - In some cases Rtools might be necessary (https://groundhogr.com/rtools/);
+  - In some cases re-running the script might solve possible installation issues.
+- Run `"code/MASTERFILE.R"` to run all R scripts in sequence.
   - Skipping individual R programs will not prevent others from running correctly because all intermediate datasets are available. However, you should manually adjust the folder-specific master files to remove the scripts you do not want to run.
-
 
 ### Details
 

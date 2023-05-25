@@ -1060,11 +1060,28 @@ sequence.</li>
 </ul>
 <p>Additional Example:</p>
 <ul>
-<li>Download the replication package.</li>
+<li>(Only in the first time) Download the replication package.</li>
+<li>(Only in the first time) Download R 4.3.0 (strongly
+recommended).</li>
 <li>Open RStudio using <code>&quot;reproducible_paper_example2.Rproj&quot;</code>
 to set the working directory to the project root.</li>
+<li>(Only in the first time) Run <code>&quot;code/setup.R&quot;</code> to install
+all the necessary R packages with the same version as when it was last
+run.
+<ul>
+<li>Strongly recommended to run line by line to answer possible prompts
+from <code>groundhog</code>;</li>
+<li><code>&quot;groundhog&quot;</code> might give the following message
+<code>&quot;IMPORTANT. R does not have a personal library to save packages to. The default location for it is: &#39;C:\Users\username\AppData\Local/R/win-library/4.3&#39;. 1) Type &#39;create&#39; to create that directory 2) Otherwise type &#39;stop&#39;&quot;</code>.
+Answer with <code>create</code> in the console to proceed;</li>
+<li>Package <code>tabulizer</code> might require installing Java 64-bits
+(<a href="https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava" class="uri">https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava</a>)</li>
+<li>In some cases Rtools might be necessary (<a href="https://groundhogr.com/rtools/" class="uri">https://groundhogr.com/rtools/</a>);</li>
+<li>In some cases re-running the script might solve possible
+installation issues.</li>
+</ul></li>
 <li>Run <code>&quot;code/MASTERFILE.R&quot;</code> to run all R scripts in
-sequence, including the initial setup.
+sequence.
 <ul>
 <li>Skipping individual R programs will not prevent others from running
 correctly because all intermediate datasets are available. However, you
