@@ -29,7 +29,7 @@ tictoc::tic(msg = "masterfile_analysis.R script", log = T)
 # RUN ALL REGRESSIONS --------------------------------------------------------------------------------------------------------------------------------
 
 # RUN REGRESSION NAME
-source(here::here("code/analysis/regression_name_analysis.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/regression_name.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -41,21 +41,21 @@ rm(list = ls())
 # RUN PAPER MAIN RESULTS ------------------------------------------------------------------------------------------------------------------------------
 
 # GENERATE SUPPORTING STATS CITED IN-TEXT
-source(here::here("code/analysis/supportingStats_analysis.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/supportingStats.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # GENERATE FIGURE 1: NAME
-source(here::here("code/analysis/fig1_name_analysis.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/fig1_name.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # GENERATE TABLE 1: NAME
-source(here::here("code/analysis/tab1_name_analysis.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/tab1_name.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -65,14 +65,14 @@ rm(list = ls())
 # RUN PAPER APPENDIX RESULTS ---------------------------------------------------------------------------------------------------------------------------
 
 # GENERATE FIGURE A1: NAME
-source(here::here("code/analysis/figA1_name_analysis.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/figA1_name.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # GENERATE TABLE A1: NAME
-source(here::here("code/analysis/tabA1_name_analysis.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/tabA1_name.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())

@@ -113,17 +113,17 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
       
       * `_template_masterfile_analysis.R` - an R script to source all `analysis` R scripts in the desired sequence.
       
-      * `_template_regression_name_analysis.R` - R script to run regressions and generate results to feed figure(s)/table(s)
+      * `_template_regression_name.R` - R script to run regressions and generate results to feed figure(s)/table(s)
       
-      * `_template_supportingStats_analysis.R` - R script to calculate all statistics cited in the paper
+      * `_template_supportingStats.R` - R script to calculate all statistics cited in the paper
       
-      * `_template_fig1_name_analysis.R` - R script to generate figure 1
+      * `_template_fig1_name.R` - R script to generate figure 1
       
-      * `_template_figA1_name_analysis.R` - R script to generate appendix figure A1
+      * `_template_figA1_name.R` - R script to generate appendix figure A1
       
-      * `_template_tab1_name_analysis.R` - R script to generate Table 1
+      * `_template_tab1_name.R` - R script to generate Table 1
       
-      * `_template_tabA1_name_analysis.R` - R script to generate appendix table A1
+      * `_template_tabA1_name.R` - R script to generate appendix table A1
 
 * `data`
 
