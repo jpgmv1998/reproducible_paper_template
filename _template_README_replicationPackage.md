@@ -20,7 +20,7 @@ knit: (function(inputFile, encoding) {
 
 > INSTRUCTIONS: This README suggests structure and content that have been approved by various journals, see [Endorsers](Endorsers.md). It is available as [Markdown/txt](https://github.com/social-science-data-editors/template_README/blob/master/template-README.md), [Word](templates/README.docx), [LaTeX](templates/README.tex), and [PDF](templates/README.pdf). In practice, there are many variations and complications, and authors should feel free to adapt to their needs. All instructions can (should) be removed from the final README (in Markdown, remove lines starting with `> INSTRUCTIONS`). Please ensure that a PDF is submitted in addition to the chosen native format. 
 
-> DISCLAIMER: The original template was adapted to fit the structure of this paper template. Also, additional examples were added, mostly, from an example application of the template [@].
+> DISCLAIMER: The original template was adapted to fit the structure of this paper template. Also, additional examples were added, mostly, from an example application of the template [@vieira2023example].
 
 Overview
 --------
@@ -116,7 +116,7 @@ The data is licensed under a Creative Commons Attribution 4.0 International Publ
 - [ ] Some data **cannot be made** publicly available.
 - [ ] **No data can be made** publicly available.
 
-Additional Example: The data used to support the findings of this study comes from multiple data sources; all of them are publicly available online and have been deposited in a Zenodo repository [@]. Each raw dataset is listed and described in more detail below. Access to download from the original source is guaranteed by providing a persistent link, using the Save a Page feature from Archive.org, pointing directly to the data download.
+Additional Example: The data used to support the findings of this study comes from multiple data sources; all of them are publicly available online and have been deposited in a Zenodo repository [@vieira2023example]. Each raw dataset is listed and described in more detail below. Access to download from the original source is guaranteed by providing a persistent link, using the Save a Page feature from Archive.org, pointing directly to the data download.
 
 ### Details on each Data Source
 
@@ -411,7 +411,7 @@ The numbers provided in the text in the paper are generated in `"code/analysis/s
 
 ## Acknowledgements
 
-Adapted structure from @vilhuber2020template. Use additional examples from @
+Adapted structure from @vilhuber2020template. Used additional examples from @vieira2023example.
 
 ## References
 

@@ -22,6 +22,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 * When using R, always open RStudio using the .Rproj file. 
 
 * In Tools > Project Options... > Sweave > select `pdfLaTeX` for Typset LaTeX. To render .tex and .Rmd files as tested in this template. 
+  * If you encounter missing package errors when compiling to pdf a useful solution is to run `tinytex::parse_install(here::here("products/paper/_template_main_paper.log"))` in R (substituting the file name and path with the relevant for your case).
 
 * Eventually...
   * all .gitignore files should be carefully adjusted to avoid commiting unnecessary files (e.g., large data files);
@@ -50,7 +51,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
   * [Replication Package README template](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/_template_README_replicationPackage.md) adapted from the [AEA Template](https://social-science-data-editors.github.io/template_README/) - The AEA template README is in a form that follows best practices as defined by a number of data editors at social science journals. 
 
-* [Replication Package example](https://github.com/jpgmv1998/reproducible_paper_example) - Application of this template using real data. It simulates a replication package in a stage ready to be deposited, thus containing only the necessary files to replicate the analysis (code and data folders; README; license; and Rproj). Code, data, and README examples may be useful to see how the proposed structure works in "practice". The GitHub repository does not contain the data files because of its hard limit of 100Mb for individual files. So a version with all the data is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4579463.svg)](https://doi.org/10.5281/zenodo.4579463)
+* [Replication Package example](https://github.com/jpgmv1998/reproducible_paper_example2) - Application of this template using real data. It simulates a replication package in a stage ready to be deposited, thus containing only the necessary files to replicate the analysis (code and data folders; README; license; and Rproj). Code, data, and README examples may be useful to see how the proposed structure works in "practice". The GitHub repository does not contain the data files because of its hard limit of 100Mb for individual files. So a version with all the data is available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7971743.svg)](https://doi.org/10.5281/zenodo.7971743)
 
 * Custom function to automatically generate CSV files containing the time of processing of each script - [ExportTimeProcessing](https://github.com/jpgmv1998/reproducible_paper_template/blob/master/code/_functions/ExportTimeProcessing.R).
 
