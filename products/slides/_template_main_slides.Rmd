@@ -19,7 +19,10 @@ output:
 classoption: "aspectratio=169"
 section-titles: true  # add Appendix section title transition slide
 urlcolor: blue
-bibliography: "../../references/references_bib.bib"
+bibliography: 
+  - "../../references/references_literature.bib"
+  - "../../references/references_data.bib"
+  - "../../references/references_software.bib"
 ---
 
 ```{r setup, include=FALSE}
@@ -71,7 +74,7 @@ knitr::opts_chunk$set(fig.pos = 'H!', warning = F, message = F, echo = F, includ
 
 ## Main datasets
 
-- **Dataset1** (Data source)
+- **Dataset1** [@]
 
 
 # Empirical strategy

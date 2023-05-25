@@ -19,7 +19,10 @@ output:
 classoption: "aspectratio=169"
 section-titles: true  # add Appendix section title transition slide
 urlcolor: blue
-bibliography: "../../references/references_bib.bib"
+bibliography:  
+  - "../../references/references_literature.bib"
+  - "../../references/references_data.bib"
+  - "../../references/references_software.bib"
 ---
 
 ```{r setup, include=FALSE}
@@ -34,62 +37,38 @@ knitr::opts_chunk$set(fig.pos = 'H!', warning = F, message = F, echo = F, includ
 
 # Figure 1 
 
-<!-- % \begin{figure}[H] -->
-<!-- % \caption{Title} -->
-<!-- % \centering -->
-<!-- % \begin{minipage}{\textwidth} % choose width suitably -->
-<!-- % %\includegraphics[width=\textwidth]{../../results/figures/fig1_name.png} -->
-<!-- % \scriptsize -->
-<!--     % \RaggedRight -->
-<!--     % \textit{Notes:} . \\ -->
-<!--     % \textit{Data Sources:} . -->
-<!-- % \end{minipage} -->
-<!-- % \label{fig:} -->
-<!-- % \end{figure} -->
+<!-- \begin{figure} -->
+<!--   \includegraphics[width=\textwidth]{`r here::here("results/figures/fig1_name.png")`} -->
+<!-- \label{fig:eventStudyBalanced} -->
+<!-- \end{figure} -->
 
 # Table 1 
 
-<!-- % \begin{table}[H] -->
-<!-- % \caption{Title} -->
-<!-- % \centering -->
-<!-- % \scalebox{1}{ -->
-<!-- % \begin{threeparttable} -->
-<!-- %     %\input{../../results/tables/tab1_name.tex} -->
-<!-- % \begin{tablenotes}[flushleft] -->
-<!-- % \item \footnotesize \textit{Notes}: . -->
-<!-- % \item \footnotesize \textit{Data Sources}: . -->
-<!-- % \end{tablenotes} -->
-<!-- % \end{threeparttable}} -->
-<!-- % \label{tab:} -->
-<!-- % \end{table} -->
+\vspace{-0.5cm}
+
+<!-- \begin{table}[H] -->
+<!-- \centering -->
+<!-- \scalebox{0.6}{ -->
+<!--     \input{`r here::here("results/tables/tab1_name.tex")`} -->
+<!-- } -->
+<!-- \label{tab:summaryStat} -->
+<!-- \end{table} -->
 
 # Figure A1 
 
-<!-- % \begin{figure}[H] -->
-<!-- % \caption{Title} -->
-<!-- % \centering -->
-<!-- % \begin{minipage}{\textwidth} % choose width suitably -->
-<!-- % %\includegraphics[width=\textwidth]{../../results/figures/figA1_name.png} -->
-<!-- % \scriptsize -->
-<!--     % \RaggedRight -->
-<!--     % \textit{Notes:} . \\ -->
-<!--     % \textit{Data Sources:} . -->
-<!-- % \end{minipage} -->
-<!-- % \label{fig:} -->
-<!-- % \end{figure} -->
+<!-- \begin{figure} -->
+<!--   \includegraphics[width=\textwidth]{`r here::here("results/figures/figA1_name.png")`} -->
+<!-- \label{fig:eventStudyUnbalanced} -->
+<!-- \end{figure} -->
 
 # Table A1 
 
-<!-- % \begin{table}[H] -->
-<!-- % \caption{Title} -->
-<!-- % \centering -->
-<!-- % \scalebox{1}{ -->
-<!-- % \begin{threeparttable} -->
-<!-- %     %\input{../../results/tables/tabA1_name.tex} -->
-<!-- % \begin{tablenotes}[flushleft] -->
-<!-- % \item \footnotesize \textit{Notes}: . -->
-<!-- % \item \footnotesize \textit{Data Sources}: . -->
-<!-- % \end{tablenotes} -->
-<!-- % \end{threeparttable}} -->
-<!-- % \label{tab:} -->
-<!-- % \end{table} -->
+\vspace{-0.5cm}
+
+<!-- \begin{table}[H] -->
+<!-- \centering -->
+<!-- \scalebox{0.6}{ -->
+<!--     \input{`r here::here("results/tables/tabA1_name.tex")`} -->
+<!-- } -->
+<!-- \label{tab:summaryStat} -->
+<!-- \end{table} -->
