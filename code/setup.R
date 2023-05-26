@@ -81,11 +81,24 @@ groundhog::groundhog.library("janitor", groundhog.date)
 
 # LIST OF ADDITIONAL PACKAGES THAT MIGHT BE USEFUL
 
+# data.table - An alternative way to organize data sets for very, very fast operations. Useful for big data.
+#groundhog::groundhog.library("data.table", groundhog.date)
+
+# fixest - provides a family of functions to perform estimations with multiple fixed-effects.
+# This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
+#groundhog::groundhog.library("fixest", groundhog.date)
+
 # kableExtra - to create beautiful and flexible tables in R
 #groundhog::groundhog.library("kableExtra", groundhog.date)
 
 # modelsummary - to create and customize tables of model output
 #groundhog::groundhog.library("modelsummary", groundhog.date)
+
+# terra - to manipulate spatial data in raster format
+#groundhog::groundhog.library("terra", groundhog.date)
+
+# leaflet - to generate thematic maps, including interactive version
+#groundhog::groundhog.library("tmap", groundhog.date)
 
 # tabulizer - to extract table from pdf
 # /!\ needed to install Java 64-bits after receiving the following error in the first try:
