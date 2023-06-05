@@ -81,32 +81,49 @@ groundhog::groundhog.library("janitor", groundhog.date)
 
 # LIST OF ADDITIONAL PACKAGES THAT MIGHT BE USEFUL
 
-# data.table - An alternative way to organize data sets for very, very fast operations. Useful for big data.
+# # data.table - An alternative way to organize data sets for very, very fast operations. Useful for big data.
 #groundhog::groundhog.library("data.table", groundhog.date)
+# # declare preference to avoid conflicted error with tictoc::shift
+#conflicted::conflicts_prefer(data.table::shift)
 
-# fixest - provides a family of functions to perform estimations with multiple fixed-effects.
-# This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
+# # fixest - provides a family of functions to perform estimations with multiple fixed-effects.
+# # This package is currently (Feb. 2020) the fastest software available to perform fixed-effects estimations.
 #groundhog::groundhog.library("fixest", groundhog.date)
 
-# kableExtra - to create beautiful and flexible tables in R
+# # kableExtra - to create beautiful and flexible tables in R
 #groundhog::groundhog.library("kableExtra", groundhog.date)
 
-# modelsummary - to create and customize tables of model output
+# # modelsummary - to create and customize tables of model output
 #groundhog::groundhog.library("modelsummary", groundhog.date)
 
-# terra - to manipulate spatial data in raster format
+# # terra - to manipulate spatial data in raster format
 #groundhog::groundhog.library("terra", groundhog.date)
 
-# leaflet - to generate thematic maps, including interactive version
+# # leaflet - to generate thematic maps, including interactive version
 #groundhog::groundhog.library("tmap", groundhog.date)
 
-# tabulizer - to extract table from pdf
-# /!\ needed to install Java 64-bits after receiving the following error in the first try:
-#  erro: .onLoad falhou em loadNamespace() para 'rJava', detalhes:
-#  chamada: fun(libname, pkgname)
-#  erro: JAVA_HOME cannot be determined from the Registry
-# ref: (https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava)
+# # tabulizer - to extract table from pdf
+# # /!\ needed to install Java 64-bits after receiving the following error in the first try:
+# #  erro: .onLoad falhou em loadNamespace() para 'rJava', detalhes:
+# #  chamada: fun(libname, pkgname)
+# #  erro: JAVA_HOME cannot be determined from the Registry
+# # ref: (https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava)
 #groundhog::groundhog.library("tabulizer", groundhog.date)
+
+# # igraph - identify polygons that are spatially connected
+#groundhog::groundhog.library("igraph", groundhog.date)
+
+# # did - to use Callaway and Sant'Anna (2021) new DiD estimators
+#groundhog::groundhog.library("did", groundhog.date)
+
+# # XML - to download files online
+#groundhog::groundhog.library("XML", groundhog.date)
+
+# # geobr - to read brazilian shapefiles
+#groundhog::groundhog.library("geobr", groundhog.date)
+
+# # ggsn - to add scale bar to map
+#groundhog::groundhog.library("ggsn", groundhog.date)
 
 
 
