@@ -447,7 +447,7 @@ analysis presented in the paper.</p></li>
 <li><p><code>&quot;code</code>: a folder containing all scripts to clean,
 construct, and analyze the data</p>
 <ul>
-<li><code>&quot;code/MASTERFILE.R&quot;</code>: R script to run all scripts from
+<li><code>&quot;code/_MASTERFILE.R&quot;</code>: R script to run all scripts from
 data cleaning to generating the final results;</li>
 <li><code>&quot;code/setup.R&quot;</code>: R script to install/load R packages and
 configure the initial setup. Uses <code>&quot;groundhog&quot;</code> to keep all
@@ -508,7 +508,7 @@ main paper are listed in <code>&quot;tables.tex&quot;</code>. The tables of the
 appendix are listed in <code>&quot;tables_appendix.tex&quot;</code>;</li>
 <li><code>&quot;stats&quot;</code>: folder with the log output from the R script
 that calculates all the statistics cited in the text
-<code>&quot;supportingStats.txt&quot;</code>.</li>
+<code>&quot;stats_inText.txt&quot;</code>.</li>
 </ul></li>
 <li><p><code>&quot;name_proj.Rproj&quot;</code>: R project to automatically adjust
 file path references. Always open RStudio from this file when running
@@ -1003,14 +1003,14 @@ outlined below, your results may differ.</li>
 <li><code>&quot;code/_MASTERFILE.R&quot;</code> will run individual master files
 for each folder:
 <ul>
-<li><code>&quot;code/raw2clean/masterfile_raw2clean.R&quot;</code> will run one R
+<li><code>&quot;code/raw2clean/_masterfile_raw2clean.R&quot;</code> will run one R
 script to clean each input dataset (4 scripts).</li>
-<li><code>&quot;code/projectSpecific/muniLevel/masterfile_projectSpecific.R&quot;</code>
+<li><code>&quot;code/projectSpecific/_masterfile_projectSpecific.R&quot;</code>
 will construct the base sample, extract the information from each
 dataset relevant to this paper, construct the variables of interest,
 merge them with the base sample, and generate the sample for analysis in
 multiple formats: panel and spatial (4 scripts).</li>
-<li><code>&quot;code/analysis/masterfile_analysis.R&quot;</code> will run the
+<li><code>&quot;code/analysis/_masterfile_analysis.R&quot;</code> will run the
 regressions and generate all supporting statistics, tables, and figures
 (5 scripts).</li>
 </ul></li>
@@ -1080,7 +1080,7 @@ Answer with <code>create</code> in the console to proceed;</li>
 <li>In some cases re-running the script might solve possible
 installation issues.</li>
 </ul></li>
-<li>Run <code>&quot;code/MASTERFILE.R&quot;</code> to run all R scripts in
+<li>Run <code>&quot;code/_MASTERFILE.R&quot;</code> to run all R scripts in
 sequence.
 <ul>
 <li>Skipping individual R programs will not prevent others from running
@@ -1310,8 +1310,8 @@ the paper, as explained and justified below.</li>
 </tbody>
 </table>
 <p>The numbers provided in the text in the paper are generated in
-<code>&quot;code/analysis/supportingStats.R&quot;</code> and saved in the
-<code>&quot;results/stats/supportingStats.txt&quot;</code> with page location and
+<code>&quot;code/analysis/stats_inText.R&quot;</code> and saved in the
+<code>&quot;results/stats/stats_inText.txt&quot;</code> with page location and
 citation.</p>
 </div>
 <div id="acknowledgements" class="section level2">

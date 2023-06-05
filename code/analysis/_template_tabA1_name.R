@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "tabA1_name_analysis.R script", log = T)
+tictoc::tic(msg = "tabA1_name.R script", log = T)
 
 
 

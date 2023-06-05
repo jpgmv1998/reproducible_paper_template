@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "masterfile_projectSpecific.R script", log = T)
+tictoc::tic(msg = "_masterfile_projectSpecific.R script", log = T)
 
 
 
@@ -31,7 +31,7 @@ tictoc::tic(msg = "masterfile_projectSpecific.R script", log = T)
 # RUN ALL PREP DATA SCRIPTS --------------------------------------------------------------------------------------------------------------------------
 
 # PREPARE VARIABLE THEME
-source(here::here("code/projectSpecific/variableTheme_projectSpecific_prepData.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/prepData_variableTheme.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -43,21 +43,21 @@ rm(list = ls())
 # RUN ALL UNIT LEVEL SCRIPTS -------------------------------------------------------------------------------------------------------------------------
 
 # CONSTRUCT SAMPLE(S) OF INTEREST AT UNIT LEVEL
-source(here::here("code/projectSpecific/sampleConstruction_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/unitLevel_sampleConstruction.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # ADD VARIABLE THEME
-source(here::here("code/projectSpecific/dataFormat_variableTheme_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/unitLevel_dataFormat_variableTheme.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
 
 
 # CONSTRUCT FINAL SAMPLE(S) FOR ANALYSUS
-source(here::here("code/projectSpecific/sampleForAnalysis_projectSpecific_unitLevel.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/projectSpecific/unitLevel_sampleForAnalysis.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())

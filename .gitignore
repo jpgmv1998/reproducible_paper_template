@@ -8,3 +8,5 @@ reproducible_paper_template.Rproj
 *.synctex.gz
 *.log
 *.bbl
+.Rproj.user
+_deprecated/

@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "masterfile_analysis.R script", log = T)
+tictoc::tic(msg = "_masterfile_analysis.R script", log = T)
 
 
 
@@ -29,7 +29,7 @@ tictoc::tic(msg = "masterfile_analysis.R script", log = T)
 # RUN ALL REGRESSIONS --------------------------------------------------------------------------------------------------------------------------------
 
 # RUN REGRESSION NAME
-source(here::here("code/analysis/regression_name.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/reg_name.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -41,7 +41,7 @@ rm(list = ls())
 # RUN PAPER MAIN RESULTS ------------------------------------------------------------------------------------------------------------------------------
 
 # GENERATE SUPPORTING STATS CITED IN-TEXT
-source(here::here("code/analysis/supportingStats.R"), encoding = "UTF-8", echo = T)
+source(here::here("code/analysis/stats_inText.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())

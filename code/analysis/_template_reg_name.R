@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: GENERATE SUPPORTING STATS CITED IN-TEXT - TEMPLATE
+# AIM: RUN REGRESSION NAME - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "supportingStats_analysis.R script", log = T)
+tictoc::tic(msg = "reg_name.R script", log = T)
 
 
 
@@ -32,31 +32,25 @@ tictoc::tic(msg = "supportingStats_analysis.R script", log = T)
 
 
 
+
 # DATA PREP ------------------------------------------------------------------------------------------------------------------------------------------
 
+# SELECT RELEVANT TIME PERIOD SAMPLE AND VARIABLES
 
 
 
 
 
-# STATISTICS CITED IN THE TEXT -----------------------------------------------------------------------------------------------------------------------
+# ESTIMATION -----------------------------------------------------------------------------------------------------------------------------------------
 
-sink(here::here("results/stats/supportingStats.txt"))
 
-# in-text citation 1
-print("(page X): in-text citation 1")
 
-# print the statistic
-print()
 
-# in-text citation 2
-print("(page X): in-text citation 2")
 
-# print the statistic
-print()
+# EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-# end printing console output to text file
-sink()
+# save regression outputs
+saveRDS(reg.name, file = here::here("data/analysis/regressions/reg_name.rds"))
 
 
 # END TIMER

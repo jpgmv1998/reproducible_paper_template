@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: MASTERFILE SCRIPT TO RUN ALL RAW2CLEAN SCRIPTS - TEMPLATE
+# AIM: MASTERFILE SCRIPT TO RUN ALL SUBFOLDER MASTERFILES - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -21,16 +21,30 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "masterfile_raw2clean.R script", log = T)
+tictoc::tic(msg = "_MASTERFILE.R script", log = T)
 
 
 
 
 
-# RUN RAW2CLEAN SCRIPTS ------------------------------------------------------------------------------------------------------------------------------
+# RUN MASTERFILES ------------------------------------------------------------------------------------------------------------------------------------
 
-# SHORT DESCRIPTION
-source(file = here::here("code/raw2clean/datasetName_dataSource.R"), encoding = "UTF-8", echo = T)
+# RUN RAW2CLEAN SCRIPTS
+source(file = here::here("code/raw2clean/_masterfile_raw2clean.R"), encoding = "UTF-8", echo = T)
+
+# clear all objects from global environment
+rm(list = ls())
+
+
+# RUN PROJECT-SPECIFIC SCRIPTS
+source(file = here::here("code/projectSpecific/_masterfile_projectSpecific.R"), encoding = "UTF-8", echo = T)
+
+# clear all objects from global environment
+rm(list = ls())
+
+
+# RUN ANALYSIS SCRIPTS
+source(file = here::here("code/analysis/_masterfile_analysis.R"), encoding = "UTF-8", echo = T)
 
 # clear all objects from global environment
 rm(list = ls())
@@ -49,7 +63,7 @@ tictoc::toc(log = T)
 source(here::here("code/_functions/ExportTimeProcessing.R"))
 
 # export time to csv table
-ExportTimeProcessing("code/raw2clean")
+ExportTimeProcessing("code")
 
 
 

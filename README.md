@@ -86,7 +86,7 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
 
   * All files inside this folder should be in version control and regularly committed when changes are made. All files with the prefix `_template_` should be replaced by your scripts, adjusting the script name accordingly or deleted from your project. 
 
-  * `_template_MASTERFILE.R` - main MASTERFILE R script to run all subfolders master files, including all R scripts.
+  * `_template__MASTERFILE.R` - main MASTERFILE R script to run all subfolders master files, including all R scripts.
   
   * `setup.R` - R script for initial R setup. Install/load relevant R packages, configure `groundhog` to select all packages based on a specific date, install `tinytex` to generate PDFs from .tex and .Rmd files, describe additional packages that might be useful, and source personal functions to use across multiple scripts.
   
@@ -96,33 +96,33 @@ Ideas for future implementation are stored on [Issues](https://github.com/jpgmv1
     
   * `raw2clean` - a folder containing:
   
-      * one `_template_datasetName_raw2clean.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder, perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder, preferably in `.rds` format. 
+      * one `_template_r2c_datasetName.R` R script for each dataset folder in `data/raw2clean`. The goal of each script is to read the file(s) in the `data/raw2clean/datasetName_dataSource/input` folder, perform simple cleaning tasks, and save the cleaned data in the `data/raw2clean/datasetName_dataSource/output` folder, preferably in `.rds` format. 
           
-      * `_template_masterfile_raw2clean.R` - an R script to source all raw2clean R scripts and specify the order when relevant.
+      * `_template__masterfile_raw2clean.R` - an R script to source all raw2clean R scripts and specify the order when relevant.
       
-      * `_timeProcessing_raw2clean.csv` - a CSV file containing each script's time to run (not present, but is automatically generated after running `_template_masterfile_raw2clean.R`).
+      * `_timeProcessing_code_raw2clean.csv` - a CSV file containing each script's time to run (not present, but is automatically generated after running `_template__masterfile_raw2clean.R`).
   
   * `projectSpecific` - a folder containing:
   
-      * `_template_masterfile_projectSpecific.R` - an R script to source all `projectSpecifc` R scripts in the desired sequence.
+      * `_template__masterfile_projectSpecific.R` - an R script to source all `projectSpecifc` R scripts in the desired sequence.
   
-      * `_timeProcessing_projectSpecific.csv` - a CSV file containing the total time of all project-specific scripts (not present, but is automatically generated after running `_template_masterfile_projectSpecific.R`)
+      * `_timeProcessing_code_projectSpecific.csv` - a CSV file containing the total time of all project-specific scripts (not present, but is automatically generated after running `_template__masterfile_projectSpecific.R`)
       
-      * `_template_variableTheme_projectSpecific_prepData.R` - R script(s) to manipulate cleaned dataset(s) before generating the sample(s) of interest
+      * `_template_prepData_variableTheme.R` - R script(s) to manipulate cleaned dataset(s) before generating the sample(s) of interest
 
-      * `_template_sampleConstruction_projectSpecific_unitLevel.R` - R script to create the sample(s) of interest (e.g., panel, cross-section, spatial) at a given unit level (e.g., farm, municipality, country).
+      * `_template_unitLevel_sampleConstruction.R` - R script to create the sample(s) of interest (e.g., panel, cross-section, spatial) at a given unit level (e.g., farm, municipality, country).
       
-      * `_template_dataFormat_variableTheme_projectSpecific_unitLevel.R` - R script(s) to extract/create the variables of interest and merge with the relevant sample (according to `dataFormat`) for a given unit level. If there is only one relevant format, exclude the prefix `dataFormat`.
+      * `_template_unitLevel_dataFormat_variableTheme.R` - R script(s) to extract/create the variables of interest and merge with the relevant sample (according to `dataFormat`) for a given unit level. If there is only one relevant format, exclude the prefix `dataFormat`.
     
-      * `_template_sampleForAnalysis_unitLevel.R` - R script to combine all relevant files in `data/projectSpecific/unitLevel` into the output file(s) for analysis at a given unit level.
+      * `_template_unitLevel_sampleForAnalysis.R` - R script to combine all relevant files in `data/projectSpecific/unitLevel` into the output file(s) for analysis at a given unit level.
       
   * `analysis` - a folder to store scripts that generate stats, figures, and tables with the results of interest:
       
-      * `_template_masterfile_analysis.R` - an R script to source all `analysis` R scripts in the desired sequence.
+      * `_template__masterfile_analysis.R` - an R script to source all `analysis` R scripts in the desired sequence.
       
-      * `_template_regression_name.R` - R script to run regressions and generate results to feed figure(s)/table(s)
+      * `_template_reg_name.R` - R script to run regressions and generate results to feed figure(s)/table(s)
       
-      * `_template_supportingStats.R` - R script to calculate all statistics cited in the paper
+      * `_template_stats_inText.R` - R script to calculate all statistics cited in the paper
       
       * `_template_fig1_name.R` - R script to generate figure 1
       

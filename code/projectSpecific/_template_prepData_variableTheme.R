@@ -4,7 +4,7 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: ADD VARIABLE THEME INFO TO PROJECT DATA FORMAT SAMPLE - TEMPLATE
+# AIM: PREPARE VARIABLE THEME - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
@@ -20,7 +20,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "dataFormat_variableTheme_projectSpecific_unitLevel.R script", log = T)
+tictoc::tic(msg = "prepData_variableTheme.R script", log = T)
 
 
 
@@ -28,31 +28,18 @@ tictoc::tic(msg = "dataFormat_variableTheme_projectSpecific_unitLevel.R script",
 
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
-# DATA FORMAT SAMPLE
-dataFormat.sample.unitLevel <- readRDS(file = here::here("data/projectSpecific/unitLevel/dataFormat_sample_unitLevel.rds"))
-
-
-# CLEAN DATA NAME
+# CLEANED DATA 1
 clean.datasetName <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
-
-# PREP DATA NAME
-prep.variableTheme <- readRDS(file = here::here("data/projectSpecific/prepData", "prep_variableTheme.rds"))
-
+# CLEANED DATA 2
+clean.datasetName2 <- readRDS(file = here::here("data/raw2clean/datasetName2_dataSource/output", "clean_datasetName2.rds"))
 
 
 
 
 # DATA MANIPULATION ----------------------------------------------------------------------------------------------------------------------------------
 
-# MERGE DATA NAME WITH DATA FORMAT SAMPLE
-# merge
-dataFormat.variableTheme.unitLevel <-
-  dataFormat.sample.unitLevel %>%
-  tidylog::left_join(clean.datasetName, by = c("unitLevel")) %>%
-  tidylog::left_join(prep.variableTheme, by = c("unitLevel"))
-
-
+prep.variableTheme <-
 
 
 
@@ -60,14 +47,14 @@ dataFormat.variableTheme.unitLevel <-
 
 # LABELS
 # check existing labels
-sjlabelled::get_label(dataFormat.variableTheme.unitLevel)
+sjlabelled::get_label(prep.variableTheme)
 
 # add labels when missing
-sjlabelled::set_label(dataFormat.variableTheme.unitLevel$column1) <- "description of column 1"
+sjlabelled::set_label(prep.variableTheme$column1) <- "description of column 1"
 
 
 # POST-TREATMENT OVERVIEW
-# summary(dataFormat.variableTheme.unitLevel)
+# summary(prep.variableTheme)
 
 
 
@@ -75,8 +62,8 @@ sjlabelled::set_label(dataFormat.variableTheme.unitLevel$column1) <- "descriptio
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-saveRDS(dataFormat.variableTheme.unitLevel,
-        file = here::here("data/projectSpecific/unitLevel", "dataFormat_variableTheme_unitLevel.rds"))
+saveRDS(prep.variableTheme,
+        file = here::here("data/projectSpecific/prepData", "prep_variableTheme.rds"))
 
 
 

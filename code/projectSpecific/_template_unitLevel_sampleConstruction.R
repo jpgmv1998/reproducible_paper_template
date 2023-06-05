@@ -4,11 +4,12 @@
 # LEAD: LEADING AUTHOR(S) NAME(S)
 #
 # > THIS SCRIPT
-# AIM: PREPARE VARIABLE THEME - TEMPLATE
+# AIM: CONSTRUCT SAMPLE(S) OF INTEREST AT UNIT LEVEL - TEMPLATE
 # AUTHOR: SCRIPT AUTHOR(S) NAME(S)
 #
 # > NOTES
 # 1: -
+
 
 
 
@@ -19,8 +20,8 @@
 source("code/setup.R")
 
 
-# START TIMER
-tictoc::tic(msg = "variableTheme_projectSpecific_prepData.R script", log = T)
+# START TIME
+tictoc::tic(msg = "unitLevel_sampleConstruction.R script", log = T)
 
 
 
@@ -28,18 +29,21 @@ tictoc::tic(msg = "variableTheme_projectSpecific_prepData.R script", log = T)
 
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
-# CLEANED DATA 1
+# CLEAN DATA NAME
 clean.datasetName <- readRDS(file = here::here("data/raw2clean/datasetName_dataSource/output", "clean_datasetName.rds"))
 
-# CLEANED DATA 2
-clean.datasetName2 <- readRDS(file = here::here("data/raw2clean/datasetName2_dataSource/output", "clean_datasetName2.rds"))
+
+# PREP DATA NAME
+prep.variableTheme <- readRDS(file = here::here("data/projectSpecific/prepData", "prep_variableTheme.rds"))
+
 
 
 
 
 # DATA MANIPULATION ----------------------------------------------------------------------------------------------------------------------------------
 
-prep.variableTheme <-
+# construct sample of interest
+unitLevel.dataFormat.sample <-
 
 
 
@@ -47,14 +51,19 @@ prep.variableTheme <-
 
 # LABELS
 # check existing labels
-sjlabelled::get_label(prep.variableTheme)
+sjlabelled::get_label(unitLevel.dataFormat.sample)
 
 # add labels when missing
-sjlabelled::set_label(prep.variableTheme$column1) <- "description of column 1"
+sjlabelled::set_label(unitLevel.dataFormat.sample$column1) <- "description of column 1"
+
+
+# OTHER EXPORT FORMATS
+
 
 
 # POST-TREATMENT OVERVIEW
-# summary(prep.variableTheme)
+# summary(unitLevel.dataFormat.sample)
+
 
 
 
@@ -62,9 +71,8 @@ sjlabelled::set_label(prep.variableTheme$column1) <- "description of column 1"
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-saveRDS(prep.variableTheme,
-        file = here::here("data/projectSpecific/prepData", "prep_variableTheme.rds"))
-
+saveRDS(unitLevel.dataFormat.sample,
+        file = here::here("data/projectSpecific/unitLevel", "unitLevel_dataFormat_sample.rds"))
 
 
 # END TIMER

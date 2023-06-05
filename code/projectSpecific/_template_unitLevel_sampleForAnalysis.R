@@ -21,7 +21,7 @@ source("code/setup.R")
 
 
 # START TIMER
-tictoc::tic(msg = "sampleForAnalysis_projectSpecific_unitLevel.R script", log = T)
+tictoc::tic(msg = "unitLevel_sampleForAnalysis.R script", log = T)
 
 
 
@@ -30,11 +30,11 @@ tictoc::tic(msg = "sampleForAnalysis_projectSpecific_unitLevel.R script", log = 
 # DATA INPUT -----------------------------------------------------------------------------------------------------------------------------------------
 
 # DATA FORMAT SAMPLE
-dataFormat.sample.unitLevel <- readRDS(file = here::here("data/projectSpecific/unitLevel/dataFormat_sample_unitLevel.rds"))
+unitLevel.dataFormat.sample <- readRDS(file = here::here("data/projectSpecific/unitLevel/unitLevel_dataFormat_sample.rds"))
 
 
 # VARIABLE 1
-dataFormat.variableTheme.unitLevel <- readRDS(file = here::here("data/projectSpecific/unitLevel/dataFormat_variableTheme_unitLevel.rds"))
+unitLevel.dataFormat.variableTheme <- readRDS(file = here::here("data/projectSpecific/unitLevel/unitLevel_dataFormat_variableTheme.rds"))
 
 
 
@@ -43,9 +43,9 @@ dataFormat.variableTheme.unitLevel <- readRDS(file = here::here("data/projectSpe
 # DATA MERGE -----------------------------------------------------------------------------------------------------------------------------------------
 
 # merge sample with all variables of interest
-dataFormat.sampleForAnalysis.unitLevel <-
-  dataFormat.sample.unitLevel %>%
-  dplyr::left_join(dataFormat.variableTheme.unitLevel)
+unitLevel.dataFormat.sampleForAnalysis <-
+  unitLevel.dataFormat.sample %>%
+  dplyr::left_join(unitLevel.dataFormat.variableTheme)
 
 
 
@@ -55,14 +55,14 @@ dataFormat.sampleForAnalysis.unitLevel <-
 
 # LABELS
 # check existing labels
-sjlabelled::get_label(dataFormat.sampleForAnalysis.unitLevel)
+sjlabelled::get_label(unitLevel.dataFormat.sampleForAnalysis)
 
 # add labels when missing
-sjlabelled::set_label(dataFormat.sampleForAnalysis.unitLevel$column1) <- "description of column 1"
+sjlabelled::set_label(unitLevel.dataFormat.sampleForAnalysis$column1) <- "description of column 1"
 
 
 # POST-TREATMENT OVERVIEW
-# summary(dataFormat.sampleForAnalysis.unitLevel)
+# summary(unitLevel.dataFormat.sampleForAnalysis)
 
 
 
@@ -70,8 +70,8 @@ sjlabelled::set_label(dataFormat.sampleForAnalysis.unitLevel$column1) <- "descri
 
 # EXPORT ---------------------------------------------------------------------------------------------------------------------------------------------
 
-saveRDS(dataFormat.sampleForAnalysis.unitLevel,
-        file = here::here("data/projectSpecific/unitLevel", "dataFormat_sampleForAnalysis_unitLevel.rds"))
+saveRDS(unitLevel.dataFormat.sampleForAnalysis,
+        file = here::here("data/projectSpecific/unitLevel", "unitLevel_dataFormat_sampleForAnalysis.rds"))
 
 
 # END TIMER

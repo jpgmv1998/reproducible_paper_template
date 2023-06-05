@@ -41,7 +41,7 @@ Description of Files Structure
 - `"README.md"`:  This document. A markdown file to generate `"README.pdf"` and `"README.html"` (best for reading). It provides the necessary information about the structure of the replication folder, data sources, data access, computational requirements, and ultimately explains how to fully replicate the analysis presented in the paper.
  
 - `"code`: a folder containing all scripts to clean, construct, and analyze the data
-  - `"code/MASTERFILE.R"`: R script to run all scripts from data cleaning to generating the final results;
+  - `"code/_MASTERFILE.R"`: R script to run all scripts from data cleaning to generating the final results;
   - `"code/setup.R"`: R script to install/load R packages and configure the initial setup. Uses `"groundhog"` to keep all packages version fixes at the specified date (YYYY-MM-DD);
   - `"code/raw2clean"`: R scripts that clean the data on input and save on the output for each dataset;
   - `"code/projectSpecific"`: R scripts that construct the sample(s) for analysis;
@@ -66,7 +66,7 @@ Description of Files Structure
 - `"results"`: folder with the main results used in the paper
   - `"figures"`: folder with all figures. The figures of the main paper are listed in `"figures.tex"`. The figures of the appendix are listed in `"figures_appendix.tex"`;
   - `"tables"`: folder with all tables. The tables of the main paper are listed in `"tables.tex"`. The tables of the appendix are listed in `"tables_appendix.tex"`;
-  - `"stats"`: folder with the log output from the R script that calculates all the statistics cited in the text `"supportingStats.txt"`.
+  - `"stats"`: folder with the log output from the R script that calculates all the statistics cited in the text `"stats_inText.txt"`.
 
 - `"name_proj.Rproj"`: R project to automatically adjust file path references. Always open RStudio from this file when running any R script.
 
@@ -308,9 +308,9 @@ Original Example:
 Additional Example:
 
 - `"code/_MASTERFILE.R"` will run individual master files for each folder: 
-  - `"code/raw2clean/masterfile_raw2clean.R"` will run one R script to clean each input dataset (4 scripts).
-  - `"code/projectSpecific/muniLevel/masterfile_projectSpecific.R"` will construct the base sample, extract the information from each dataset relevant to this paper, construct the variables of interest, merge them with the base sample, and generate the sample for analysis in multiple formats: panel and spatial (4 scripts).
-  - `"code/analysis/masterfile_analysis.R"` will run the regressions and generate all supporting statistics, tables, and figures (5 scripts).
+  - `"code/raw2clean/_masterfile_raw2clean.R"` will run one R script to clean each input dataset (4 scripts).
+  - `"code/projectSpecific/_masterfile_projectSpecific.R"` will construct the base sample, extract the information from each dataset relevant to this paper, construct the variables of interest, merge them with the base sample, and generate the sample for analysis in multiple formats: panel and spatial (4 scripts).
+  - `"code/analysis/_masterfile_analysis.R"` will run the regressions and generate all supporting statistics, tables, and figures (5 scripts).
 
 
 ### (Optional, but recommended) License for Code
@@ -342,7 +342,7 @@ Additional Example:
   - Package `tabulizer` might require installing Java 64-bits (https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava)
   - In some cases Rtools might be necessary (https://groundhogr.com/rtools/);
   - In some cases re-running the script might solve possible installation issues.
-- Run `"code/MASTERFILE.R"` to run all R scripts in sequence.
+- Run `"code/_MASTERFILE.R"` to run all R scripts in sequence.
   - Skipping individual R programs will not prevent others from running correctly because all intermediate datasets are available. However, you should manually adjust the folder-specific master files to remove the scripts you do not want to run.
 
 ### Details
@@ -413,7 +413,7 @@ Additional Example:
 | Figure 1   | fig1_eventStudyBalanced.R           | figures/fig1_eventStudyBalanced.png                  |
 | Figure A.1 | figA1_eventStudyUnbalanced.R        | figures/figA1_eventStudyUnbalanced.png               |
 
-The numbers provided in the text in the paper are generated in `"code/analysis/supportingStats.R"` and saved in the `"results/stats/supportingStats.txt"` with page location and citation.
+The numbers provided in the text in the paper are generated in `"code/analysis/stats_inText.R"` and saved in the `"results/stats/stats_inText.txt"` with page location and citation.
 
 ## Acknowledgements
 
